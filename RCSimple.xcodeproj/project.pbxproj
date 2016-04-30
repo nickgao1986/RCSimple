@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C66B9521CD36ADE009E3892 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66B9511CD36ADE009E3892 /* main.m */; };
+		8C66B9551CD36ADE009E3892 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66B9541CD36ADE009E3892 /* AppDelegate.m */; };
+		8C66B9581CD36ADE009E3892 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66B9571CD36ADE009E3892 /* ViewController.m */; };
+		8C66B95B1CD36ADE009E3892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C66B9591CD36ADE009E3892 /* Main.storyboard */; };
+		8C66B95E1CD36ADE009E3892 /* RCSimple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C66B95C1CD36ADE009E3892 /* RCSimple.xcdatamodeld */; };
+		8C66B9601CD36ADE009E3892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C66B95F1CD36ADE009E3892 /* Assets.xcassets */; };
+		8C66B9631CD36ADE009E3892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C66B9611CD36ADE009E3892 /* LaunchScreen.storyboard */; };
+		8C7880531CD41AD800BCC7BB /* RCSPLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880521CD41AD800BCC7BB /* RCSPLaunchView.m */; };
+		8C7880571CD41C9D00BCC7BB /* RCUIGlobalCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880561CD41C9D00BCC7BB /* RCUIGlobalCommon.m */; };
+		8C78805A1CD41D3A00BCC7BB /* RCExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880591CD41D3A00BCC7BB /* RCExtern.m */; };
+		8C78805D1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78805C1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.m */; };
+		8C7880601CD41F2100BCC7BB /* UIWindow+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78805F1CD41F2100BCC7BB /* UIWindow+RCUICategory.m */; };
+		8C7880661CD4208F00BCC7BB /* RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880631CD4208F00BCC7BB /* RCUIThemeStyle.m */; };
+		8C7880671CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880651CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.m */; };
+		8C78806A1CD420E500BCC7BB /* RCUIThemeStyleDefined.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880691CD420E500BCC7BB /* RCUIThemeStyleDefined.m */; };
+		8C7880701CD4225500BCC7BB /* UIView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78806F1CD4225500BCC7BB /* UIView+RCUIThemeStyle.m */; };
+		8C7880771CD4236700BCC7BB /* RCFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C7880721CD4236700BCC7BB /* RCFont.ttf */; };
+		8C7880781CD4236700BCC7BB /* RCUIAppAwesomeIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880741CD4236700BCC7BB /* RCUIAppAwesomeIcons.m */; };
+		8C7880791CD4236700BCC7BB /* RCUIAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880761CD4236700BCC7BB /* RCUIAwesome.m */; };
+		8C7880841CD4263900BCC7BB /* UIImage+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78807B1CD4263900BCC7BB /* UIImage+RCUICategory.m */; };
+		8C7880851CD4263900BCC7BB /* UIImage+RCUIMergeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78807D1CD4263900BCC7BB /* UIImage+RCUIMergeCategory.m */; };
+		8C7880861CD4263900BCC7BB /* UIImage+RCUIPathCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78807F1CD4263900BCC7BB /* UIImage+RCUIPathCategory.m */; };
+		8C7880871CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880811CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.m */; };
+		8C7880881CD4263900BCC7BB /* UIImage+RCUIStretchable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880831CD4263900BCC7BB /* UIImage+RCUIStretchable.m */; };
+		8C7880BF1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78808C1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.m */; };
+		8C7880C01CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78808E1CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.m */; };
+		8C7880C11CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880901CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.m */; };
+		8C7880C21CD4270300BCC7BB /* UIButton+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880921CD4270300BCC7BB /* UIButton+RCUIThemeStyle.m */; };
+		8C7880C31CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880941CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.m */; };
+		8C7880C41CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880961CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.m */; };
+		8C7880C51CD4270300BCC7BB /* UILabel+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880981CD4270300BCC7BB /* UILabel+RCUIThemeStyle.m */; };
+		8C7880C61CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78809A1CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.m */; };
+		8C7880C71CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78809C1CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.m */; };
+		8C7880C81CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78809E1CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.m */; };
+		8C7880C91CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880A01CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.m */; };
+		8C7880CA1CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880A21CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.m */; };
+		8C7880CB1CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880A41CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.m */; };
+		8C7880CC1CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880A61CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.m */; };
+		8C7880CD1CD4270300BCC7BB /* UISlider+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880A81CD4270300BCC7BB /* UISlider+RCUIThemeStyle.m */; };
+		8C7880CE1CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880AA1CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.m */; };
+		8C7880CF1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880AC1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.m */; };
+		8C7880D01CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880AE1CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.m */; };
+		8C7880D11CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880B01CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.m */; };
+		8C7880D21CD4270300BCC7BB /* UITableView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880B21CD4270300BCC7BB /* UITableView+RCUIThemeStyle.m */; };
+		8C7880D31CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880B41CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.m */; };
+		8C7880D41CD4270300BCC7BB /* UITextField+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880B61CD4270300BCC7BB /* UITextField+RCUIThemeStyle.m */; };
+		8C7880D51CD4270300BCC7BB /* UITextView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880B81CD4270300BCC7BB /* UITextView+RCUIThemeStyle.m */; };
+		8C7880D61CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880BA1CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.m */; };
+		8C7880D71CD4270300BCC7BB /* UIView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880BC1CD4270300BCC7BB /* UIView+RCUIThemeStyle.m */; };
+		8C7880D81CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880BE1CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.m */; };
+		8C7880DC1CD4282400BCC7BB /* RCUIPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880DB1CD4282400BCC7BB /* RCUIPageControl.m */; };
+		8C7880DF1CD4289200BCC7BB /* UIFont+RCUILineHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880DE1CD4289200BCC7BB /* UIFont+RCUILineHeight.m */; };
+		8C7880E21CD428DE00BCC7BB /* RCUIGlobalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880E11CD428DE00BCC7BB /* RCUIGlobalStyle.m */; };
+		8C7880E51CD4295C00BCC7BB /* RCUINumberTipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880E41CD4295C00BCC7BB /* RCUINumberTipTextField.m */; };
+		8C7880E81CD42A1E00BCC7BB /* RCUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880E71CD42A1E00BCC7BB /* RCUISwitch.m */; };
+		8C7880EB1CD42A5C00BCC7BB /* RCUIBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880EA1CD42A5C00BCC7BB /* RCUIBadge.m */; };
+		8C78810D1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880FB1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.m */; };
+		8C78810E1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7880FD1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.m */; };
+		8C7881241CD4448500BCC7BB /* RCUIThemeStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7881231CD4448500BCC7BB /* RCUIThemeStyleManager.m */; };
+		8C7881271CD444E000BCC7BB /* RCUIRingCentralThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7881261CD444E000BCC7BB /* RCUIRingCentralThemeStyle.m */; };
+		8C78812B1CD4456800BCC7BB /* RCBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78812A1CD4456800BCC7BB /* RCBrand.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C66B94D1CD36ADE009E3892 /* RCSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C66B9511CD36ADE009E3892 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C66B9531CD36ADE009E3892 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C66B9541CD36ADE009E3892 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C66B9561CD36ADE009E3892 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8C66B9571CD36ADE009E3892 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C66B95A1CD36ADE009E3892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C66B95D1CD36ADE009E3892 /* RCSimple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RCSimple.xcdatamodel; sourceTree = "<group>"; };
+		8C66B95F1CD36ADE009E3892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C66B9621CD36ADE009E3892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C66B9641CD36ADE009E3892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C7880511CD41AD800BCC7BB /* RCSPLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPLaunchView.h; sourceTree = "<group>"; };
+		8C7880521CD41AD800BCC7BB /* RCSPLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPLaunchView.m; sourceTree = "<group>"; };
+		8C7880551CD41C9D00BCC7BB /* RCUIGlobalCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIGlobalCommon.h; sourceTree = "<group>"; };
+		8C7880561CD41C9D00BCC7BB /* RCUIGlobalCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIGlobalCommon.m; sourceTree = "<group>"; };
+		8C7880581CD41D3A00BCC7BB /* RCExtern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCExtern.h; sourceTree = "<group>"; };
+		8C7880591CD41D3A00BCC7BB /* RCExtern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCExtern.m; sourceTree = "<group>"; };
+		8C78805B1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+RCUIBounds.h"; sourceTree = "<group>"; };
+		8C78805C1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+RCUIBounds.m"; sourceTree = "<group>"; };
+		8C78805E1CD41F2100BCC7BB /* UIWindow+RCUICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+RCUICategory.h"; sourceTree = "<group>"; };
+		8C78805F1CD41F2100BCC7BB /* UIWindow+RCUICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+RCUICategory.m"; sourceTree = "<group>"; };
+		8C7880621CD4208F00BCC7BB /* RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIThemeStyle.h; sourceTree = "<group>"; };
+		8C7880631CD4208F00BCC7BB /* RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIThemeStyle.m; sourceTree = "<group>"; };
+		8C7880641CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880651CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880681CD420E500BCC7BB /* RCUIThemeStyleDefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIThemeStyleDefined.h; sourceTree = "<group>"; };
+		8C7880691CD420E500BCC7BB /* RCUIThemeStyleDefined.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIThemeStyleDefined.m; sourceTree = "<group>"; };
+		8C78806E1CD4225500BCC7BB /* UIView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C78806F1CD4225500BCC7BB /* UIView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880721CD4236700BCC7BB /* RCFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RCFont.ttf; sourceTree = "<group>"; };
+		8C7880731CD4236700BCC7BB /* RCUIAppAwesomeIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIAppAwesomeIcons.h; sourceTree = "<group>"; };
+		8C7880741CD4236700BCC7BB /* RCUIAppAwesomeIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIAppAwesomeIcons.m; sourceTree = "<group>"; };
+		8C7880751CD4236700BCC7BB /* RCUIAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIAwesome.h; sourceTree = "<group>"; };
+		8C7880761CD4236700BCC7BB /* RCUIAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIAwesome.m; sourceTree = "<group>"; };
+		8C78807A1CD4263900BCC7BB /* UIImage+RCUICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RCUICategory.h"; sourceTree = "<group>"; };
+		8C78807B1CD4263900BCC7BB /* UIImage+RCUICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RCUICategory.m"; sourceTree = "<group>"; };
+		8C78807C1CD4263900BCC7BB /* UIImage+RCUIMergeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RCUIMergeCategory.h"; sourceTree = "<group>"; };
+		8C78807D1CD4263900BCC7BB /* UIImage+RCUIMergeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RCUIMergeCategory.m"; sourceTree = "<group>"; };
+		8C78807E1CD4263900BCC7BB /* UIImage+RCUIPathCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RCUIPathCategory.h"; sourceTree = "<group>"; };
+		8C78807F1CD4263900BCC7BB /* UIImage+RCUIPathCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RCUIPathCategory.m"; sourceTree = "<group>"; };
+		8C7880801CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RCUIProfileImagePlaceholderCategory.h"; sourceTree = "<group>"; };
+		8C7880811CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RCUIProfileImagePlaceholderCategory.m"; sourceTree = "<group>"; };
+		8C7880821CD4263900BCC7BB /* UIImage+RCUIStretchable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RCUIStretchable.h"; sourceTree = "<group>"; };
+		8C7880831CD4263900BCC7BB /* UIImage+RCUIStretchable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RCUIStretchable.m"; sourceTree = "<group>"; };
+		8C7880891CD426FB00BCC7BB /* RCUIThemeStyleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIThemeStyleHeader.h; sourceTree = "<group>"; };
+		8C78808B1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C78808C1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C78808D1CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBadge+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C78808E1CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBadge+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C78808F1CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880901CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880911CD4270300BCC7BB /* UIButton+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880921CD4270300BCC7BB /* UIButton+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880931CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDatePicker+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880941CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDatePicker+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880951CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880961CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880971CD4270300BCC7BB /* UILabel+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880981CD4270300BCC7BB /* UILabel+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880991CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C78809A1CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C78809B1CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C78809C1CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C78809D1CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C78809E1CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C78809F1CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverBackgroundView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880A01CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverBackgroundView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880A11CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880A21CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880A31CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880A41CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880A51CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880A61CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880A71CD4270300BCC7BB /* UISlider+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880A81CD4270300BCC7BB /* UISlider+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880A91CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880AA1CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880AB1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880AC1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880AD1CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880AE1CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880AF1CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880B01CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880B11CD4270300BCC7BB /* UITableView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880B21CD4270300BCC7BB /* UITableView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880B31CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880B41CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880B51CD4270300BCC7BB /* UITextField+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880B61CD4270300BCC7BB /* UITextField+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880B71CD4270300BCC7BB /* UITextView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880B81CD4270300BCC7BB /* UITextView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880B91CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880BA1CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880BB1CD4270300BCC7BB /* UIView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880BC1CD4270300BCC7BB /* UIView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880BD1CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+RCUIThemeStyle.h"; sourceTree = "<group>"; };
+		8C7880BE1CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+RCUIThemeStyle.m"; sourceTree = "<group>"; };
+		8C7880DA1CD4282400BCC7BB /* RCUIPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIPageControl.h; sourceTree = "<group>"; };
+		8C7880DB1CD4282400BCC7BB /* RCUIPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIPageControl.m; sourceTree = "<group>"; };
+		8C7880DD1CD4289200BCC7BB /* UIFont+RCUILineHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+RCUILineHeight.h"; sourceTree = "<group>"; };
+		8C7880DE1CD4289200BCC7BB /* UIFont+RCUILineHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+RCUILineHeight.m"; sourceTree = "<group>"; };
+		8C7880E01CD428DE00BCC7BB /* RCUIGlobalStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIGlobalStyle.h; sourceTree = "<group>"; };
+		8C7880E11CD428DE00BCC7BB /* RCUIGlobalStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIGlobalStyle.m; sourceTree = "<group>"; };
+		8C7880E31CD4295C00BCC7BB /* RCUINumberTipTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUINumberTipTextField.h; sourceTree = "<group>"; };
+		8C7880E41CD4295C00BCC7BB /* RCUINumberTipTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUINumberTipTextField.m; sourceTree = "<group>"; };
+		8C7880E61CD42A1E00BCC7BB /* RCUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUISwitch.h; sourceTree = "<group>"; };
+		8C7880E71CD42A1E00BCC7BB /* RCUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUISwitch.m; sourceTree = "<group>"; };
+		8C7880E91CD42A5C00BCC7BB /* RCUIBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIBadge.h; sourceTree = "<group>"; };
+		8C7880EA1CD42A5C00BCC7BB /* RCUIBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIBadge.m; sourceTree = "<group>"; };
+		8C7880FA1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIiOS7TableViewCellBackgroundView.h; sourceTree = "<group>"; };
+		8C7880FB1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIiOS7TableViewCellBackgroundView.m; sourceTree = "<group>"; };
+		8C7880FC1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewCellBackgroundView.h; sourceTree = "<group>"; };
+		8C7880FD1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewCellBackgroundView.m; sourceTree = "<group>"; };
+		8C7881221CD4448500BCC7BB /* RCUIThemeStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIThemeStyleManager.h; sourceTree = "<group>"; };
+		8C7881231CD4448500BCC7BB /* RCUIThemeStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIThemeStyleManager.m; sourceTree = "<group>"; };
+		8C7881251CD444E000BCC7BB /* RCUIRingCentralThemeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIRingCentralThemeStyle.h; sourceTree = "<group>"; };
+		8C7881261CD444E000BCC7BB /* RCUIRingCentralThemeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIRingCentralThemeStyle.m; sourceTree = "<group>"; };
+		8C7881291CD4456800BCC7BB /* RCBrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCBrand.h; sourceTree = "<group>"; };
+		8C78812A1CD4456800BCC7BB /* RCBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCBrand.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C66B94A1CD36ADE009E3892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C66B9441CD36ADE009E3892 = {
+			isa = PBXGroup;
+			children = (
+				8C66B94F1CD36ADE009E3892 /* RCSimple */,
+				8C66B94E1CD36ADE009E3892 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C66B94E1CD36ADE009E3892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C66B94D1CD36ADE009E3892 /* RCSimple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C66B94F1CD36ADE009E3892 /* RCSimple */ = {
+			isa = PBXGroup;
+			children = (
+				8C7881281CD4456800BCC7BB /* RCFoundation */,
+				8C7881151CD4301900BCC7BB /* RCUIKit */,
+				8C7880D91CD4282400BCC7BB /* RCUIControl */,
+				8C7880711CD4236700BCC7BB /* Awesome */,
+				8C7880611CD4205300BCC7BB /* RCUIThemeManager */,
+				8C7880541CD41B8800BCC7BB /* RCUICommon */,
+				8C66B9531CD36ADE009E3892 /* AppDelegate.h */,
+				8C66B9541CD36ADE009E3892 /* AppDelegate.m */,
+				8C66B9561CD36ADE009E3892 /* ViewController.h */,
+				8C66B9571CD36ADE009E3892 /* ViewController.m */,
+				8C7880511CD41AD800BCC7BB /* RCSPLaunchView.h */,
+				8C7880521CD41AD800BCC7BB /* RCSPLaunchView.m */,
+				8C66B9591CD36ADE009E3892 /* Main.storyboard */,
+				8C66B95F1CD36ADE009E3892 /* Assets.xcassets */,
+				8C66B9611CD36ADE009E3892 /* LaunchScreen.storyboard */,
+				8C66B9641CD36ADE009E3892 /* Info.plist */,
+				8C66B95C1CD36ADE009E3892 /* RCSimple.xcdatamodeld */,
+				8C66B9501CD36ADE009E3892 /* Supporting Files */,
+			);
+			path = RCSimple;
+			sourceTree = "<group>";
+		};
+		8C66B9501CD36ADE009E3892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C66B9511CD36ADE009E3892 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C7880541CD41B8800BCC7BB /* RCUICommon */ = {
+			isa = PBXGroup;
+			children = (
+				8C7880E01CD428DE00BCC7BB /* RCUIGlobalStyle.h */,
+				8C7880E11CD428DE00BCC7BB /* RCUIGlobalStyle.m */,
+				8C7880DD1CD4289200BCC7BB /* UIFont+RCUILineHeight.h */,
+				8C7880DE1CD4289200BCC7BB /* UIFont+RCUILineHeight.m */,
+				8C78807A1CD4263900BCC7BB /* UIImage+RCUICategory.h */,
+				8C78807B1CD4263900BCC7BB /* UIImage+RCUICategory.m */,
+				8C78807C1CD4263900BCC7BB /* UIImage+RCUIMergeCategory.h */,
+				8C78807D1CD4263900BCC7BB /* UIImage+RCUIMergeCategory.m */,
+				8C78807E1CD4263900BCC7BB /* UIImage+RCUIPathCategory.h */,
+				8C78807F1CD4263900BCC7BB /* UIImage+RCUIPathCategory.m */,
+				8C7880801CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.h */,
+				8C7880811CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.m */,
+				8C7880821CD4263900BCC7BB /* UIImage+RCUIStretchable.h */,
+				8C7880831CD4263900BCC7BB /* UIImage+RCUIStretchable.m */,
+				8C78805E1CD41F2100BCC7BB /* UIWindow+RCUICategory.h */,
+				8C78805F1CD41F2100BCC7BB /* UIWindow+RCUICategory.m */,
+				8C78805B1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.h */,
+				8C78805C1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.m */,
+				8C7880581CD41D3A00BCC7BB /* RCExtern.h */,
+				8C7880591CD41D3A00BCC7BB /* RCExtern.m */,
+				8C7880551CD41C9D00BCC7BB /* RCUIGlobalCommon.h */,
+				8C7880561CD41C9D00BCC7BB /* RCUIGlobalCommon.m */,
+			);
+			path = RCUICommon;
+			sourceTree = "<group>";
+		};
+		8C7880611CD4205300BCC7BB /* RCUIThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				8C7881251CD444E000BCC7BB /* RCUIRingCentralThemeStyle.h */,
+				8C7881261CD444E000BCC7BB /* RCUIRingCentralThemeStyle.m */,
+				8C7881221CD4448500BCC7BB /* RCUIThemeStyleManager.h */,
+				8C7881231CD4448500BCC7BB /* RCUIThemeStyleManager.m */,
+				8C78808A1CD4270300BCC7BB /* UIControlStyle */,
+				8C7880891CD426FB00BCC7BB /* RCUIThemeStyleHeader.h */,
+				8C7880681CD420E500BCC7BB /* RCUIThemeStyleDefined.h */,
+				8C7880691CD420E500BCC7BB /* RCUIThemeStyleDefined.m */,
+				8C7880621CD4208F00BCC7BB /* RCUIThemeStyle.h */,
+				8C7880631CD4208F00BCC7BB /* RCUIThemeStyle.m */,
+				8C7880641CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.h */,
+				8C7880651CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.m */,
+				8C78806E1CD4225500BCC7BB /* UIView+RCUIThemeStyle.h */,
+				8C78806F1CD4225500BCC7BB /* UIView+RCUIThemeStyle.m */,
+			);
+			path = RCUIThemeManager;
+			sourceTree = "<group>";
+		};
+		8C7880711CD4236700BCC7BB /* Awesome */ = {
+			isa = PBXGroup;
+			children = (
+				8C7880721CD4236700BCC7BB /* RCFont.ttf */,
+				8C7880731CD4236700BCC7BB /* RCUIAppAwesomeIcons.h */,
+				8C7880741CD4236700BCC7BB /* RCUIAppAwesomeIcons.m */,
+				8C7880751CD4236700BCC7BB /* RCUIAwesome.h */,
+				8C7880761CD4236700BCC7BB /* RCUIAwesome.m */,
+			);
+			path = Awesome;
+			sourceTree = "<group>";
+		};
+		8C78808A1CD4270300BCC7BB /* UIControlStyle */ = {
+			isa = PBXGroup;
+			children = (
+				8C78808B1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.h */,
+				8C78808C1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.m */,
+				8C78808D1CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.h */,
+				8C78808E1CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.m */,
+				8C78808F1CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.h */,
+				8C7880901CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.m */,
+				8C7880911CD4270300BCC7BB /* UIButton+RCUIThemeStyle.h */,
+				8C7880921CD4270300BCC7BB /* UIButton+RCUIThemeStyle.m */,
+				8C7880931CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.h */,
+				8C7880941CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.m */,
+				8C7880951CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.h */,
+				8C7880961CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.m */,
+				8C7880971CD4270300BCC7BB /* UILabel+RCUIThemeStyle.h */,
+				8C7880981CD4270300BCC7BB /* UILabel+RCUIThemeStyle.m */,
+				8C7880991CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.h */,
+				8C78809A1CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.m */,
+				8C78809B1CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.h */,
+				8C78809C1CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.m */,
+				8C78809D1CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.h */,
+				8C78809E1CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.m */,
+				8C78809F1CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.h */,
+				8C7880A01CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.m */,
+				8C7880A11CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.h */,
+				8C7880A21CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.m */,
+				8C7880A31CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.h */,
+				8C7880A41CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.m */,
+				8C7880A51CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.h */,
+				8C7880A61CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.m */,
+				8C7880A71CD4270300BCC7BB /* UISlider+RCUIThemeStyle.h */,
+				8C7880A81CD4270300BCC7BB /* UISlider+RCUIThemeStyle.m */,
+				8C7880A91CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.h */,
+				8C7880AA1CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.m */,
+				8C7880AB1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.h */,
+				8C7880AC1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.m */,
+				8C7880AD1CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.h */,
+				8C7880AE1CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.m */,
+				8C7880AF1CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.h */,
+				8C7880B01CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.m */,
+				8C7880B11CD4270300BCC7BB /* UITableView+RCUIThemeStyle.h */,
+				8C7880B21CD4270300BCC7BB /* UITableView+RCUIThemeStyle.m */,
+				8C7880B31CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.h */,
+				8C7880B41CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.m */,
+				8C7880B51CD4270300BCC7BB /* UITextField+RCUIThemeStyle.h */,
+				8C7880B61CD4270300BCC7BB /* UITextField+RCUIThemeStyle.m */,
+				8C7880B71CD4270300BCC7BB /* UITextView+RCUIThemeStyle.h */,
+				8C7880B81CD4270300BCC7BB /* UITextView+RCUIThemeStyle.m */,
+				8C7880B91CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.h */,
+				8C7880BA1CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.m */,
+				8C7880BB1CD4270300BCC7BB /* UIView+RCUIThemeStyle.h */,
+				8C7880BC1CD4270300BCC7BB /* UIView+RCUIThemeStyle.m */,
+				8C7880BD1CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.h */,
+				8C7880BE1CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.m */,
+			);
+			path = UIControlStyle;
+			sourceTree = "<group>";
+		};
+		8C7880D91CD4282400BCC7BB /* RCUIControl */ = {
+			isa = PBXGroup;
+			children = (
+				8C7880F71CD42E8B00BCC7BB /* RCUICustomTableUI */,
+				8C7880E91CD42A5C00BCC7BB /* RCUIBadge.h */,
+				8C7880EA1CD42A5C00BCC7BB /* RCUIBadge.m */,
+				8C7880E61CD42A1E00BCC7BB /* RCUISwitch.h */,
+				8C7880E71CD42A1E00BCC7BB /* RCUISwitch.m */,
+				8C7880E31CD4295C00BCC7BB /* RCUINumberTipTextField.h */,
+				8C7880E41CD4295C00BCC7BB /* RCUINumberTipTextField.m */,
+				8C7880DA1CD4282400BCC7BB /* RCUIPageControl.h */,
+				8C7880DB1CD4282400BCC7BB /* RCUIPageControl.m */,
+			);
+			path = RCUIControl;
+			sourceTree = "<group>";
+		};
+		8C7880F71CD42E8B00BCC7BB /* RCUICustomTableUI */ = {
+			isa = PBXGroup;
+			children = (
+				8C7880FA1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.h */,
+				8C7880FB1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.m */,
+				8C7880FC1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.h */,
+				8C7880FD1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.m */,
+			);
+			path = RCUICustomTableUI;
+			sourceTree = "<group>";
+		};
+		8C7881151CD4301900BCC7BB /* RCUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8C7881161CD4301900BCC7BB /* RCUIViewController */,
+			);
+			path = RCUIKit;
+			sourceTree = "<group>";
+		};
+		8C7881161CD4301900BCC7BB /* RCUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C7881171CD4301900BCC7BB /* Table View Controller */,
+			);
+			path = RCUIViewController;
+			sourceTree = "<group>";
+		};
+		8C7881171CD4301900BCC7BB /* Table View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C7881181CD4301900BCC7BB /* Search Display Controller */,
+			);
+			path = "Table View Controller";
+			sourceTree = "<group>";
+		};
+		8C7881181CD4301900BCC7BB /* Search Display Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Search Display Controller";
+			sourceTree = "<group>";
+		};
+		8C7881281CD4456800BCC7BB /* RCFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				8C7881291CD4456800BCC7BB /* RCBrand.h */,
+				8C78812A1CD4456800BCC7BB /* RCBrand.m */,
+			);
+			path = RCFoundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C66B94C1CD36ADE009E3892 /* RCSimple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C66B9671CD36ADE009E3892 /* Build configuration list for PBXNativeTarget "RCSimple" */;
+			buildPhases = (
+				8C66B9491CD36ADE009E3892 /* Sources */,
+				8C66B94A1CD36ADE009E3892 /* Frameworks */,
+				8C66B94B1CD36ADE009E3892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCSimple;
+			productName = RCSimple;
+			productReference = 8C66B94D1CD36ADE009E3892 /* RCSimple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C66B9451CD36ADE009E3892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = nickgao;
+				TargetAttributes = {
+					8C66B94C1CD36ADE009E3892 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = R47P3YRS5D;
+					};
+				};
+			};
+			buildConfigurationList = 8C66B9481CD36ADE009E3892 /* Build configuration list for PBXProject "RCSimple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C66B9441CD36ADE009E3892;
+			productRefGroup = 8C66B94E1CD36ADE009E3892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C66B94C1CD36ADE009E3892 /* RCSimple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C66B94B1CD36ADE009E3892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66B9631CD36ADE009E3892 /* LaunchScreen.storyboard in Resources */,
+				8C66B9601CD36ADE009E3892 /* Assets.xcassets in Resources */,
+				8C7880771CD4236700BCC7BB /* RCFont.ttf in Resources */,
+				8C66B95B1CD36ADE009E3892 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C66B9491CD36ADE009E3892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C78812B1CD4456800BCC7BB /* RCBrand.m in Sources */,
+				8C7880661CD4208F00BCC7BB /* RCUIThemeStyle.m in Sources */,
+				8C7880E81CD42A1E00BCC7BB /* RCUISwitch.m in Sources */,
+				8C7880C11CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.m in Sources */,
+				8C7880D21CD4270300BCC7BB /* UITableView+RCUIThemeStyle.m in Sources */,
+				8C78805A1CD41D3A00BCC7BB /* RCExtern.m in Sources */,
+				8C66B95E1CD36ADE009E3892 /* RCSimple.xcdatamodeld in Sources */,
+				8C7880601CD41F2100BCC7BB /* UIWindow+RCUICategory.m in Sources */,
+				8C7880791CD4236700BCC7BB /* RCUIAwesome.m in Sources */,
+				8C7880C71CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.m in Sources */,
+				8C7880D51CD4270300BCC7BB /* UITextView+RCUIThemeStyle.m in Sources */,
+				8C7880861CD4263900BCC7BB /* UIImage+RCUIPathCategory.m in Sources */,
+				8C7880D81CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.m in Sources */,
+				8C7880CE1CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.m in Sources */,
+				8C7880531CD41AD800BCC7BB /* RCSPLaunchView.m in Sources */,
+				8C7880D11CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.m in Sources */,
+				8C7880C21CD4270300BCC7BB /* UIButton+RCUIThemeStyle.m in Sources */,
+				8C7880CA1CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.m in Sources */,
+				8C7880DC1CD4282400BCC7BB /* RCUIPageControl.m in Sources */,
+				8C7880D41CD4270300BCC7BB /* UITextField+RCUIThemeStyle.m in Sources */,
+				8C7880781CD4236700BCC7BB /* RCUIAppAwesomeIcons.m in Sources */,
+				8C7880EB1CD42A5C00BCC7BB /* RCUIBadge.m in Sources */,
+				8C78810E1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.m in Sources */,
+				8C7880881CD4263900BCC7BB /* UIImage+RCUIStretchable.m in Sources */,
+				8C7880C51CD4270300BCC7BB /* UILabel+RCUIThemeStyle.m in Sources */,
+				8C7880BF1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.m in Sources */,
+				8C7880DF1CD4289200BCC7BB /* UIFont+RCUILineHeight.m in Sources */,
+				8C7881241CD4448500BCC7BB /* RCUIThemeStyleManager.m in Sources */,
+				8C7880671CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.m in Sources */,
+				8C66B9581CD36ADE009E3892 /* ViewController.m in Sources */,
+				8C7880E51CD4295C00BCC7BB /* RCUINumberTipTextField.m in Sources */,
+				8C7880D01CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.m in Sources */,
+				8C7880C01CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.m in Sources */,
+				8C66B9551CD36ADE009E3892 /* AppDelegate.m in Sources */,
+				8C7880851CD4263900BCC7BB /* UIImage+RCUIMergeCategory.m in Sources */,
+				8C78810D1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.m in Sources */,
+				8C7880CB1CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.m in Sources */,
+				8C7880CF1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.m in Sources */,
+				8C7880D31CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.m in Sources */,
+				8C7880D71CD4270300BCC7BB /* UIView+RCUIThemeStyle.m in Sources */,
+				8C7880C41CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.m in Sources */,
+				8C7880701CD4225500BCC7BB /* UIView+RCUIThemeStyle.m in Sources */,
+				8C7880CD1CD4270300BCC7BB /* UISlider+RCUIThemeStyle.m in Sources */,
+				8C7880CC1CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.m in Sources */,
+				8C78806A1CD420E500BCC7BB /* RCUIThemeStyleDefined.m in Sources */,
+				8C7880871CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.m in Sources */,
+				8C7881271CD444E000BCC7BB /* RCUIRingCentralThemeStyle.m in Sources */,
+				8C7880C91CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.m in Sources */,
+				8C7880D61CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.m in Sources */,
+				8C7880C81CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.m in Sources */,
+				8C7880571CD41C9D00BCC7BB /* RCUIGlobalCommon.m in Sources */,
+				8C66B9521CD36ADE009E3892 /* main.m in Sources */,
+				8C7880C61CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.m in Sources */,
+				8C7880841CD4263900BCC7BB /* UIImage+RCUICategory.m in Sources */,
+				8C7880E21CD428DE00BCC7BB /* RCUIGlobalStyle.m in Sources */,
+				8C78805D1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.m in Sources */,
+				8C7880C31CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C66B9591CD36ADE009E3892 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C66B95A1CD36ADE009E3892 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C66B9611CD36ADE009E3892 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C66B9621CD36ADE009E3892 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C66B9651CD36ADE009E3892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C66B9661CD36ADE009E3892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C66B9681CD36ADE009E3892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = RCSimple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickgao.RCSimple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8C66B9691CD36ADE009E3892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = RCSimple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickgao.RCSimple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C66B9481CD36ADE009E3892 /* Build configuration list for PBXProject "RCSimple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C66B9651CD36ADE009E3892 /* Debug */,
+				8C66B9661CD36ADE009E3892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C66B9671CD36ADE009E3892 /* Build configuration list for PBXNativeTarget "RCSimple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C66B9681CD36ADE009E3892 /* Debug */,
+				8C66B9691CD36ADE009E3892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C66B95C1CD36ADE009E3892 /* RCSimple.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C66B95D1CD36ADE009E3892 /* RCSimple.xcdatamodel */,
+			);
+			currentVersion = 8C66B95D1CD36ADE009E3892 /* RCSimple.xcdatamodel */;
+			path = RCSimple.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8C66B9451CD36ADE009E3892 /* Project object */;
+}
