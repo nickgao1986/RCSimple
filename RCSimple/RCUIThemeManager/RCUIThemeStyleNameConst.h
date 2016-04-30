@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RCBase/RCNSStringDefinitions.h>
+#import "RCNSStringDefinitions.h"
 
 /**
  * @ reference = RCUIThemeStyleNameHelperGuide.md

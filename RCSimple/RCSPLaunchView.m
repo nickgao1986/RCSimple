@@ -9,12 +9,21 @@
 #import "RCSPLaunchView.h"
 //#import "RCUIGlobalCommon.h”
 //#import "RCUIGlobalStyle.h”
+#import "RCUIGlobalStyle.h"
+#import "RCUIGlobalCommon.h"
+
+
 #import "RCUIThemeStyleDefined.h"
 #import "UIImage+RCUIPathCategory.h"
 #import "UIView+RCUIThemeStyle.h"
 #import "RCExtern.h"
 #import "RCUIThemeStyleManager.h"
 #import "RCUIThemeStyle.h"
+#import "RCUIThemeStyleNameConst.h"
+
+
+#define RCUI_TABLEVIEW_CELL_RADIUS_PHONE							6
+
 
 @implementation RCSPLaunchView
 
@@ -74,9 +83,17 @@
 
 - (void) loadLaunchButton: (NSString*)title;
 {
+    
     self.launchButton = [UIButton buttonWithType: UIButtonTypeCustom];
-//    [self.launchButton uiApplyiOS7ThemeStyle: [RCUI_THEME_STYLE () buttonThemeWithStyleName: RCMeetingButtonJoin] radius: RCUI_TABLEVIEW_CELL_RADIUS];
-  //  self.launchButton.titleLabel.font = RCUIMediumSystemFont(20);
+  
+
+    RCUIThemeStyle* style = [[RCUIThemeStyle alloc] init];
+      RCUIButtonThemeStyle *themeStyle = [style buttonThemeWithStyleName: RCMeetingButtonJoin];
+  
+    [self.launchButton uiApplyiOS7ThemeStyle: themeStyle radius: RCUI_TABLEVIEW_CELL_RADIUS_PHONE];
+    self.launchButton.titleLabel.font = RCUIMediumSystemFont(20);
+    self.launchButton.backgroundColor = [UIColor purpleColor];
+
     [self.launchButton setTitle: title forState: UIControlStateNormal];
     [self.launchButton setTitle: title forState: UIControlStateHighlighted];
     [self.launchButton addTarget: self action: @selector (launchAction:) forControlEvents: UIControlEventTouchUpInside];

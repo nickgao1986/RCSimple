@@ -65,63 +65,64 @@
 
 - (void) configureThemeStyleDictionary;
 {
-    [self configureThemeStyleNavigationBar];
-    [self configureThemeStylenNavigationBarButtonItem];
-    [self configureThemeStyleSearchBar];
-    [self configureThemeStyleLaunchBar];
-    [self configureThemeStyleEditBar];
-    [self configureThemeStyleFilterBar];
-    [self configureThemeStyleMenuIndicator];
-    [self configureThemeStyleBadge];
-    [self configureThemeStyleOffline];
-    [self configureThemeStyleVoIPUnavailable];
-    [self configureThemeStyleVoIPOnly];
-    [self configureThemeStyleDND];
+//    [self configureThemeStyleNavigationBar];
+//    [self configureThemeStylenNavigationBarButtonItem];
+//    [self configureThemeStyleSearchBar];
+//    [self configureThemeStyleLaunchBar];
+//    [self configureThemeStyleEditBar];
+//    [self configureThemeStyleFilterBar];
+//    [self configureThemeStyleMenuIndicator];
+//    [self configureThemeStyleBadge];
+//    [self configureThemeStyleOffline];
+//    [self configureThemeStyleVoIPUnavailable];
+//    [self configureThemeStyleVoIPOnly];
+//    [self configureThemeStyleDND];
     [self configureThemeStyleButton];
-    [self configureThemeStyleView];
-    [self configureThemeStyleSlider];
-    [self configureThemeStyleProgressView];
-    [self configureThemeStyleLabel];
-    [self configureThemeStyleImageView];
-    [self configureThemeStyleSwitch];
-    
-    [self configureThemeStyleTableView];
-    [self configureThemeStyleTableViewCell];
-    [self configureThemeStyleRefreshView];
     [self configureThemeStyleMeeting];
-    [self configureThemeStyleConference];
-    [self configureThemeStyleToastMessage];
-    [self configureThemeStyleAssetsPicker];
-    [self configureThemeStyleRingoutMode];
-    [self configureThemeStyleSettingsCallerID];
-    [self configureThemeStylePopover];
-    [self configureThemeStylePresence];
-    [self configureThemeStyleVoiceMail];
-    [self configureThemeStylePickerView];
-    [self configureThemeStyleToolBar];
-    [self configureThemeStyleTextField];
-    [self configureThemeStyleEmbeddedBrowser];
-    [self configureThemeStyleSMS];
-    [self configureThemeStyleLogin];
-    [self configureThemeStyleCloudDownload];
-    [self configureThemeStyleGroupMessagingTip];
-    [self configureThemeStyleIntroduction];
-    [self configureThemeStyleLegalDocs];
-    [self configureThemeStyleLoading];
-    [self configureThemeStyleReports];
-    [self configureThemeStyleDataMigration];
-    [self configureThemeStyleInAppNotification];
-    [self configureThemeStyleMyProfile];
-    [self configureThemeStyleMyProfileMoodMessage];
-    [self configureThemeStyleMyProfilePresence];
-    [self configureThemeStyleDropdown];
-    [self configureThemestyleDialingPlan];
-    [self configureThemeStyleSegmentedControl];
-    [self configureThemeStyleCloudContactEditView];
-    [self configureThemeStylePersonalContactAccessView];
-    [self configureThemeStyleCalendarView];
-    
-    [self configureThemeStyleForBrand];
+//    [self configureThemeStyleView];
+//    [self configureThemeStyleSlider];
+//    [self configureThemeStyleProgressView];
+//    [self configureThemeStyleLabel];
+//    [self configureThemeStyleImageView];
+//    [self configureThemeStyleSwitch];
+//    
+//    [self configureThemeStyleTableView];
+//    [self configureThemeStyleTableViewCell];
+//    [self configureThemeStyleRefreshView];
+//    [self configureThemeStyleMeeting];
+//    [self configureThemeStyleConference];
+//    [self configureThemeStyleToastMessage];
+//    [self configureThemeStyleAssetsPicker];
+//    [self configureThemeStyleRingoutMode];
+//    [self configureThemeStyleSettingsCallerID];
+//    [self configureThemeStylePopover];
+//    [self configureThemeStylePresence];
+//    [self configureThemeStyleVoiceMail];
+//    [self configureThemeStylePickerView];
+//    [self configureThemeStyleToolBar];
+//    [self configureThemeStyleTextField];
+//    [self configureThemeStyleEmbeddedBrowser];
+//    [self configureThemeStyleSMS];
+//    [self configureThemeStyleLogin];
+//    [self configureThemeStyleCloudDownload];
+//    [self configureThemeStyleGroupMessagingTip];
+//    [self configureThemeStyleIntroduction];
+//    [self configureThemeStyleLegalDocs];
+//    [self configureThemeStyleLoading];
+//    [self configureThemeStyleReports];
+//    [self configureThemeStyleDataMigration];
+//    [self configureThemeStyleInAppNotification];
+//    [self configureThemeStyleMyProfile];
+//    [self configureThemeStyleMyProfileMoodMessage];
+//    [self configureThemeStyleMyProfilePresence];
+//    [self configureThemeStyleDropdown];
+//    [self configureThemestyleDialingPlan];
+//    [self configureThemeStyleSegmentedControl];
+//    [self configureThemeStyleCloudContactEditView];
+//    [self configureThemeStylePersonalContactAccessView];
+//    [self configureThemeStyleCalendarView];
+//    
+//    [self configureThemeStyleForBrand];
 }
 
 - (RCUINavigationBarThemeStyle *) navigationBarThemeWithStyleName: (NSString *)name;
@@ -211,6 +212,7 @@
 - (RCUIButtonThemeStyle *) buttonThemeWithStyleName: (NSString *)name;
 {
     id themeStyle = [self.themeStyleDictionary objectForKey: name];
+    
     
     if ([themeStyle isKindOfClass: [RCUIButtonThemeStyle class]])
     {
@@ -624,456 +626,456 @@
 
 - (void) configureThemeStyleButton;
 {
-//    self.themeStyleDictionary[RCToViewButtonAddContact] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICON (nil, nil, self.colorTable[@"1"], self.colorTable[@"1a"]);
-//    
-//    self.themeStyleDictionary[RCUserDetailCellButtonPhone] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"1"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCUserDetailCellButtonText] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowTextIconWithSize: 22 color: self.colorTable[@"1"]],
-//                                                                                              [RCUIAppAwesomeIcons hollowTextIconWithSize: 22 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCToViewButtonAddContact] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICON (nil, nil, self.colorTable[@"1"], self.colorTable[@"1a"]);
+    
+    self.themeStyleDictionary[RCUserDetailCellButtonPhone] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"1"]],
+                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCUserDetailCellButtonText] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowTextIconWithSize: 22 color: self.colorTable[@"1"]],
+                                                                                              [RCUIAppAwesomeIcons hollowTextIconWithSize: 22 color: self.colorTable[@"1a"]]);
     
     /*
      * To View
      */
-//    self.themeStyleDictionary[RCToViewButtonContact] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"1"],
-//                                                                                               self.colorTable[@"1"],
-//                                                                                               self.colorTable[@"6"],
-//                                                                                               nil, nil, nil,
-//                                                                                               self.colorTable[@"6"],
-//                                                                                               self.colorTable[@"6"],
-//                                                                                               self.colorTable[@"1"],
-//                                                                                               nil, nil, nil,
-//                                                                                               nil, nil, nil, nil, nil, nil);
-//    
-//    self.themeStyleDictionary[RCToViewImageviewMoreDetail] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"]);
-//    
-//    self.themeStyleDictionary[RCToViewButtonInvalideContact] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
-//                                                                                                       self.colorTable[@"3"],
-//                                                                                                       self.colorTable[@"6"],
-//                                                                                                       nil, nil, nil,
-//                                                                                                       self.colorTable[@"6"],
-//                                                                                                       self.colorTable[@"6"],
-//                                                                                                       self.colorTable[@"3"],
-//                                                                                                       nil, nil, nil,
-//                                                                                                       nil, nil, nil, nil, nil, nil);
-//    
-//    /*
-//     * New Fax
-//     */
-//    self.themeStyleDictionary[RCNewFaxButtonEdit] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPenIconWithSize: 20 color: self.colorTable[@"1"]],
-//                                                                                      [RCUIAppAwesomeIcons hollowPenIconWithSize: 20 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCNewFaxButtonAddDocument] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons pinIconWithSize: 24 color: self.colorTable[@"1"]],
-//                                                                                             [RCUIAppAwesomeIcons pinIconWithSize: 24 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCNewFaxButtonDone] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"],
-//                                                                                                 self.colorTable[@"1"],
-//                                                                                                 self.colorTable[@"1"],
-//                                                                                                 self.colorTable[@"1a"]);
-//    
-//    /*
-//     * Conference
-//     */
-//    self.themeStyleDictionary[RCConferenceButtonDefaultDialInNumberSelection] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
-//    
-//    
-//    /*
-//     * Common tableViewCell accessory button
-//     */
-//    self.themeStyleDictionary[RCTableViewCellButtonAccessory] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
-//    self.themeStyleDictionary[RCTableViewCellButtonInformation] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 22 color: self.colorTable[@"7b"]],
-//                                                                                                    [RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 22 color: self.colorTable[@"7c"]]);
-//    
-//    self.themeStyleDictionary[RCTableViewCellButtonMute] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"1"]],
-//                                                                                             [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"1a"]]);
-//    
-//    self.themeStyleDictionary[RCTableViewCellButtonMuteDisabled] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"7b"]],
-//                                                                                             [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"7d"]]);
-//    
-//
-//    self.themeStyleDictionary[RCTableViewCellButtonUnmute] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"3"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"3a"]]);
-//
-//    self.themeStyleDictionary[RCTableViewCellButtonUnmute] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"7b"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"7d"]]);
-//    
-//
-//    /*
-//     * Voicemail
-//     */
-//    self.themeStyleDictionary[RCVoiceMailButtonPrev] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
-//    
-//    self.themeStyleDictionary[RCVoiceMailButtonNext] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
-//    
-//    CGFloat playSizeLarge = (RCUIIsIPAD () ? 70.0f : 60.0f);
-//    self.themeStyleDictionary[RCVoiceMailButtonPlayLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
-//                                                                                              [RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCVoiceMailButtonPauseLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCVoiceMailButtonLoadingLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
-//                                                                                                 [RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCVoiceMailImageViewSpinLoadingNormal] = RCUI_ACTIVITYINDICATOR_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"]);
-//    self.themeStyleDictionary[RCVoiceMailButtonDownloadLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
-//                                                                                                  [RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
-//
-//    CGFloat playSizeSmall = RCUIIsIPAD () ? 58.0f : 40.0f;
-//    self.themeStyleDictionary[RCVoiceMailButtonPlaySmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
-//                                                                                              [RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCVoiceMailButtonPauseSmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCVoiceMailButtonLoadingSmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
-//                                                                                                 [RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCVoiceMailImageViewSpinLoadingColorful] = RCUI_ACTIVITYINDICATOR_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"]);
-//    self.themeStyleDictionary[RCVoiceMailButtonDownloadSmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
-//                                                                                                  [RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
-//
-//    CGFloat audioSourceSize = (RCUIIsIPAD () ? 29.0f : 23.0f);
-//    self.themeStyleDictionary[RCVoiceMailButtonAudioHeadset] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowAudioIconWithSize: audioSourceSize color: self.colorTable[@"7"]],
-//                                                                                                 [RCUIAppAwesomeIcons hollowAudioIconWithSize: audioSourceSize color: self.colorTable[@"7a"]]);
-//    self.themeStyleDictionary[RCVoiceMailButtonAudioSpeaker] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowSpeakerIconWithSize: audioSourceSize color: self.colorTable[@"7"]],
-//                                                                                                 [RCUIAppAwesomeIcons hollowSpeakerIconWithSize: audioSourceSize color: self.colorTable[@"7a"]]);
-//    self.themeStyleDictionary[RCVoiceMailButtonAudioBluetooth] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowBluetoothIconWithSize: audioSourceSize color: self.colorTable[@"7"]],
-//                                                                                                   [RCUIAppAwesomeIcons hollowBluetoothIconWithSize: audioSourceSize color: self.colorTable[@"7a"]]);
-//
-//    CGFloat transcriptionReloadSize = (RCUIIsIPAD () ? 70.0f : 60.0f);
-//    self.themeStyleDictionary[RCVoiceMailButtonTranscriptionReload] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: transcriptionReloadSize color: self.colorTable[@"1"]],
-//                                                                                                        [RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: transcriptionReloadSize color: self.colorTable[@"1a"]]);
-//
-//    
-//    self.themeStyleDictionary[RCVoiceMailButtonText] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
-//                                                                                               self.colorTable[@"10"],
-//                                                                                               nil, nil,
-//                                                                                               self.colorTable[@"7d"], nil,
-//                                                                                               self.colorTable[@"6"],
-//                                                                                               self.colorTable[@"1a"],
-//                                                                                               nil, nil,
-//                                                                                               self.colorTable[@"6"], nil,
-//                                                                                               [RCUIAppAwesomeIcons hollowTextIconWithSize: 26 color: self.colorTable[@"1"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowTextIconWithSize: 26 color: self.colorTable[@"1"]], nil, nil,
-//                                                                                               [RCUIAppAwesomeIcons hollowTextIconWithSize: 26 color: self.colorTable[@"7d"]], nil);
-//    
-//    self.themeStyleDictionary[RCVoiceMailButtonDelete] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
-//                                                                                                 self.colorTable[@"10"],
-//                                                                                                 nil, nil,
-//                                                                                                 self.colorTable[@"7d"], nil,
-//                                                                                                 self.colorTable[@"6"],
-//                                                                                                 self.colorTable[@"1a"],
-//                                                                                                 nil, nil,
-//                                                                                                 self.colorTable[@"6"], nil,
-//                                                                                                 [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 24 color: self.colorTable[@"1"]],
-//                                                                                                 [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 24 color: self.colorTable[@"1"]], nil, nil,
-//                                                                                                 [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 24 color: self.colorTable[@"7d"]], nil);
-//    
-//    self.themeStyleDictionary[RCVoiceMailButtonCall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
-//                                                                                               self.colorTable[@"10"],
-//                                                                                               nil, nil,
-//                                                                                               self.colorTable[@"7d"], nil,
-//                                                                                               self.colorTable[@"4"],
-//                                                                                               self.colorTable[@"4a"],
-//                                                                                               nil, nil,
-//                                                                                               self.colorTable[@"6"], nil,
-//                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]], nil, nil,
-//                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"7d"]], nil);
-//    /*
-//     * Keypad
-//     */
-//    self.themeStyleDictionary[RCKeypadButtonKeyNumber] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICON (nil, self.colorTable[@"1"], self.colorTable[@"1"], self.colorTable[@"6"]);
-//    self.themeStyleDictionary[RCActiveCallButtonKeyNumber] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICON (self.colorTable[@"1"], nil, self.colorTable[@"6"], self.colorTable[@"1"]);
-//    self.themeStyleDictionary[RCKeypadButtonAddContact] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICONDISABLE (nil, nil, nil,
-//                                                                                                             [RCUIAppAwesomeIcons hollowAddContactIconWithSize: 28 color: self.colorTable[@"1"]],
-//                                                                                                             [RCUIAppAwesomeIcons hollowAddContactIconWithSize: 28 color: self.colorTable[@"1a"]],
-//                                                                                                             [RCUIAppAwesomeIcons hollowAddContactIconWithSize: 28 color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCKeypadButtonDelete] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICONDISABLE (nil, nil, nil,
-//                                                                                                         [RCUIAppAwesomeIcons hollowDeleteIconWithSize: 26 color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons hollowDeleteIconWithSize: 26 color: self.colorTable[@"1a"]],
-//                                                                                                         [RCUIAppAwesomeIcons hollowDeleteIconWithSize: 26 color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCKeypadButtonCall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
-//                                                                                            self.colorTable[@"10"],
-//                                                                                            nil, nil, nil, nil,
-//                                                                                            self.colorTable[@"4"],
-//                                                                                            self.colorTable[@"4a"],
-//                                                                                            nil, nil, nil, nil,
-//                                                                                            [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]],
-//                                                                                            [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]],
-//                                                                                            nil, nil, nil, nil);
-//    
-//    self.themeStyleDictionary[RCKeypadButtonFromArrow] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
-//    
-//    /*
-//     * Documents
-//     */
-//    self.themeStyleDictionary[RCDocumentsTableViewCellButtonRename] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"], self.colorTable[@"1"], self.colorTable[@"1"], self.colorTable[@"1a"]);
-//    
-//    /*
-//     * Flip
-//     */
-//    self.themeStyleDictionary[RCFlipTableViewCellLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], RCUIMediumSystemFont(17));
-//    self.themeStyleDictionary[RCFlipTableViewCellLabelDetail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], RCUIRegularSystemFont(12));
-//    self.themeStyleDictionary[RCFlipTableViewCellButtonFlip] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"],
-//                                                                                                            self.colorTable[@"1"],
-//                                                                                                            self.colorTable[@"1"],
-//                                                                                                            self.colorTable[@"1a"]);
-//    self.themeStyleDictionary[RCCallFlipLabelPromptEmpty]   = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
-//                                                                                                            self.colorTable[@"7b"],
-//                                                                                                            RCUIRegularSystemFont(14),
-//                                                                                                            RCUIRegularSystemFont(18),
-//                                                                                                            RCUIRegularSystemFont(18));
-//    self.themeStyleDictionary[RCCallFlipLabelPromptLoading]      = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
-//                                                                                                                 self.colorTable[@"7b"],
-//                                                                                                                 RCUIMediumSystemFont(15),
-//                                                                                                                 RCUIMediumSystemFont(18),
-//                                                                                                                 RCUIMediumSystemFont(18));
-//    self.themeStyleDictionary[RCCallFlipLabelPromptErrorTitle]   = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
-//                                                                                                                 self.colorTable[@"7b"],
-//                                                                                                                 RCUIMediumSystemFont(18),
-//                                                                                                                 RCUIMediumSystemFont(18),
-//                                                                                                                 RCUIMediumSystemFont(18));
-//    self.themeStyleDictionary[RCCallFlipLabelPromptErrorDetail]  = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
-//                                                                                                                 self.colorTable[@"7b"],
-//                                                                                                                 RCUIMediumSystemFont(12),
-//                                                                                                                 RCUIMediumSystemFont(18),
-//                                                                                                                 RCUIMediumSystemFont(18));
-//    
-//    /*
-//     * Active Call
-//     */
-//    CGFloat activeCallSize = RCUIIsIPAD () ? 98 : RCUIIsIPHONE4 () ? 58 : 66;
-//    self.themeStyleDictionary[RCActiveCallButtonHold] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"7d"],
-//                                                                                                         [RCUIAppAwesomeIcons hollowHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons holdCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons unHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons unHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"1a"]],
-//                                                                                                         [RCUIAppAwesomeIcons hollowHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonRecord] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                           self.colorTable[@"1"],
-//                                                                                                           self.colorTable[@"7d"],
-//                                                                                                           [RCUIAppAwesomeIcons hollowRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                           [RCUIAppAwesomeIcons recordCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                           [RCUIAppAwesomeIcons unRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                           [RCUIAppAwesomeIcons unRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"1a"]],
-//                                                                                                           [RCUIAppAwesomeIcons hollowRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonPark] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"7d"],
-//                                                                                                         [RCUIAppAwesomeIcons hollowParkCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons parkCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         nil, nil,
-//                                                                                                         [RCUIAppAwesomeIcons hollowParkCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonKeypad] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                           self.colorTable[@"1"],
-//                                                                                                           self.colorTable[@"7d"],
-//                                                                                                           [RCUIAppAwesomeIcons hollowKeypadCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                           [RCUIAppAwesomeIcons keypadCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                           nil, nil,
-//                                                                                                           [RCUIAppAwesomeIcons hollowKeypadCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonAudioHeadset] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                                 self.colorTable[@"1"],
-//                                                                                                                 self.colorTable[@"7d"],
-//                                                                                                                 [RCUIAppAwesomeIcons hollowAudioCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                                 [RCUIAppAwesomeIcons audioCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                                 nil, nil,
-//                                                                                                                 [RCUIAppAwesomeIcons hollowAudioCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonAudioSpeaker] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                                 self.colorTable[@"1"],
-//                                                                                                                 self.colorTable[@"7d"],
-//                                                                                                                 [RCUIAppAwesomeIcons hollowSpeakerCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]] ,
-//                                                                                                                 [RCUIAppAwesomeIcons speakerCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                                 nil, nil,
-//                                                                                                                 [RCUIAppAwesomeIcons hollowSpeakerCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonAudioBluetooth] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                                   self.colorTable[@"1"],
-//                                                                                                                   self.colorTable[@"7d"],
-//                                                                                                                   [RCUIAppAwesomeIcons hollowBluetoothCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                                   [RCUIAppAwesomeIcons bluetoothCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                                   nil, nil,
-//                                                                                                                   [RCUIAppAwesomeIcons hollowBluetoothCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonSwitchToCarrier] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                                    self.colorTable[@"1"],
-//                                                                                                                    self.colorTable[@"7d"],
-//                                                                                                                    [RCUIAppAwesomeIcons hollowCarrierCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                                    [RCUIAppAwesomeIcons carrierCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                                    nil,
-//                                                                                                                    nil,
-//                                                                                                                    [RCUIAppAwesomeIcons hollowCarrierCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonMute] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"7d"],
-//                                                                                                         [RCUIAppAwesomeIcons hollowUnMuteCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons muteCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons muteCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons muteCircleIconWithSize: activeCallSize color: self.colorTable[@"1a"]],
-//                                                                                                         [RCUIAppAwesomeIcons hollowUnMuteCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonFlip] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"1"],
-//                                                                                                         self.colorTable[@"7d"],
-//                                                                                                         [RCUIAppAwesomeIcons hollowFlipCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons flipCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                         nil, nil,
-//                                                                                                         [RCUIAppAwesomeIcons hollowFlipCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonTransfer] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
-//                                                                                                             self.colorTable[@"1"],
-//                                                                                                             self.colorTable[@"7d"],
-//                                                                                                             [RCUIAppAwesomeIcons hollowTransferCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                             [RCUIAppAwesomeIcons transferCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
-//                                                                                                             nil, nil,
-//                                                                                                             [RCUIAppAwesomeIcons hollowTransferCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonRectMute] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
-//                                                                                                    self.colorTable[@"10"],
-//                                                                                                    self.colorTable[@"10"],
-//                                                                                                    self.colorTable[@"10"],
-//                                                                                                    self.colorTable[@"7d"],
-//                                                                                                    self.colorTable[@"7d"],
-//                                                                                                    self.colorTable[@"6"],
-//                                                                                                    self.colorTable[@"1a"],
-//                                                                                                    self.colorTable[@"7d"],
-//                                                                                                    self.colorTable[@"1a"],
-//                                                                                                    self.colorTable[@"6"],
-//                                                                                                    self.colorTable[@"6"],
-//                                                                                                    [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 29 color: self.colorTable[@"1"]],
-//                                                                                                    [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 29 color: self.colorTable[@"1"]],
-//                                                                                                    [RCUIAppAwesomeIcons hollowMuteIconWithSize: 29 color: self.colorTable[@"1"]],
-//                                                                                                    [RCUIAppAwesomeIcons hollowMuteIconWithSize: 29 color: self.colorTable[@"1"]],
-//                                                                                                    [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 29 color: self.colorTable[@"7d"]],
-//                                                                                                    [RCUIAppAwesomeIcons hollowMuteIconWithSize: 29 color: self.colorTable[@"7d"]]);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonEndcallBig] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
-//                                                                                                      self.colorTable[@"10"],
-//                                                                                                      nil, nil,
-//                                                                                                      self.colorTable[@"7d"], nil,
-//                                                                                                      self.colorTable[@"3"],
-//                                                                                                      self.colorTable[@"3a"],
-//                                                                                                      nil, nil,
-//                                                                                                      self.colorTable[@"6"], nil,
-//                                                                                                      [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]],
-//                                                                                                      [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]], nil, nil,
-//                                                                                                      [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"7d"]], nil);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonEndcallSmall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
-//                                                                                                        self.colorTable[@"10"],
-//                                                                                                        nil, nil,
-//                                                                                                        self.colorTable[@"7d"], nil,
-//                                                                                                        self.colorTable[@"3"],
-//                                                                                                        self.colorTable[@"3a"],
-//                                                                                                        nil, nil,
-//                                                                                                        self.colorTable[@"6"], nil,
-//                                                                                                        [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]],
-//                                                                                                        [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]], nil, nil,
-//                                                                                                        [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"7d"]], nil);
-//
-//    self.themeStyleDictionary[RCActiveCallButtonHideKeypad] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
-//                                                                                                      self.colorTable[@"10"],
-//                                                                                                      nil, nil,
-//                                                                                                      self.colorTable[@"7d"], nil,
-//                                                                                                      self.colorTable[@"6"],
-//                                                                                                      self.colorTable[@"1a"],
-//                                                                                                      nil, nil,
-//                                                                                                      self.colorTable[@"6"], nil,
-//                                                                                                      [RCUIAppAwesomeIcons hollowHideKeypadIconWithSize: 31 color: self.colorTable[@"1"]],
-//                                                                                                      [RCUIAppAwesomeIcons hollowHideKeypadIconWithSize: 31 color: self.colorTable[@"1"]],
-//                                                                                                      nil, nil,
-//                                                                                                      [RCUIAppAwesomeIcons hollowHideKeypadIconWithSize: 31 color: self.colorTable[@"7d"]], nil);
-//    
-//    self.themeStyleDictionary[RCActiveCallButtonFlipComplete] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"6"],
-//                                                                                                        self.colorTable[@"6"],
-//                                                                                                        nil, nil,
-//                                                                                                        self.colorTable[@"7d"],
-//                                                                                                        self.colorTable[@"7d"],
-//                                                                                                        self.colorTable[@"4"],
-//                                                                                                        self.colorTable[@"4a"],
-//                                                                                                        nil, nil,
-//                                                                                                        self.colorTable[@"10"],
-//                                                                                                        self.colorTable[@"10"],
-//                                                                                                        self.colorTable[@"10"],
-//                                                                                                        self.colorTable[@"10"],
-//                                                                                                        nil, nil,
-//                                                                                                        self.colorTable[@"7d"],
-//                                                                                                        self.colorTable[@"7d"]);
-//    /*
-//     * Incoming Call
-//     */
-//    self.themeStyleDictionary[RCIncomingCallButtonReplyWithMessage] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"1"],
-//                                                                                                              self.colorTable[@"1"],
-//                                                                                                              nil, nil, nil, nil,
-//                                                                                                              self.colorTable[@"6"],
-//                                                                                                              self.colorTable[@"1a"],
-//                                                                                                              nil, nil, nil, nil,
-//                                                                                                              self.colorTable[@"7b"],
-//                                                                                                              self.colorTable[@"10"],
-//                                                                                                              nil, nil, nil, nil);
-//
-//    self.themeStyleDictionary[RCIncomingCallButtonVoicemail] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
-//                                                                                                       self.colorTable[@"10"],
-//                                                                                                       nil, nil, nil, nil,
-//                                                                                                       self.colorTable[@"3"],
-//                                                                                                       self.colorTable[@"3a"],
-//                                                                                                       nil, nil, nil, nil,
-//                                                                                                       [RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 40 color: self.colorTable[@"6"]],
-//                                                                                                       [RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 40 color: self.colorTable[@"6"]],
-//                                                                                                       nil, nil, nil, nil);
-//
-//    self.themeStyleDictionary[RCIncomingCallButtonAnswer] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
-//                                                                                                    self.colorTable[@"10"],
-//                                                                                                    nil, nil, nil, nil,
-//                                                                                                    self.colorTable[@"4"],
-//                                                                                                    self.colorTable[@"4a"],
-//                                                                                                    nil, nil, nil, nil,
-//                                                                                                    [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 35 color: self.colorTable[@"6"]],
-//                                                                                                    [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 35 color: self.colorTable[@"6"]],
-//                                                                                                    nil, nil, nil, nil);
-//    
-//    /*
-//     * Two Leg
-//     */
-//    self.themeStyleDictionary[RCTwoLegButtonEndCall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
-//                                                                                               self.colorTable[@"10"],
-//                                                                                               nil, nil,
-//                                                                                               self.colorTable[@"7d"], nil,
-//                                                                                               self.colorTable[@"3"],
-//                                                                                               self.colorTable[@"3a"],
-//                                                                                               nil, nil,
-//                                                                                               self.colorTable[@"6"], nil,
-//                                                                                               [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]],
-//                                                                                               [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]], nil, nil,
-//                                                                                               [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"7d"]], nil);
-//    
-//    /*
-//     * User Detail
-//     */
-//    self.themeStyleDictionary[RCUserDetailFooterButtonFavorite] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM(nil, nil, nil, nil,
-//                                                                                                         nil, nil, nil, nil,
-//                                                                                                         nil, nil, nil, nil,
-//                                                                                                         [RCUIAppAwesomeIcons hollowFavoritesIconWithSize: 24 color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons hollowFavoritesIconWithSize: 24 color: self.colorTable[@"1a"]],
-//                                                                                                         [RCUIAppAwesomeIcons favoritesIconWithSize: 24 color: self.colorTable[@"1"]],
-//                                                                                                         [RCUIAppAwesomeIcons favoritesIconWithSize: 24 color: self.colorTable[@"1a"]],
-//                                                                                                         nil,nil);
-//    self.themeStyleDictionary[RCUserDetailFooterImageViewFax] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 25 color: self.colorTable[@"1"]]);
-//    self.themeStyleDictionary[RCUserDetailFooterImageViewBanner] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"10"], self.colorTable[@"7b"]);
-//	/*
-//     * Cloud
-//     */
-//    self.themeStyleDictionary[RCCloudAccountInfoButtonUnlink] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"6"],
-//                                                                                                        self.colorTable[@"6"],
-//                                                                                                        nil, nil, nil, nil,
-//                                                                                                        self.colorTable[@"3"],
-//                                                                                                        self.colorTable[@"3a"],
-//                                                                                                        nil, nil, nil, nil,
-//                                                                                                        self.colorTable[@"10"],
-//                                                                                                        self.colorTable[@"10"],
-//                                                                                                        nil, nil, nil, nil);
+    self.themeStyleDictionary[RCToViewButtonContact] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"1"],
+                                                                                               self.colorTable[@"1"],
+                                                                                               self.colorTable[@"6"],
+                                                                                               nil, nil, nil,
+                                                                                               self.colorTable[@"6"],
+                                                                                               self.colorTable[@"6"],
+                                                                                               self.colorTable[@"1"],
+                                                                                               nil, nil, nil,
+                                                                                               nil, nil, nil, nil, nil, nil);
+    
+    self.themeStyleDictionary[RCToViewImageviewMoreDetail] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"]);
+    
+    self.themeStyleDictionary[RCToViewButtonInvalideContact] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
+                                                                                                       self.colorTable[@"3"],
+                                                                                                       self.colorTable[@"6"],
+                                                                                                       nil, nil, nil,
+                                                                                                       self.colorTable[@"6"],
+                                                                                                       self.colorTable[@"6"],
+                                                                                                       self.colorTable[@"3"],
+                                                                                                       nil, nil, nil,
+                                                                                                       nil, nil, nil, nil, nil, nil);
+    
+    /*
+     * New Fax
+     */
+    self.themeStyleDictionary[RCNewFaxButtonEdit] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPenIconWithSize: 20 color: self.colorTable[@"1"]],
+                                                                                      [RCUIAppAwesomeIcons hollowPenIconWithSize: 20 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCNewFaxButtonAddDocument] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons pinIconWithSize: 24 color: self.colorTable[@"1"]],
+                                                                                             [RCUIAppAwesomeIcons pinIconWithSize: 24 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCNewFaxButtonDone] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"],
+                                                                                                 self.colorTable[@"1"],
+                                                                                                 self.colorTable[@"1"],
+                                                                                                 self.colorTable[@"1a"]);
+    
+    /*
+     * Conference
+     */
+    self.themeStyleDictionary[RCConferenceButtonDefaultDialInNumberSelection] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
+    
+    
+    /*
+     * Common tableViewCell accessory button
+     */
+    self.themeStyleDictionary[RCTableViewCellButtonAccessory] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
+    self.themeStyleDictionary[RCTableViewCellButtonInformation] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 22 color: self.colorTable[@"7b"]],
+                                                                                                    [RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 22 color: self.colorTable[@"7c"]]);
+    
+    self.themeStyleDictionary[RCTableViewCellButtonMute] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"1"]],
+                                                                                             [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"1a"]]);
+    
+    self.themeStyleDictionary[RCTableViewCellButtonMuteDisabled] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"7b"]],
+                                                                                             [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 22 color: self.colorTable[@"7d"]]);
+    
+
+    self.themeStyleDictionary[RCTableViewCellButtonUnmute] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"3"]],
+                                                                                               [RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"3a"]]);
+
+    self.themeStyleDictionary[RCTableViewCellButtonUnmute] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"7b"]],
+                                                                                               [RCUIAppAwesomeIcons hollowMuteIconWithSize: 22 color: self.colorTable[@"7d"]]);
+    
+
+    /*
+     * Voicemail
+     */
+    self.themeStyleDictionary[RCVoiceMailButtonPrev] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
+    
+    self.themeStyleDictionary[RCVoiceMailButtonNext] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
+    
+    CGFloat playSizeLarge = (RCUIIsIPAD () ? 70.0f : 60.0f);
+    self.themeStyleDictionary[RCVoiceMailButtonPlayLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
+                                                                                              [RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCVoiceMailButtonPauseLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
+                                                                                               [RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCVoiceMailButtonLoadingLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
+                                                                                                 [RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCVoiceMailImageViewSpinLoadingNormal] = RCUI_ACTIVITYINDICATOR_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"]);
+    self.themeStyleDictionary[RCVoiceMailButtonDownloadLarge] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1"]],
+                                                                                                  [RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeLarge - 1 color: self.colorTable[@"1a"]]);
+
+    CGFloat playSizeSmall = RCUIIsIPAD () ? 58.0f : 40.0f;
+    self.themeStyleDictionary[RCVoiceMailButtonPlaySmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
+                                                                                              [RCUIAppAwesomeIcons hollowPlayCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCVoiceMailButtonPauseSmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
+                                                                                               [RCUIAppAwesomeIcons hollowStopCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCVoiceMailButtonLoadingSmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
+                                                                                                 [RCUIAppAwesomeIcons hollowLoadingCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCVoiceMailImageViewSpinLoadingColorful] = RCUI_ACTIVITYINDICATOR_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"]);
+    self.themeStyleDictionary[RCVoiceMailButtonDownloadSmall] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1"]],
+                                                                                                  [RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: playSizeSmall - 1 color: self.colorTable[@"1a"]]);
+
+    CGFloat audioSourceSize = (RCUIIsIPAD () ? 29.0f : 23.0f);
+    self.themeStyleDictionary[RCVoiceMailButtonAudioHeadset] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowAudioIconWithSize: audioSourceSize color: self.colorTable[@"7"]],
+                                                                                                 [RCUIAppAwesomeIcons hollowAudioIconWithSize: audioSourceSize color: self.colorTable[@"7a"]]);
+    self.themeStyleDictionary[RCVoiceMailButtonAudioSpeaker] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowSpeakerIconWithSize: audioSourceSize color: self.colorTable[@"7"]],
+                                                                                                 [RCUIAppAwesomeIcons hollowSpeakerIconWithSize: audioSourceSize color: self.colorTable[@"7a"]]);
+    self.themeStyleDictionary[RCVoiceMailButtonAudioBluetooth] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowBluetoothIconWithSize: audioSourceSize color: self.colorTable[@"7"]],
+                                                                                                   [RCUIAppAwesomeIcons hollowBluetoothIconWithSize: audioSourceSize color: self.colorTable[@"7a"]]);
+
+    CGFloat transcriptionReloadSize = (RCUIIsIPAD () ? 70.0f : 60.0f);
+    self.themeStyleDictionary[RCVoiceMailButtonTranscriptionReload] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: transcriptionReloadSize color: self.colorTable[@"1"]],
+                                                                                                        [RCUIAppAwesomeIcons hollowDownloadCircleIconWithSize: transcriptionReloadSize color: self.colorTable[@"1a"]]);
+
+    
+    self.themeStyleDictionary[RCVoiceMailButtonText] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
+                                                                                               self.colorTable[@"10"],
+                                                                                               nil, nil,
+                                                                                               self.colorTable[@"7d"], nil,
+                                                                                               self.colorTable[@"6"],
+                                                                                               self.colorTable[@"1a"],
+                                                                                               nil, nil,
+                                                                                               self.colorTable[@"6"], nil,
+                                                                                               [RCUIAppAwesomeIcons hollowTextIconWithSize: 26 color: self.colorTable[@"1"]],
+                                                                                               [RCUIAppAwesomeIcons hollowTextIconWithSize: 26 color: self.colorTable[@"1"]], nil, nil,
+                                                                                               [RCUIAppAwesomeIcons hollowTextIconWithSize: 26 color: self.colorTable[@"7d"]], nil);
+    
+    self.themeStyleDictionary[RCVoiceMailButtonDelete] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
+                                                                                                 self.colorTable[@"10"],
+                                                                                                 nil, nil,
+                                                                                                 self.colorTable[@"7d"], nil,
+                                                                                                 self.colorTable[@"6"],
+                                                                                                 self.colorTable[@"1a"],
+                                                                                                 nil, nil,
+                                                                                                 self.colorTable[@"6"], nil,
+                                                                                                 [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 24 color: self.colorTable[@"1"]],
+                                                                                                 [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 24 color: self.colorTable[@"1"]], nil, nil,
+                                                                                                 [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 24 color: self.colorTable[@"7d"]], nil);
+    
+    self.themeStyleDictionary[RCVoiceMailButtonCall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
+                                                                                               self.colorTable[@"10"],
+                                                                                               nil, nil,
+                                                                                               self.colorTable[@"7d"], nil,
+                                                                                               self.colorTable[@"4"],
+                                                                                               self.colorTable[@"4a"],
+                                                                                               nil, nil,
+                                                                                               self.colorTable[@"6"], nil,
+                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]],
+                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]], nil, nil,
+                                                                                               [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"7d"]], nil);
+    /*
+     * Keypad
+     */
+    self.themeStyleDictionary[RCKeypadButtonKeyNumber] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICON (nil, self.colorTable[@"1"], self.colorTable[@"1"], self.colorTable[@"6"]);
+    self.themeStyleDictionary[RCActiveCallButtonKeyNumber] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICON (self.colorTable[@"1"], nil, self.colorTable[@"6"], self.colorTable[@"1"]);
+    self.themeStyleDictionary[RCKeypadButtonAddContact] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICONDISABLE (nil, nil, nil,
+                                                                                                             [RCUIAppAwesomeIcons hollowAddContactIconWithSize: 28 color: self.colorTable[@"1"]],
+                                                                                                             [RCUIAppAwesomeIcons hollowAddContactIconWithSize: 28 color: self.colorTable[@"1a"]],
+                                                                                                             [RCUIAppAwesomeIcons hollowAddContactIconWithSize: 28 color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCKeypadButtonDelete] = RCUI_BUTTON_THEMESTYLE_WITH_BACKGROUNDICONDISABLE (nil, nil, nil,
+                                                                                                         [RCUIAppAwesomeIcons hollowDeleteIconWithSize: 26 color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons hollowDeleteIconWithSize: 26 color: self.colorTable[@"1a"]],
+                                                                                                         [RCUIAppAwesomeIcons hollowDeleteIconWithSize: 26 color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCKeypadButtonCall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
+                                                                                            self.colorTable[@"10"],
+                                                                                            nil, nil, nil, nil,
+                                                                                            self.colorTable[@"4"],
+                                                                                            self.colorTable[@"4a"],
+                                                                                            nil, nil, nil, nil,
+                                                                                            [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]],
+                                                                                            [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 31 color: self.colorTable[@"6"]],
+                                                                                            nil, nil, nil, nil);
+    
+    self.themeStyleDictionary[RCKeypadButtonFromArrow] = RCUI_BUTTON_THEMESTYLE_WITH_ICON (self.colorTable[@"7b"], self.colorTable[@"7c"]);
+    
+    /*
+     * Documents
+     */
+    self.themeStyleDictionary[RCDocumentsTableViewCellButtonRename] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"], self.colorTable[@"1"], self.colorTable[@"1"], self.colorTable[@"1a"]);
+    
+    /*
+     * Flip
+     */
+    self.themeStyleDictionary[RCFlipTableViewCellLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], RCUIMediumSystemFont(17));
+    self.themeStyleDictionary[RCFlipTableViewCellLabelDetail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], RCUIRegularSystemFont(12));
+    self.themeStyleDictionary[RCFlipTableViewCellButtonFlip] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"],
+                                                                                                            self.colorTable[@"1"],
+                                                                                                            self.colorTable[@"1"],
+                                                                                                            self.colorTable[@"1a"]);
+    self.themeStyleDictionary[RCCallFlipLabelPromptEmpty]   = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
+                                                                                                            self.colorTable[@"7b"],
+                                                                                                            RCUIRegularSystemFont(14),
+                                                                                                            RCUIRegularSystemFont(18),
+                                                                                                            RCUIRegularSystemFont(18));
+    self.themeStyleDictionary[RCCallFlipLabelPromptLoading]      = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
+                                                                                                                 self.colorTable[@"7b"],
+                                                                                                                 RCUIMediumSystemFont(15),
+                                                                                                                 RCUIMediumSystemFont(18),
+                                                                                                                 RCUIMediumSystemFont(18));
+    self.themeStyleDictionary[RCCallFlipLabelPromptErrorTitle]   = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
+                                                                                                                 self.colorTable[@"7b"],
+                                                                                                                 RCUIMediumSystemFont(18),
+                                                                                                                 RCUIMediumSystemFont(18),
+                                                                                                                 RCUIMediumSystemFont(18));
+    self.themeStyleDictionary[RCCallFlipLabelPromptErrorDetail]  = RCUI_LABEL_THEMESTYLE_WITH_ORIENTATION_PARAM (self.colorTable[@"7b"],
+                                                                                                                 self.colorTable[@"7b"],
+                                                                                                                 RCUIMediumSystemFont(12),
+                                                                                                                 RCUIMediumSystemFont(18),
+                                                                                                                 RCUIMediumSystemFont(18));
+    
+    /*
+     * Active Call
+     */
+    CGFloat activeCallSize = RCUIIsIPAD () ? 98 : RCUIIsIPHONE4 () ? 58 : 66;
+    self.themeStyleDictionary[RCActiveCallButtonHold] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"7d"],
+                                                                                                         [RCUIAppAwesomeIcons hollowHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons holdCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons unHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons unHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"1a"]],
+                                                                                                         [RCUIAppAwesomeIcons hollowHoldCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonRecord] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                           self.colorTable[@"1"],
+                                                                                                           self.colorTable[@"7d"],
+                                                                                                           [RCUIAppAwesomeIcons hollowRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                           [RCUIAppAwesomeIcons recordCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                           [RCUIAppAwesomeIcons unRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                           [RCUIAppAwesomeIcons unRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"1a"]],
+                                                                                                           [RCUIAppAwesomeIcons hollowRecordCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonPark] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"7d"],
+                                                                                                         [RCUIAppAwesomeIcons hollowParkCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons parkCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         nil, nil,
+                                                                                                         [RCUIAppAwesomeIcons hollowParkCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonKeypad] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                           self.colorTable[@"1"],
+                                                                                                           self.colorTable[@"7d"],
+                                                                                                           [RCUIAppAwesomeIcons hollowKeypadCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                           [RCUIAppAwesomeIcons keypadCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                           nil, nil,
+                                                                                                           [RCUIAppAwesomeIcons hollowKeypadCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonAudioHeadset] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                                 self.colorTable[@"1"],
+                                                                                                                 self.colorTable[@"7d"],
+                                                                                                                 [RCUIAppAwesomeIcons hollowAudioCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                                 [RCUIAppAwesomeIcons audioCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                                 nil, nil,
+                                                                                                                 [RCUIAppAwesomeIcons hollowAudioCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonAudioSpeaker] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                                 self.colorTable[@"1"],
+                                                                                                                 self.colorTable[@"7d"],
+                                                                                                                 [RCUIAppAwesomeIcons hollowSpeakerCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]] ,
+                                                                                                                 [RCUIAppAwesomeIcons speakerCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                                 nil, nil,
+                                                                                                                 [RCUIAppAwesomeIcons hollowSpeakerCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonAudioBluetooth] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                                   self.colorTable[@"1"],
+                                                                                                                   self.colorTable[@"7d"],
+                                                                                                                   [RCUIAppAwesomeIcons hollowBluetoothCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                                   [RCUIAppAwesomeIcons bluetoothCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                                   nil, nil,
+                                                                                                                   [RCUIAppAwesomeIcons hollowBluetoothCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonSwitchToCarrier] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                                    self.colorTable[@"1"],
+                                                                                                                    self.colorTable[@"7d"],
+                                                                                                                    [RCUIAppAwesomeIcons hollowCarrierCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                                    [RCUIAppAwesomeIcons carrierCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                                    nil,
+                                                                                                                    nil,
+                                                                                                                    [RCUIAppAwesomeIcons hollowCarrierCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonMute] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"7d"],
+                                                                                                         [RCUIAppAwesomeIcons hollowUnMuteCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons muteCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons muteCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons muteCircleIconWithSize: activeCallSize color: self.colorTable[@"1a"]],
+                                                                                                         [RCUIAppAwesomeIcons hollowUnMuteCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonFlip] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"1"],
+                                                                                                         self.colorTable[@"7d"],
+                                                                                                         [RCUIAppAwesomeIcons hollowFlipCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons flipCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                         nil, nil,
+                                                                                                         [RCUIAppAwesomeIcons hollowFlipCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonTransfer] = RCUI_BUTTON_THEMESTYLE_WITH_TITLECOLOR_AND_ICON (self.colorTable[@"1"],
+                                                                                                             self.colorTable[@"1"],
+                                                                                                             self.colorTable[@"7d"],
+                                                                                                             [RCUIAppAwesomeIcons hollowTransferCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                             [RCUIAppAwesomeIcons transferCircleIconWithSize: activeCallSize color: self.colorTable[@"1"]],
+                                                                                                             nil, nil,
+                                                                                                             [RCUIAppAwesomeIcons hollowTransferCircleIconWithSize: activeCallSize color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonRectMute] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
+                                                                                                    self.colorTable[@"10"],
+                                                                                                    self.colorTable[@"10"],
+                                                                                                    self.colorTable[@"10"],
+                                                                                                    self.colorTable[@"7d"],
+                                                                                                    self.colorTable[@"7d"],
+                                                                                                    self.colorTable[@"6"],
+                                                                                                    self.colorTable[@"1a"],
+                                                                                                    self.colorTable[@"7d"],
+                                                                                                    self.colorTable[@"1a"],
+                                                                                                    self.colorTable[@"6"],
+                                                                                                    self.colorTable[@"6"],
+                                                                                                    [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 29 color: self.colorTable[@"1"]],
+                                                                                                    [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 29 color: self.colorTable[@"1"]],
+                                                                                                    [RCUIAppAwesomeIcons hollowMuteIconWithSize: 29 color: self.colorTable[@"1"]],
+                                                                                                    [RCUIAppAwesomeIcons hollowMuteIconWithSize: 29 color: self.colorTable[@"1"]],
+                                                                                                    [RCUIAppAwesomeIcons hollowUnMuteIconWithSize: 29 color: self.colorTable[@"7d"]],
+                                                                                                    [RCUIAppAwesomeIcons hollowMuteIconWithSize: 29 color: self.colorTable[@"7d"]]);
+    
+    self.themeStyleDictionary[RCActiveCallButtonEndcallBig] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
+                                                                                                      self.colorTable[@"10"],
+                                                                                                      nil, nil,
+                                                                                                      self.colorTable[@"7d"], nil,
+                                                                                                      self.colorTable[@"3"],
+                                                                                                      self.colorTable[@"3a"],
+                                                                                                      nil, nil,
+                                                                                                      self.colorTable[@"6"], nil,
+                                                                                                      [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]],
+                                                                                                      [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]], nil, nil,
+                                                                                                      [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"7d"]], nil);
+    
+    self.themeStyleDictionary[RCActiveCallButtonEndcallSmall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
+                                                                                                        self.colorTable[@"10"],
+                                                                                                        nil, nil,
+                                                                                                        self.colorTable[@"7d"], nil,
+                                                                                                        self.colorTable[@"3"],
+                                                                                                        self.colorTable[@"3a"],
+                                                                                                        nil, nil,
+                                                                                                        self.colorTable[@"6"], nil,
+                                                                                                        [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]],
+                                                                                                        [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]], nil, nil,
+                                                                                                        [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"7d"]], nil);
+
+    self.themeStyleDictionary[RCActiveCallButtonHideKeypad] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"7b"],
+                                                                                                      self.colorTable[@"10"],
+                                                                                                      nil, nil,
+                                                                                                      self.colorTable[@"7d"], nil,
+                                                                                                      self.colorTable[@"6"],
+                                                                                                      self.colorTable[@"1a"],
+                                                                                                      nil, nil,
+                                                                                                      self.colorTable[@"6"], nil,
+                                                                                                      [RCUIAppAwesomeIcons hollowHideKeypadIconWithSize: 31 color: self.colorTable[@"1"]],
+                                                                                                      [RCUIAppAwesomeIcons hollowHideKeypadIconWithSize: 31 color: self.colorTable[@"1"]],
+                                                                                                      nil, nil,
+                                                                                                      [RCUIAppAwesomeIcons hollowHideKeypadIconWithSize: 31 color: self.colorTable[@"7d"]], nil);
+    
+    self.themeStyleDictionary[RCActiveCallButtonFlipComplete] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"6"],
+                                                                                                        self.colorTable[@"6"],
+                                                                                                        nil, nil,
+                                                                                                        self.colorTable[@"7d"],
+                                                                                                        self.colorTable[@"7d"],
+                                                                                                        self.colorTable[@"4"],
+                                                                                                        self.colorTable[@"4a"],
+                                                                                                        nil, nil,
+                                                                                                        self.colorTable[@"10"],
+                                                                                                        self.colorTable[@"10"],
+                                                                                                        self.colorTable[@"10"],
+                                                                                                        self.colorTable[@"10"],
+                                                                                                        nil, nil,
+                                                                                                        self.colorTable[@"7d"],
+                                                                                                        self.colorTable[@"7d"]);
+    /*
+     * Incoming Call
+     */
+    self.themeStyleDictionary[RCIncomingCallButtonReplyWithMessage] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"1"],
+                                                                                                              self.colorTable[@"1"],
+                                                                                                              nil, nil, nil, nil,
+                                                                                                              self.colorTable[@"6"],
+                                                                                                              self.colorTable[@"1a"],
+                                                                                                              nil, nil, nil, nil,
+                                                                                                              self.colorTable[@"7b"],
+                                                                                                              self.colorTable[@"10"],
+                                                                                                              nil, nil, nil, nil);
+
+    self.themeStyleDictionary[RCIncomingCallButtonVoicemail] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
+                                                                                                       self.colorTable[@"10"],
+                                                                                                       nil, nil, nil, nil,
+                                                                                                       self.colorTable[@"3"],
+                                                                                                       self.colorTable[@"3a"],
+                                                                                                       nil, nil, nil, nil,
+                                                                                                       [RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 40 color: self.colorTable[@"6"]],
+                                                                                                       [RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 40 color: self.colorTable[@"6"]],
+                                                                                                       nil, nil, nil, nil);
+
+    self.themeStyleDictionary[RCIncomingCallButtonAnswer] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"10"],
+                                                                                                    self.colorTable[@"10"],
+                                                                                                    nil, nil, nil, nil,
+                                                                                                    self.colorTable[@"4"],
+                                                                                                    self.colorTable[@"4a"],
+                                                                                                    nil, nil, nil, nil,
+                                                                                                    [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 35 color: self.colorTable[@"6"]],
+                                                                                                    [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 35 color: self.colorTable[@"6"]],
+                                                                                                    nil, nil, nil, nil);
+    
+    /*
+     * Two Leg
+     */
+    self.themeStyleDictionary[RCTwoLegButtonEndCall] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"3"],
+                                                                                               self.colorTable[@"10"],
+                                                                                               nil, nil,
+                                                                                               self.colorTable[@"7d"], nil,
+                                                                                               self.colorTable[@"3"],
+                                                                                               self.colorTable[@"3a"],
+                                                                                               nil, nil,
+                                                                                               self.colorTable[@"6"], nil,
+                                                                                               [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]],
+                                                                                               [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"6"]], nil, nil,
+                                                                                               [RCUIAppAwesomeIcons hollowEndCallIconWithSize: 41 color: self.colorTable[@"7d"]], nil);
+    
+    /*
+     * User Detail
+     */
+    self.themeStyleDictionary[RCUserDetailFooterButtonFavorite] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM(nil, nil, nil, nil,
+                                                                                                         nil, nil, nil, nil,
+                                                                                                         nil, nil, nil, nil,
+                                                                                                         [RCUIAppAwesomeIcons hollowFavoritesIconWithSize: 24 color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons hollowFavoritesIconWithSize: 24 color: self.colorTable[@"1a"]],
+                                                                                                         [RCUIAppAwesomeIcons favoritesIconWithSize: 24 color: self.colorTable[@"1"]],
+                                                                                                         [RCUIAppAwesomeIcons favoritesIconWithSize: 24 color: self.colorTable[@"1a"]],
+                                                                                                         nil,nil);
+    self.themeStyleDictionary[RCUserDetailFooterImageViewFax] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 25 color: self.colorTable[@"1"]]);
+    self.themeStyleDictionary[RCUserDetailFooterImageViewBanner] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"10"], self.colorTable[@"7b"]);
+	/*
+     * Cloud
+     */
+    self.themeStyleDictionary[RCCloudAccountInfoButtonUnlink] = RCUI_BUTTON_THEMESTYLE_WITH_FULL_PARAM (self.colorTable[@"6"],
+                                                                                                        self.colorTable[@"6"],
+                                                                                                        nil, nil, nil, nil,
+                                                                                                        self.colorTable[@"3"],
+                                                                                                        self.colorTable[@"3a"],
+                                                                                                        nil, nil, nil, nil,
+                                                                                                        self.colorTable[@"10"],
+                                                                                                        self.colorTable[@"10"],
+                                                                                                        nil, nil, nil, nil);
 }
 
 - (void) configureThemeStyleFilterBar;
@@ -1599,14 +1601,14 @@
 //    self.themeStyleDictionary[RCRefreshViewImageViewArrow] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (self.colorTable[@"7b"]);
 //}
 //
-//- (void) configureThemeStyleMeeting;
-//{
-//    self.themeStyleDictionary[RCMeetingButtonJoin] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"], self.colorTable[@"1"],
-//                                                                                                  self.colorTable[@"1"], self.colorTable[@"1a"]);
-//    self.themeStyleDictionary[RCMeetingLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(17));
-//    self.themeStyleDictionary[RCMeetingDetailLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(15));
-//    self.themeStyleDictionary[RCMeetingLabelPrompt] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(17));
-//}
+- (void) configureThemeStyleMeeting;
+{
+    self.themeStyleDictionary[RCMeetingButtonJoin] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"], self.colorTable[@"1"],
+                                                                                                  self.colorTable[@"1"], self.colorTable[@"1a"]);
+    self.themeStyleDictionary[RCMeetingLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(17));
+    self.themeStyleDictionary[RCMeetingDetailLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(15));
+    self.themeStyleDictionary[RCMeetingLabelPrompt] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(17));
+}
 //
 //- (void) configureThemeStyleConference;
 //{

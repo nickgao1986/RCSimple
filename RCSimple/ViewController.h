@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "RCSPLaunchView.h"
 @interface ViewController : UIViewController
 
 
@@ -16,6 +16,7 @@
 @property (nonatomic, assign) UIView *contentView;
 @property (nonatomic, assign) UIView *topView;
 @property (nonatomic, assign) UIView *permissionView;
+@property (nonatomic, retain) RCSPLaunchView *launchView;
 
 
 @end

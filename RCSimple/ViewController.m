@@ -23,14 +23,28 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    [self initTopView];
-    [self initContentView];
-    [self initPermissionView];
+//    [self initTopView];
+//    [self initContentView];
+//    [self initPermissionView];
+    
+    [self initLaunchView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(void)initLaunchView{
+    self.launchView = [[[RCSPLaunchView alloc] initWithFrame: self.view.bounds
+                                                 buttonTitle: @"Get Started"] autorelease];
+    [self.view addSubview: self.launchView];
+    
+//    self.launchView.delegate = self;
+    self.launchView.imageView.image     = [UIImage imageNamed: @"Calendar_Permission"];
+    self.launchView.label.text          = @"Join meetings quickly with one tap.";
+    self.launchView.detailLabel.text    = @"You can enable access in Settings -> Privacy -> Calendars.";
 }
 
 
