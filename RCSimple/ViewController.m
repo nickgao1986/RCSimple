@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RCSPEventListViewController.h"
 
 
 #define CURRENT_DATE_VIEW_HEIGHT 48
@@ -27,7 +28,11 @@
 //    [self initContentView];
 //    [self initPermissionView];
     
-    [self initLaunchView];
+  //  [self initLaunchView];
+    
+    RCSPEventListViewController* controller = [[RCSPEventListViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentViewController:controller animated:true completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,12 +41,25 @@
 }
 
 
+//-(void)refreshVieWithCalendarPermission() {
+//    
+//}
+
+
+
+-(void)launchViewLaunchButtonClicked:(RCSPLaunchView *)launchView{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(noCalendarSelectedViewControllerSelectBtnClicked:)])
+    {
+        [self.delegate noCalendarSelectedViewControllerSelectBtnClicked:self];
+    }
+}
+
 -(void)initLaunchView{
     self.launchView = [[[RCSPLaunchView alloc] initWithFrame: self.view.bounds
                                                  buttonTitle: @"Get Started"] autorelease];
     [self.view addSubview: self.launchView];
     
-//    self.launchView.delegate = self;
+    self.launchView.delegate = self;
     self.launchView.imageView.image     = [UIImage imageNamed: @"Calendar_Permission"];
     self.launchView.label.text          = @"Join meetings quickly with one tap.";
     self.launchView.detailLabel.text    = @"You can enable access in Settings -> Privacy -> Calendars.";

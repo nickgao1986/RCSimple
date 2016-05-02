@@ -86,8 +86,8 @@
 //    [self configureThemeStyleImageView];
 //    [self configureThemeStyleSwitch];
 //    
-//    [self configureThemeStyleTableView];
-//    [self configureThemeStyleTableViewCell];
+    [self configureThemeStyleTableView];
+    [self configureThemeStyleTableViewCell];
 //    [self configureThemeStyleRefreshView];
 //    [self configureThemeStyleMeeting];
 //    [self configureThemeStyleConference];
@@ -1375,231 +1375,231 @@
 //    
 //}
 //
-//- (void) configureThemeStyleTableView;
-//{
-//    self.themeStyleDictionary[RCCommonTableViewDefault] = RCUI_TABLEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"6"], self.colorTable[@"1"], self.colorTable[@"10"], nil);
-//    self.themeStyleDictionary[RCTableViewSectionBackground] = RCUI_VIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"7e"]);
-//    self.themeStyleDictionary[RCTableViewFilterBackground] = RCUI_TABLEVIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"7e"]);
-//    self.themeStyleDictionary[RCTableViewSectionLabel] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"1"], RCUIMediumSystemFont(16));
-//    self.themeStyleDictionary[RCTableViewSectionHeaderLabel] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7"], nil);
-//    self.themeStyleDictionary[RCTableViewLabelEmpty] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], nil);
-//}
+- (void) configureThemeStyleTableView;
+{
+    self.themeStyleDictionary[RCCommonTableViewDefault] = RCUI_TABLEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"6"], self.colorTable[@"1"], self.colorTable[@"10"], nil);
+    self.themeStyleDictionary[RCTableViewSectionBackground] = RCUI_VIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"7e"]);
+    self.themeStyleDictionary[RCTableViewFilterBackground] = RCUI_TABLEVIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"7e"]);
+    self.themeStyleDictionary[RCTableViewSectionLabel] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"1"], RCUIMediumSystemFont(16));
+    self.themeStyleDictionary[RCTableViewSectionHeaderLabel] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7"], nil);
+    self.themeStyleDictionary[RCTableViewLabelEmpty] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], nil);
+}
 //
-//- (void) configureThemeStyleTableViewCell;
-//{
-//    /**
-//     * Normal & Highlighted
-//     */
-//    self.themeStyleDictionary[RCTableViewPlainCellDefaultBackground] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_HIGHLIGHTED (self.colorTable[@"7e"]);
-//    self.themeStyleDictionary[RCTableViewGroupCellDefaultBackground] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_GROUPPARAM (self.colorTable[@"6"], self.colorTable[@"7e"],
-//                                                                                                                      self.colorTable[@"7b"], self.colorTable[@"7b"]);
-//    self.themeStyleDictionary[RCTableViewGroupCellSecondaryBackground] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_GROUPPARAM (self.colorTable[@"6"], self.colorTable[@"1a"],
-//                                                                                                                        self.colorTable[@"7b"], self.colorTable[@"7b"]);
-//    
-//    /**
-//     * common
-//     */
-//    self.themeStyleDictionary[RCTableViewCellLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], RCUIRegularSystemFont(17));
-//    self.themeStyleDictionary[RCTableViewCellLabelTitleDisabled] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7d"], self.colorTable[@"7d"], RCUIRegularSystemFont(17));
-//    self.themeStyleDictionary[RCMessageTableViewCellLabelUnReadTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], RCUIMediumSystemFont(17));
-//    self.themeStyleDictionary[RCMessageTableViewCellLabelUnReadDetail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], RCUIRegularSystemFont(13));
-//    
-//    self.themeStyleDictionary[RCTableViewCellLabelDetail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], RCUIRegularSystemFont(13));
-//    self.themeStyleDictionary[RCTableViewCellLabelTime] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], nil);
-//    self.themeStyleDictionary[RCTableViewCellLabelEmail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
-//    self.themeStyleDictionary[RCCallLogTableViewCellLabelTitleMissed] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"3"], self.colorTable[@"3"], nil);
-//    self.themeStyleDictionary[RCContactsTableViewCellLabelExtension] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
-//    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellLabelFailedTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"3"], self.colorTable[@"3"], nil);
-//    self.themeStyleDictionary[RCTableViewCellImageViewAccessory] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"]);
-//    self.themeStyleDictionary[RCTableViewCellImageViewArrow] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"]);
-//    
-//    /*
-//     * Contact Detail
-//     */
-//    UIFont *contactCompanyLabelFont = RCUIMediumSystemFont(14);
-//    UIFont *contactNameFont = RCUIRegularSystemFont(19);
-//    UIFont *contactCompanyMoodFont = RCUIRegularSystemFont(14);
-//    self.themeStyleDictionary[RCUserDetailHeaderLabelCompany] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], contactCompanyLabelFont);
-//    self.themeStyleDictionary[RCUserDetailHeaderLabelMood] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], contactCompanyMoodFont);
-//    self.themeStyleDictionary[RCUserDetailHeaderLabelName] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactNameFont);
-//    
-//    UIFont *contactDescriptionLabelFont = RCUIRegularSystemFont(14);
-//    self.themeStyleDictionary[RCUserDetailDescriptionLabelStatus] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactDescriptionLabelFont);
-//    UIFont *contactDescriptionValueFont = RCUILightSystemFont(14);
-//    self.themeStyleDictionary[RCUserDetailDescriptionLabelAddress] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactDescriptionValueFont);
-//    UIFont *contactDescriptionTimestampFont = RCUIRegularSystemFont(12);
-//    self.themeStyleDictionary[RCUserDetailDescriptionLabelTime] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactDescriptionTimestampFont);
-//    
-//    UIFont *cellCaptionLabelFont = RCUIRegularSystemFont(14);
-//    self.themeStyleDictionary[RCUserDetailCellLabelCaption] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], cellCaptionLabelFont);
-//    self.themeStyleDictionary[RCUserDetailCellLabelDestination] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], cellCaptionLabelFont);
-//    UIFont *cellCaptionValueFont = RCUILightSystemFont(17);
-//    self.themeStyleDictionary[RCUserDetailCellLabelValue] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], cellCaptionValueFont);
-//    UIFont *cellCaptionTitleHighlighted = RCUIRegularSystemFont(14);
-//    UIFont *cellCaptionValueHighlighted = RCUILightSystemFont(17);
-//    self.themeStyleDictionary[RCUserDetailCellLabelTitleHighlighted] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"2"], self.colorTable[@"2"], cellCaptionTitleHighlighted);
-//    self.themeStyleDictionary[RCUserDetailCellLabelValueHighlighted] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"2"], self.colorTable[@"2"], cellCaptionValueHighlighted);
-//    self.themeStyleDictionary[RCUserDetailCellCreator] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], nil);
-//    
-//    
-//    /*
-//     * Message
-//     */
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceRead] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 22 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceReadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellVoicemailDownloadOpened.png");
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceUnread] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 22 color: self.colorTable[@"1"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceUnreadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellVoicemailDownloadUnopened.png");
-//    
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxRead] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 22 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxReadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellFaxDownloadOpened.png");
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxUnread] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 22 color: self.colorTable[@"1"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxUnreadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellFaxDownloadUnopened.png");
-//    
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextRead] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTextIconWithSize: 20 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextReadGroup] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGroupTextIconWithSize: 20 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextUnread] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTextIconWithSize: 22 color: self.colorTable[@"1"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextUnreadGroup] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGroupTextIconWithSize: 22 color: self.colorTable[@"1"]]);
-//    
-//    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonRead] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons lightMarkIconWithSize: 24 color: self.colorTable[@"1"]],
-//                                                                                                           [RCUIAppAwesomeIcons lightMarkIconWithSize: 24 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonUnread] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLightMarkIconWithSize: 24 color: self.colorTable[@"1"]],
-//                                                                                                             [RCUIAppAwesomeIcons hollowLightMarkIconWithSize: 24 color: self.colorTable[@"1a"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonForward] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLightForwardIconWithSize: 28 color: self.colorTable[@"7"]],
-//                                                                                                              [RCUIAppAwesomeIcons hollowLightForwardIconWithSize: 28 color: self.colorTable[@"7a"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonPhone] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"4"]],
-//                                                                                                            [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"4a"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonDelete] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowEmptyIconWithSize: 23 color: self.colorTable[@"3"]],
-//                                                                                                             [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 23 color: self.colorTable[@"3a"]]);
-//    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonFax] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 25 color: self.colorTable[@"1"]],
-//                                                                                                          [RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 25 color: self.colorTable[@"1a"]]);
-//    
-//    /*
-//     * Incoming Call
-//     */
-//    self.themeStyleDictionary[RCTableViewCellPreCallLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], RCUIMediumSystemFont(17));
-//    
-//    /*
-//     * Call Log
-//     */
-//    self.themeStyleDictionary[RCCallLogTableViewCellImageViewFaxFailed] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxFailedIconWithSize: 21 color: self.colorTable[@"3"]]);
-//    self.themeStyleDictionary[RCCallLogTableViewCellImageViewFaxIncoming] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxInIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCCallLogTableViewCellImageViewFaxOutgoing] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    
-//    self.themeStyleDictionary[RCCallLogTableViewCellImageViewPhoneCallMissed] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCallFailedIconWithSize: 21 color: self.colorTable[@"3"]]);
-//    self.themeStyleDictionary[RCCallLogTableViewCellImageViewPhoneCallOpened] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCallOutIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCCallLogTableViewCellImageViewPhoneCallUnopened] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCallInIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    
-//    /*
-//     * Outbox
-//     */
-//    self.themeStyleDictionary[RCDocumentsDraftsTableViewCellImageViewFax] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 23 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellImageViewLoading] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPOutboxLoading.png");
-//    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellImageViewFailed] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxFailedIconWithSize: 23 color: self.colorTable[@"3"]]);
-//    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellImageViewOut] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 23 color: self.colorTable[@"1"]]);
-//    
-//    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewDocuments] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentIconWithSize: 20 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewPhotos] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPhotosIconWithSize: 19 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewDropbox] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDropboxIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewBox] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowBoxIconWithSize: 22 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewGoogleDrive] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGoogleDriveIconWithSize: 22 color: self.colorTable[@"7b"]]);
-//    
-//    /*
-//     * Documents Draft
-//     */
-//    self.themeStyleDictionary[RCDocumentsDraftsTableViewCellImageViewFax] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 22 color: self.colorTable[@"7b"]]);
-//    
-//    /*
-//     * Documents fax document type
-//     */
-//    CGFloat fontSize = 30;
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDefault] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOC] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOCIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeGIF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGIFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeJPG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowJPGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePDF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPDFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePNG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPNGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePPT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPPTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTIFF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTIFFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeVSD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVSDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLS] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeAWD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowAWDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeBMP] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowBMPIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeC] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeCPP] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCPPIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeCSV] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCSVIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOCM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOCMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOCX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOCXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDXF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDXFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeEPS] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowEPSIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeERR] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowERRIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeH] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeHPP] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHPPIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeHTM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHTMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeHTML] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHTMLIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeJPEG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowJPEGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeLOG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowLOGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeMCW] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowMCWIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeMHT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowMHTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeMHTML] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowMHTMLIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePCX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPCXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePPTM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPPTMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePPTX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPPTXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePSD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPSDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePUB] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPUBIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeRTF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowRTFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTGA] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTGAIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTIF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTIFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTXT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTXTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeVDX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVDXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWK1] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWK1IconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWK4] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWK4IconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWPS] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWPSIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWQ1] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWQ1IconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWRI] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWRIIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLSB] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSBIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLSM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLSX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXML] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXMLIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWPD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWPDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeFolder] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentsIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeUnsupport] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentIconWithSize: 21 color: self.colorTable[@"7b"]]);
-//    
-//    /*
-//     * Select source
-//     */
-//    self.themeStyleDictionary[RCSelectSourceTableViewCellLabelSelectSource] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
-//    
-//    /**
-//     * Settings
-//     */
-//    self.themeStyleDictionary[RCMobileSettingsTableViewCellLabelCloudStorage] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
-//    
-//    /**
-//     * Filters
-//     */
-//    self.themeStyleDictionary[RCFiltersTableViewCellHideShow] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_GROUPPARAM (self.colorTable[@"1"], self.colorTable[@"1a"],
-//                                                                                                               self.colorTable[@"10"], self.colorTable[@"10"]);
-//    self.themeStyleDictionary[RCFiltersTableViewCellHideShowLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"6"], self.colorTable[@"1"], nil);
-//    self.themeStyleDictionary[RCFiltersTableViewCellLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
-//    self.themeStyleDictionary[RCFiltersTableViewCellLabelTitleHighlighted] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], nil);
-//    
-//    /**
-//     *  Conferencing
-//     */
-//    self.themeStyleDictionary[RCConferenceParticipantCellUtilityButtonInfo] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 28 color: self.colorTable[@"7"]],
-//                                                                                                              [RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 28 color: self.colorTable[@"7a"]]);
-//    self.themeStyleDictionary[RCConferenceParticipantCellUtilityButtonDissmiss] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"], self.colorTable[@"6a"],
-//                                                                                                  self.colorTable[@"3"], self.colorTable[@"3a"]);
-//}
-//
-//- (void) configureThemeStyleRefreshView;
-//{
-//    self.themeStyleDictionary[RCRefreshViewBackground] = RCUI_VIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"6"]);
-//    self.themeStyleDictionary[RCRefreshViewLabelStatus] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIMediumSystemFont(12));
-//    self.themeStyleDictionary[RCRefreshViewLabelTime] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(11.f));
-//    self.themeStyleDictionary[RCRefreshViewImageViewArrow] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (self.colorTable[@"7b"]);
-//}
+- (void) configureThemeStyleTableViewCell;
+{
+    /**
+     * Normal & Highlighted
+     */
+    self.themeStyleDictionary[RCTableViewPlainCellDefaultBackground] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_HIGHLIGHTED (self.colorTable[@"7e"]);
+    self.themeStyleDictionary[RCTableViewGroupCellDefaultBackground] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_GROUPPARAM (self.colorTable[@"6"], self.colorTable[@"7e"],
+                                                                                                                      self.colorTable[@"7b"], self.colorTable[@"7b"]);
+    self.themeStyleDictionary[RCTableViewGroupCellSecondaryBackground] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_GROUPPARAM (self.colorTable[@"6"], self.colorTable[@"1a"],
+                                                                                                                        self.colorTable[@"7b"], self.colorTable[@"7b"]);
+    
+    /**
+     * common
+     */
+    self.themeStyleDictionary[RCTableViewCellLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], RCUIRegularSystemFont(17));
+    self.themeStyleDictionary[RCTableViewCellLabelTitleDisabled] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7d"], self.colorTable[@"7d"], RCUIRegularSystemFont(17));
+    self.themeStyleDictionary[RCMessageTableViewCellLabelUnReadTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], RCUIMediumSystemFont(17));
+    self.themeStyleDictionary[RCMessageTableViewCellLabelUnReadDetail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], RCUIRegularSystemFont(13));
+    
+    self.themeStyleDictionary[RCTableViewCellLabelDetail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], RCUIRegularSystemFont(13));
+    self.themeStyleDictionary[RCTableViewCellLabelTime] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], nil);
+    self.themeStyleDictionary[RCTableViewCellLabelEmail] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
+    self.themeStyleDictionary[RCCallLogTableViewCellLabelTitleMissed] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"3"], self.colorTable[@"3"], nil);
+    self.themeStyleDictionary[RCContactsTableViewCellLabelExtension] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
+    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellLabelFailedTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"3"], self.colorTable[@"3"], nil);
+    self.themeStyleDictionary[RCTableViewCellImageViewAccessory] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"]);
+    self.themeStyleDictionary[RCTableViewCellImageViewArrow] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"]);
+    
+    /*
+     * Contact Detail
+     */
+    UIFont *contactCompanyLabelFont = RCUIMediumSystemFont(14);
+    UIFont *contactNameFont = RCUIRegularSystemFont(19);
+    UIFont *contactCompanyMoodFont = RCUIRegularSystemFont(14);
+    self.themeStyleDictionary[RCUserDetailHeaderLabelCompany] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], contactCompanyLabelFont);
+    self.themeStyleDictionary[RCUserDetailHeaderLabelMood] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], contactCompanyMoodFont);
+    self.themeStyleDictionary[RCUserDetailHeaderLabelName] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactNameFont);
+    
+    UIFont *contactDescriptionLabelFont = RCUIRegularSystemFont(14);
+    self.themeStyleDictionary[RCUserDetailDescriptionLabelStatus] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactDescriptionLabelFont);
+    UIFont *contactDescriptionValueFont = RCUILightSystemFont(14);
+    self.themeStyleDictionary[RCUserDetailDescriptionLabelAddress] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactDescriptionValueFont);
+    UIFont *contactDescriptionTimestampFont = RCUIRegularSystemFont(12);
+    self.themeStyleDictionary[RCUserDetailDescriptionLabelTime] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], contactDescriptionTimestampFont);
+    
+    UIFont *cellCaptionLabelFont = RCUIRegularSystemFont(14);
+    self.themeStyleDictionary[RCUserDetailCellLabelCaption] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], cellCaptionLabelFont);
+    self.themeStyleDictionary[RCUserDetailCellLabelDestination] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7b"], self.colorTable[@"7b"], cellCaptionLabelFont);
+    UIFont *cellCaptionValueFont = RCUILightSystemFont(17);
+    self.themeStyleDictionary[RCUserDetailCellLabelValue] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], cellCaptionValueFont);
+    UIFont *cellCaptionTitleHighlighted = RCUIRegularSystemFont(14);
+    UIFont *cellCaptionValueHighlighted = RCUILightSystemFont(17);
+    self.themeStyleDictionary[RCUserDetailCellLabelTitleHighlighted] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"2"], self.colorTable[@"2"], cellCaptionTitleHighlighted);
+    self.themeStyleDictionary[RCUserDetailCellLabelValueHighlighted] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"2"], self.colorTable[@"2"], cellCaptionValueHighlighted);
+    self.themeStyleDictionary[RCUserDetailCellCreator] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], nil);
+    
+    
+    /*
+     * Message
+     */
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceRead] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 22 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceReadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellVoicemailDownloadOpened.png");
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceUnread] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVoicemailIconWithSize: 22 color: self.colorTable[@"1"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconVoiceUnreadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellVoicemailDownloadUnopened.png");
+    
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxRead] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 22 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxReadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellFaxDownloadOpened.png");
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxUnread] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 22 color: self.colorTable[@"1"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconFaxUnreadUndownload] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPTableViewCellFaxDownloadUnopened.png");
+    
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextRead] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTextIconWithSize: 20 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextReadGroup] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGroupTextIconWithSize: 20 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextUnread] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTextIconWithSize: 22 color: self.colorTable[@"1"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellImageViewIconTextUnreadGroup] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGroupTextIconWithSize: 22 color: self.colorTable[@"1"]]);
+    
+    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonRead] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons lightMarkIconWithSize: 24 color: self.colorTable[@"1"]],
+                                                                                                           [RCUIAppAwesomeIcons lightMarkIconWithSize: 24 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonUnread] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLightMarkIconWithSize: 24 color: self.colorTable[@"1"]],
+                                                                                                             [RCUIAppAwesomeIcons hollowLightMarkIconWithSize: 24 color: self.colorTable[@"1a"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonForward] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowLightForwardIconWithSize: 28 color: self.colorTable[@"7"]],
+                                                                                                              [RCUIAppAwesomeIcons hollowLightForwardIconWithSize: 28 color: self.colorTable[@"7a"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonPhone] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"4"]],
+                                                                                                            [RCUIAppAwesomeIcons hollowPhoneIconWithSize: 24 color: self.colorTable[@"4a"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonDelete] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowEmptyIconWithSize: 23 color: self.colorTable[@"3"]],
+                                                                                                             [RCUIAppAwesomeIcons hollowEmptyIconWithSize: 23 color: self.colorTable[@"3a"]]);
+    self.themeStyleDictionary[RCMessageTableViewCellUtilityButtonFax] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 25 color: self.colorTable[@"1"]],
+                                                                                                          [RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 25 color: self.colorTable[@"1a"]]);
+    
+    /*
+     * Incoming Call
+     */
+    self.themeStyleDictionary[RCTableViewCellPreCallLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], RCUIMediumSystemFont(17));
+    
+    /*
+     * Call Log
+     */
+    self.themeStyleDictionary[RCCallLogTableViewCellImageViewFaxFailed] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxFailedIconWithSize: 21 color: self.colorTable[@"3"]]);
+    self.themeStyleDictionary[RCCallLogTableViewCellImageViewFaxIncoming] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxInIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCCallLogTableViewCellImageViewFaxOutgoing] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    
+    self.themeStyleDictionary[RCCallLogTableViewCellImageViewPhoneCallMissed] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCallFailedIconWithSize: 21 color: self.colorTable[@"3"]]);
+    self.themeStyleDictionary[RCCallLogTableViewCellImageViewPhoneCallOpened] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCallOutIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCCallLogTableViewCellImageViewPhoneCallUnopened] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCallInIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    
+    /*
+     * Outbox
+     */
+    self.themeStyleDictionary[RCDocumentsDraftsTableViewCellImageViewFax] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 23 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellImageViewLoading] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (@"RCSPOutboxLoading.png");
+    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellImageViewFailed] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxFailedIconWithSize: 23 color: self.colorTable[@"3"]]);
+    self.themeStyleDictionary[RCDocumentsOutboxTableViewCellImageViewOut] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxOutIconWithSize: 23 color: self.colorTable[@"1"]]);
+    
+    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewDocuments] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentIconWithSize: 20 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewPhotos] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPhotosIconWithSize: 19 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewDropbox] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDropboxIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewBox] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowBoxIconWithSize: 22 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCSelectSourceTableViewCellImageViewGoogleDrive] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGoogleDriveIconWithSize: 22 color: self.colorTable[@"7b"]]);
+    
+    /*
+     * Documents Draft
+     */
+    self.themeStyleDictionary[RCDocumentsDraftsTableViewCellImageViewFax] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowFaxIconWithSize: 22 color: self.colorTable[@"7b"]]);
+    
+    /*
+     * Documents fax document type
+     */
+    CGFloat fontSize = 30;
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDefault] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOC] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOCIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeGIF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowGIFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeJPG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowJPGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePDF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPDFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePNG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPNGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePPT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPPTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTIFF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTIFFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeVSD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVSDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLS] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeAWD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowAWDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeBMP] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowBMPIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeC] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeCPP] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCPPIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeCSV] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowCSVIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOCM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOCMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOCX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOCXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDOT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDOTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeDXF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDXFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeEPS] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowEPSIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeERR] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowERRIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeH] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeHPP] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHPPIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeHTM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHTMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeHTML] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowHTMLIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeJPEG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowJPEGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeLOG] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowLOGIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeMCW] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowMCWIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeMHT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowMHTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeMHTML] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowMHTMLIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePCX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPCXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePPTM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPPTMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePPTX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPPTXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePSD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPSDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypePUB] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowPUBIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeRTF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowRTFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTGA] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTGAIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTIF] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTIFIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeTXT] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowTXTIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeVDX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowVDXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWK1] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWK1IconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWK4] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWK4IconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWPS] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWPSIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWQ1] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWQ1IconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWRI] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWRIIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLSB] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSBIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLSM] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSMIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXLSX] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXLSXIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeXML] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowXMLIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeWPD] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowWPDIconWithSize: fontSize color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeFolder] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentsIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    self.themeStyleDictionary[RCDocumentsFaxDocumentTypeUnsupport] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE ([RCUIAppAwesomeIcons hollowDocumentIconWithSize: 21 color: self.colorTable[@"7b"]]);
+    
+    /*
+     * Select source
+     */
+    self.themeStyleDictionary[RCSelectSourceTableViewCellLabelSelectSource] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
+    
+    /**
+     * Settings
+     */
+    self.themeStyleDictionary[RCMobileSettingsTableViewCellLabelCloudStorage] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
+    
+    /**
+     * Filters
+     */
+    self.themeStyleDictionary[RCFiltersTableViewCellHideShow] = RCUI_TABLEVIEWCELL_THEMESTYLE_WITH_GROUPPARAM (self.colorTable[@"1"], self.colorTable[@"1a"],
+                                                                                                               self.colorTable[@"10"], self.colorTable[@"10"]);
+    self.themeStyleDictionary[RCFiltersTableViewCellHideShowLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"6"], self.colorTable[@"1"], nil);
+    self.themeStyleDictionary[RCFiltersTableViewCellLabelTitle] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"7"], self.colorTable[@"7"], nil);
+    self.themeStyleDictionary[RCFiltersTableViewCellLabelTitleHighlighted] = RCUI_LABEL_THEMESTYLE_WITH_PARAM (self.colorTable[@"1"], self.colorTable[@"1"], nil);
+    
+    /**
+     *  Conferencing
+     */
+    self.themeStyleDictionary[RCConferenceParticipantCellUtilityButtonInfo] = RCUI_BUTTON_THEMESTYLE_WITH_ICON ([RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 28 color: self.colorTable[@"7"]],
+                                                                                                              [RCUIAppAwesomeIcons hollowInformationCircleIconWithSize: 28 color: self.colorTable[@"7a"]]);
+    self.themeStyleDictionary[RCConferenceParticipantCellUtilityButtonDissmiss] = RCUI_BUTTON_THEMESTYLE_WITH_TITLEBACKGROUND (self.colorTable[@"6"], self.colorTable[@"6a"],
+                                                                                                  self.colorTable[@"3"], self.colorTable[@"3a"]);
+}
+
+- (void) configureThemeStyleRefreshView;
+{
+    self.themeStyleDictionary[RCRefreshViewBackground] = RCUI_VIEW_THEMESTYLE_WITH_BACKGROUND (self.colorTable[@"6"]);
+    self.themeStyleDictionary[RCRefreshViewLabelStatus] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIMediumSystemFont(12));
+    self.themeStyleDictionary[RCRefreshViewLabelTime] = RCUI_LABEL_THEMESTYLE_WITH_TEXTCOLOR (self.colorTable[@"7b"], RCUIRegularSystemFont(11.f));
+    self.themeStyleDictionary[RCRefreshViewImageViewArrow] = RCUI_IMAGEVIEW_THEMESTYLE_WITH_IMAGE (self.colorTable[@"7b"]);
+}
 //
 - (void) configureThemeStyleMeeting;
 {

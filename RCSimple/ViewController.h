@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "RCSPLaunchView.h"
-@interface ViewController : UIViewController
+@protocol RCSPNoCalendarSelectedViewControllerDelegate;
+
+
+@interface ViewController : UIViewController<RCSPLaunchViewDelegate>
 
 
 @property (nonatomic, assign) BOOL isAnmiationInProgress;
@@ -18,6 +21,14 @@
 @property (nonatomic, assign) UIView *permissionView;
 @property (nonatomic, retain) RCSPLaunchView *launchView;
 
+@property (nonatomic, assign) id <RCSPNoCalendarSelectedViewControllerDelegate> delegate;
+
+@end
+
+
+@protocol RCSPNoCalendarSelectedViewControllerDelegate <NSObject>
+
+- (void) noCalendarSelectedViewControllerSelectBtnClicked: (ViewController *)controller;
 
 @end
 

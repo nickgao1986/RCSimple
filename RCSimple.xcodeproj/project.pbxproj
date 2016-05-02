@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C4211EE1CD57960001C0FC6 /* NSArray+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4211E91CD57960001C0FC6 /* NSArray+RCUICategory.m */; };
+		8C4211EF1CD57960001C0FC6 /* NSObject+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4211EB1CD57960001C0FC6 /* NSObject+RCUICategory.m */; };
+		8C4211F01CD57960001C0FC6 /* NSString+RCUIAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4211ED1CD57960001C0FC6 /* NSString+RCUIAddition.m */; };
+		8C4211F31CD57C5A001C0FC6 /* RCUISearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4211F21CD57C5A001C0FC6 /* RCUISearchBar.m */; };
+		8C4211F91CD5E2D5001C0FC6 /* RCSPEventListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4211F81CD5E2D5001C0FC6 /* RCSPEventListDataSource.m */; };
+		8C4211FC1CD5E33F001C0FC6 /* RCSPEventListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4211FB1CD5E33F001C0FC6 /* RCSPEventListItem.m */; };
+		8C4212111CD5E3A7001C0FC6 /* RCSPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212001CD5E3A7001C0FC6 /* RCSPEvent.m */; };
+		8C4212121CD5E3A7001C0FC6 /* RCSPEventAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212021CD5E3A7001C0FC6 /* RCSPEventAction.m */; };
+		8C4212131CD5E3A7001C0FC6 /* RCSPTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212041CD5E3A7001C0FC6 /* RCSPTimePeriod.m */; };
+		8C4212141CD5E3A7001C0FC6 /* RCSPCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212071CD5E3A7001C0FC6 /* RCSPCalendarManager.m */; };
+		8C4212151CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212091CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.m */; };
+		8C4212161CD5E3A7001C0FC6 /* EKEvent+RCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42120C1CD5E3A7001C0FC6 /* EKEvent+RCUtil.m */; };
+		8C4212171CD5E3A7001C0FC6 /* NSDate+RCCalendarUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42120E1CD5E3A7001C0FC6 /* NSDate+RCCalendarUtil.m */; };
+		8C4212181CD5E3A7001C0FC6 /* RCSPEventMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212101CD5E3A7001C0FC6 /* RCSPEventMatcher.m */; };
+		8C42121B1CD6DD5F001C0FC6 /* RCSPEventListFreeTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42121A1CD6DD5F001C0FC6 /* RCSPEventListFreeTimeCell.m */; };
+		8C42121E1CD6DD66001C0FC6 /* RCSPEventListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42121D1CD6DD66001C0FC6 /* RCSPEventListTableViewCell.m */; };
+		8C4212261CD6E0E8001C0FC6 /* RCSPCalendarComponentFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212211CD6E0E8001C0FC6 /* RCSPCalendarComponentFactory.m */; };
+		8C4212271CD6E0E8001C0FC6 /* RCSPCalendarUIDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212231CD6E0E8001C0FC6 /* RCSPCalendarUIDefines.m */; };
+		8C4212281CD6E0E8001C0FC6 /* UIViewController+RCSPChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212251CD6E0E8001C0FC6 /* UIViewController+RCSPChildViewController.m */; };
+		8C4212481CD6E234001C0FC6 /* RCSPCalendarSelectedDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42123D1CD6E234001C0FC6 /* RCSPCalendarSelectedDateView.m */; };
+		8C4212491CD6E234001C0FC6 /* RCSPConerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42123F1CD6E234001C0FC6 /* RCSPConerMaskView.m */; };
+		8C42124A1CD6E234001C0FC6 /* RCSPEventBackgroundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212411CD6E234001C0FC6 /* RCSPEventBackgroundButton.m */; };
+		8C42124B1CD6E234001C0FC6 /* RCSPEventGlanceActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212431CD6E234001C0FC6 /* RCSPEventGlanceActionView.m */; };
+		8C42124C1CD6E234001C0FC6 /* RCSPEventGlanceTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212451CD6E234001C0FC6 /* RCSPEventGlanceTitleView.m */; };
+		8C42124D1CD6E234001C0FC6 /* RCSPEventGlanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4212471CD6E234001C0FC6 /* RCSPEventGlanceView.m */; };
+		8C4212501CD6E4D2001C0FC6 /* NSString+RCStringEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42124F1CD6E4D2001C0FC6 /* NSString+RCStringEmpty.m */; };
 		8C66B9521CD36ADE009E3892 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66B9511CD36ADE009E3892 /* main.m */; };
 		8C66B9551CD36ADE009E3892 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66B9541CD36ADE009E3892 /* AppDelegate.m */; };
 		8C66B9581CD36ADE009E3892 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66B9571CD36ADE009E3892 /* ViewController.m */; };
@@ -443,9 +469,111 @@
 		8C7884191CD45A7900BCC7BB /* RCUIThemeStyleNameConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884181CD45A7900BCC7BB /* RCUIThemeStyleNameConst.m */; };
 		8C78841D1CD45AE200BCC7BB /* RCNSStringDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78841B1CD45AE200BCC7BB /* RCNSStringDefinitions.m */; };
 		8C7884201CD45B1B00BCC7BB /* RCExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78841F1CD45B1B00BCC7BB /* RCExtern.m */; };
+		8C78844C1CD4966300BCC7BB /* RCSPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78844B1CD4966300BCC7BB /* RCSPCalendarViewController.m */; };
+		8C7884501CD497E000BCC7BB /* RCSPEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78844F1CD497E000BCC7BB /* RCSPEventListViewController.m */; };
+		8C7884A81CD49BF700BCC7BB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884521CD49BF700BCC7BB /* LICENSE */; };
+		8C7884A91CD49BF700BCC7BB /* RCUIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884541CD49BF700BCC7BB /* RCUIBaseViewController.m */; };
+		8C7884AA1CD49BF700BCC7BB /* RCUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884561CD49BF700BCC7BB /* RCUIModel.m */; };
+		8C7884AB1CD49BF700BCC7BB /* RCUIModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884591CD49BF700BCC7BB /* RCUIModelViewController.m */; };
+		8C7884AC1CD49BF700BCC7BB /* RCUIOrientationSupportedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78845B1CD49BF700BCC7BB /* RCUIOrientationSupportedViewController.m */; };
+		8C7884AD1CD49BF700BCC7BB /* RCUIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78845D1CD49BF700BCC7BB /* RCUIRootViewController.m */; };
+		8C7884AE1CD49BF700BCC7BB /* RCUIErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884611CD49BF700BCC7BB /* RCUIErrorView.m */; };
+		8C7884AF1CD49BF700BCC7BB /* RCUILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884641CD49BF700BCC7BB /* RCUILoadingView.m */; };
+		8C7884B01CD49BF700BCC7BB /* RCUISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884671CD49BF700BCC7BB /* RCUISearchDisplayController.m */; };
+		8C7884B11CD49BF700BCC7BB /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884691CD49BF700BCC7BB /* blueArrow.png */; };
+		8C7884B21CD49BF700BCC7BB /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C78846A1CD49BF700BCC7BB /* blueArrow@2x.png */; };
+		8C7884B31CD49BF700BCC7BB /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C78846B1CD49BF700BCC7BB /* check.png */; };
+		8C7884B41CD49BF700BCC7BB /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C78846C1CD49BF700BCC7BB /* check@2x.png */; };
+		8C7884B51CD49BF700BCC7BB /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C78846D1CD49BF700BCC7BB /* empty.png */; };
+		8C7884B61CD49BF700BCC7BB /* emptyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C78846E1CD49BF700BCC7BB /* emptyIcon.png */; };
+		8C7884B71CD49BF700BCC7BB /* emptyIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C78846F1CD49BF700BCC7BB /* emptyIcon@2x.png */; };
+		8C7884B81CD49BF700BCC7BB /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884701CD49BF700BCC7BB /* error.png */; };
+		8C7884B91CD49BF700BCC7BB /* photoDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884711CD49BF700BCC7BB /* photoDefault.png */; };
+		8C7884BA1CD49BF700BCC7BB /* photoDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884721CD49BF700BCC7BB /* photoDefault@2x.png */; };
+		8C7884BB1CD49BF700BCC7BB /* photoLock@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884731CD49BF700BCC7BB /* photoLock@2x~ipad.png */; };
+		8C7884BC1CD49BF700BCC7BB /* photoLock@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884741CD49BF700BCC7BB /* photoLock@2x~iphone.png */; };
+		8C7884BD1CD49BF700BCC7BB /* photoLock~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884751CD49BF700BCC7BB /* photoLock~ipad.png */; };
+		8C7884BE1CD49BF700BCC7BB /* photoLock~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884761CD49BF700BCC7BB /* photoLock~iphone.png */; };
+		8C7884BF1CD49BF700BCC7BB /* reloadButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884771CD49BF700BCC7BB /* reloadButton.png */; };
+		8C7884C01CD49BF700BCC7BB /* reloadButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7884781CD49BF700BCC7BB /* reloadButton@2x.png */; };
+		8C7884C11CD49BF700BCC7BB /* RCUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78847B1CD49BF700BCC7BB /* RCUITableViewCell.m */; };
+		8C7884C21CD49BF700BCC7BB /* RCUITableViewiOS6GroupStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78847D1CD49BF700BCC7BB /* RCUITableViewiOS6GroupStyleCell.m */; };
+		8C7884C31CD49BF700BCC7BB /* RCUITableViewiOS7GroupStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78847F1CD49BF700BCC7BB /* RCUITableViewiOS7GroupStyleCell.m */; };
+		8C7884C41CD49BF700BCC7BB /* UITableViewCell+RCUIIOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884811CD49BF700BCC7BB /* UITableViewCell+RCUIIOS7Style.m */; };
+		8C7884C51CD49BF700BCC7BB /* RCUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884841CD49BF700BCC7BB /* RCUITableViewController.m */; };
+		8C7884C61CD49BF700BCC7BB /* RCUITableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884871CD49BF700BCC7BB /* RCUITableViewDataSource.m */; };
+		8C7884C71CD49BF700BCC7BB /* RCUITableViewListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884891CD49BF700BCC7BB /* RCUITableViewListDataSource.m */; };
+		8C7884C81CD49BF700BCC7BB /* RCUITableViewSectionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78848B1CD49BF700BCC7BB /* RCUITableViewSectionDataSource.m */; };
+		8C7884C91CD49BF700BCC7BB /* RCUITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78848E1CD49BF700BCC7BB /* RCUITableViewDelegate.m */; };
+		8C7884CA1CD49BF700BCC7BB /* RCUITableViewDragRefreshDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884901CD49BF700BCC7BB /* RCUITableViewDragRefreshDelegate.m */; };
+		8C7884CB1CD49BF700BCC7BB /* RCUITableViewGroupedVarHeightDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884921CD49BF700BCC7BB /* RCUITableViewGroupedVarHeightDelegate.m */; };
+		8C7884CC1CD49BF700BCC7BB /* RCUITableViewNetworkEnabledDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884941CD49BF700BCC7BB /* RCUITableViewNetworkEnabledDelegate.m */; };
+		8C7884CD1CD49BF700BCC7BB /* RCUITableViewPlainDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884961CD49BF700BCC7BB /* RCUITableViewPlainDelegate.m */; };
+		8C7884CE1CD49BF700BCC7BB /* RCUITableViewPlainVarHeightDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884981CD49BF700BCC7BB /* RCUITableViewPlainVarHeightDelegate.m */; };
+		8C7884CF1CD49BF700BCC7BB /* RCUITableViewVarHeightDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78849A1CD49BF700BCC7BB /* RCUITableViewVarHeightDelegate.m */; };
+		8C7884D01CD49BF700BCC7BB /* RCUITableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78849D1CD49BF700BCC7BB /* RCUITableViewItem.m */; };
+		8C7884D11CD49BF700BCC7BB /* RCUITableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884A01CD49BF700BCC7BB /* RCUITableViewSection.m */; };
+		8C7884D21CD49BF700BCC7BB /* RCUITableViewFooterInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884A31CD49BF700BCC7BB /* RCUITableViewFooterInfiniteScrollView.m */; };
+		8C7884D31CD49BF700BCC7BB /* RCUITableViewHeaderDragRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884A51CD49BF700BCC7BB /* RCUITableViewHeaderDragRefreshView.m */; };
+		8C7884D41CD49BF700BCC7BB /* RCUITableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884A71CD49BF700BCC7BB /* RCUITableViewHeaderView.m */; };
+		8C7884D71CD4B7A000BCC7BB /* RCUIGlobalRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884D61CD4B7A000BCC7BB /* RCUIGlobalRect.m */; };
+		8C7884DA1CD4B7FF00BCC7BB /* UIView+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884D91CD4B7FF00BCC7BB /* UIView+RCUICategory.m */; };
+		8C7884DD1CD4B81800BCC7BB /* UITableView+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884DC1CD4B81800BCC7BB /* UITableView+RCUICategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C4211E81CD57960001C0FC6 /* NSArray+RCUICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RCUICategory.h"; sourceTree = "<group>"; };
+		8C4211E91CD57960001C0FC6 /* NSArray+RCUICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RCUICategory.m"; sourceTree = "<group>"; };
+		8C4211EA1CD57960001C0FC6 /* NSObject+RCUICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RCUICategory.h"; sourceTree = "<group>"; };
+		8C4211EB1CD57960001C0FC6 /* NSObject+RCUICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RCUICategory.m"; sourceTree = "<group>"; };
+		8C4211EC1CD57960001C0FC6 /* NSString+RCUIAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RCUIAddition.h"; sourceTree = "<group>"; };
+		8C4211ED1CD57960001C0FC6 /* NSString+RCUIAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RCUIAddition.m"; sourceTree = "<group>"; };
+		8C4211F11CD57C5A001C0FC6 /* RCUISearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUISearchBar.h; sourceTree = "<group>"; };
+		8C4211F21CD57C5A001C0FC6 /* RCUISearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUISearchBar.m; sourceTree = "<group>"; };
+		8C4211F71CD5E2D5001C0FC6 /* RCSPEventListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventListDataSource.h; sourceTree = "<group>"; };
+		8C4211F81CD5E2D5001C0FC6 /* RCSPEventListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventListDataSource.m; sourceTree = "<group>"; };
+		8C4211FA1CD5E33F001C0FC6 /* RCSPEventListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventListItem.h; sourceTree = "<group>"; };
+		8C4211FB1CD5E33F001C0FC6 /* RCSPEventListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventListItem.m; sourceTree = "<group>"; };
+		8C4211FF1CD5E3A7001C0FC6 /* RCSPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEvent.h; sourceTree = "<group>"; };
+		8C4212001CD5E3A7001C0FC6 /* RCSPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEvent.m; sourceTree = "<group>"; };
+		8C4212011CD5E3A7001C0FC6 /* RCSPEventAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventAction.h; sourceTree = "<group>"; };
+		8C4212021CD5E3A7001C0FC6 /* RCSPEventAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventAction.m; sourceTree = "<group>"; };
+		8C4212031CD5E3A7001C0FC6 /* RCSPTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPTimePeriod.h; sourceTree = "<group>"; };
+		8C4212041CD5E3A7001C0FC6 /* RCSPTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPTimePeriod.m; sourceTree = "<group>"; };
+		8C4212061CD5E3A7001C0FC6 /* RCSPCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPCalendarManager.h; sourceTree = "<group>"; };
+		8C4212071CD5E3A7001C0FC6 /* RCSPCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPCalendarManager.m; sourceTree = "<group>"; };
+		8C4212081CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPCalendarSyncManager.h; sourceTree = "<group>"; };
+		8C4212091CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPCalendarSyncManager.m; sourceTree = "<group>"; };
+		8C42120B1CD5E3A7001C0FC6 /* EKEvent+RCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EKEvent+RCUtil.h"; sourceTree = "<group>"; };
+		8C42120C1CD5E3A7001C0FC6 /* EKEvent+RCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EKEvent+RCUtil.m"; sourceTree = "<group>"; };
+		8C42120D1CD5E3A7001C0FC6 /* NSDate+RCCalendarUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RCCalendarUtil.h"; sourceTree = "<group>"; };
+		8C42120E1CD5E3A7001C0FC6 /* NSDate+RCCalendarUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RCCalendarUtil.m"; sourceTree = "<group>"; };
+		8C42120F1CD5E3A7001C0FC6 /* RCSPEventMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventMatcher.h; sourceTree = "<group>"; };
+		8C4212101CD5E3A7001C0FC6 /* RCSPEventMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventMatcher.m; sourceTree = "<group>"; };
+		8C4212191CD6DD5F001C0FC6 /* RCSPEventListFreeTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventListFreeTimeCell.h; sourceTree = "<group>"; };
+		8C42121A1CD6DD5F001C0FC6 /* RCSPEventListFreeTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventListFreeTimeCell.m; sourceTree = "<group>"; };
+		8C42121C1CD6DD66001C0FC6 /* RCSPEventListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventListTableViewCell.h; sourceTree = "<group>"; };
+		8C42121D1CD6DD66001C0FC6 /* RCSPEventListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventListTableViewCell.m; sourceTree = "<group>"; };
+		8C4212201CD6E0E8001C0FC6 /* RCSPCalendarComponentFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPCalendarComponentFactory.h; sourceTree = "<group>"; };
+		8C4212211CD6E0E8001C0FC6 /* RCSPCalendarComponentFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPCalendarComponentFactory.m; sourceTree = "<group>"; };
+		8C4212221CD6E0E8001C0FC6 /* RCSPCalendarUIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPCalendarUIDefines.h; sourceTree = "<group>"; };
+		8C4212231CD6E0E8001C0FC6 /* RCSPCalendarUIDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPCalendarUIDefines.m; sourceTree = "<group>"; };
+		8C4212241CD6E0E8001C0FC6 /* UIViewController+RCSPChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RCSPChildViewController.h"; sourceTree = "<group>"; };
+		8C4212251CD6E0E8001C0FC6 /* UIViewController+RCSPChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RCSPChildViewController.m"; sourceTree = "<group>"; };
+		8C42123C1CD6E234001C0FC6 /* RCSPCalendarSelectedDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPCalendarSelectedDateView.h; sourceTree = "<group>"; };
+		8C42123D1CD6E234001C0FC6 /* RCSPCalendarSelectedDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPCalendarSelectedDateView.m; sourceTree = "<group>"; };
+		8C42123E1CD6E234001C0FC6 /* RCSPConerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPConerMaskView.h; sourceTree = "<group>"; };
+		8C42123F1CD6E234001C0FC6 /* RCSPConerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPConerMaskView.m; sourceTree = "<group>"; };
+		8C4212401CD6E234001C0FC6 /* RCSPEventBackgroundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventBackgroundButton.h; sourceTree = "<group>"; };
+		8C4212411CD6E234001C0FC6 /* RCSPEventBackgroundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventBackgroundButton.m; sourceTree = "<group>"; };
+		8C4212421CD6E234001C0FC6 /* RCSPEventGlanceActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventGlanceActionView.h; sourceTree = "<group>"; };
+		8C4212431CD6E234001C0FC6 /* RCSPEventGlanceActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventGlanceActionView.m; sourceTree = "<group>"; };
+		8C4212441CD6E234001C0FC6 /* RCSPEventGlanceTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventGlanceTitleView.h; sourceTree = "<group>"; };
+		8C4212451CD6E234001C0FC6 /* RCSPEventGlanceTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventGlanceTitleView.m; sourceTree = "<group>"; };
+		8C4212461CD6E234001C0FC6 /* RCSPEventGlanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPEventGlanceView.h; sourceTree = "<group>"; };
+		8C4212471CD6E234001C0FC6 /* RCSPEventGlanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPEventGlanceView.m; sourceTree = "<group>"; };
+		8C42124E1CD6E4D2001C0FC6 /* NSString+RCStringEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+RCStringEmpty.h"; path = "../NSString+RCStringEmpty.h"; sourceTree = "<group>"; };
+		8C42124F1CD6E4D2001C0FC6 /* NSString+RCStringEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+RCStringEmpty.m"; path = "../NSString+RCStringEmpty.m"; sourceTree = "<group>"; };
 		8C66B94D1CD36ADE009E3892 /* RCSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C66B9511CD36ADE009E3892 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C66B9531CD36ADE009E3892 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -457,8 +585,8 @@
 		8C66B95F1CD36ADE009E3892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C66B9621CD36ADE009E3892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C66B9641CD36ADE009E3892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C7880511CD41AD800BCC7BB /* RCSPLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPLaunchView.h; sourceTree = "<group>"; };
-		8C7880521CD41AD800BCC7BB /* RCSPLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPLaunchView.m; sourceTree = "<group>"; };
+		8C7880511CD41AD800BCC7BB /* RCSPLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCSPLaunchView.h; path = ../RCSPLaunchView.h; sourceTree = "<group>"; };
+		8C7880521CD41AD800BCC7BB /* RCSPLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCSPLaunchView.m; path = ../RCSPLaunchView.m; sourceTree = "<group>"; };
 		8C7880551CD41C9D00BCC7BB /* RCUIGlobalCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIGlobalCommon.h; sourceTree = "<group>"; };
 		8C7880561CD41C9D00BCC7BB /* RCUIGlobalCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIGlobalCommon.m; sourceTree = "<group>"; };
 		8C7880581CD41D3A00BCC7BB /* RCExtern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCExtern.h; sourceTree = "<group>"; };
@@ -944,6 +1072,91 @@
 		8C78841C1CD45AE200BCC7BB /* RCNSStringImpBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNSStringImpBody.h; sourceTree = "<group>"; };
 		8C78841E1CD45B1B00BCC7BB /* RCExtern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCExtern.h; sourceTree = "<group>"; };
 		8C78841F1CD45B1B00BCC7BB /* RCExtern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCExtern.m; sourceTree = "<group>"; };
+		8C78844A1CD4966300BCC7BB /* RCSPCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCSPCalendarViewController.h; path = ../../../RCSPCalendarViewController.h; sourceTree = "<group>"; };
+		8C78844B1CD4966300BCC7BB /* RCSPCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCSPCalendarViewController.m; path = ../../../RCSPCalendarViewController.m; sourceTree = "<group>"; };
+		8C78844E1CD497E000BCC7BB /* RCSPEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCSPEventListViewController.h; path = ../../RCSPEventListViewController.h; sourceTree = "<group>"; };
+		8C78844F1CD497E000BCC7BB /* RCSPEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCSPEventListViewController.m; path = ../../RCSPEventListViewController.m; sourceTree = "<group>"; };
+		8C7884521CD49BF700BCC7BB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8C7884531CD49BF700BCC7BB /* RCUIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIBaseViewController.h; sourceTree = "<group>"; };
+		8C7884541CD49BF700BCC7BB /* RCUIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIBaseViewController.m; sourceTree = "<group>"; };
+		8C7884551CD49BF700BCC7BB /* RCUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIModel.h; sourceTree = "<group>"; };
+		8C7884561CD49BF700BCC7BB /* RCUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIModel.m; sourceTree = "<group>"; };
+		8C7884571CD49BF700BCC7BB /* RCUIModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIModelDelegate.h; sourceTree = "<group>"; };
+		8C7884581CD49BF700BCC7BB /* RCUIModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIModelViewController.h; sourceTree = "<group>"; };
+		8C7884591CD49BF700BCC7BB /* RCUIModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIModelViewController.m; sourceTree = "<group>"; };
+		8C78845A1CD49BF700BCC7BB /* RCUIOrientationSupportedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIOrientationSupportedViewController.h; sourceTree = "<group>"; };
+		8C78845B1CD49BF700BCC7BB /* RCUIOrientationSupportedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIOrientationSupportedViewController.m; sourceTree = "<group>"; };
+		8C78845C1CD49BF700BCC7BB /* RCUIRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIRootViewController.h; sourceTree = "<group>"; };
+		8C78845D1CD49BF700BCC7BB /* RCUIRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIRootViewController.m; sourceTree = "<group>"; };
+		8C7884601CD49BF700BCC7BB /* RCUIErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIErrorView.h; sourceTree = "<group>"; };
+		8C7884611CD49BF700BCC7BB /* RCUIErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIErrorView.m; sourceTree = "<group>"; };
+		8C7884631CD49BF700BCC7BB /* RCUILoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUILoadingView.h; sourceTree = "<group>"; };
+		8C7884641CD49BF700BCC7BB /* RCUILoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUILoadingView.m; sourceTree = "<group>"; };
+		8C7884661CD49BF700BCC7BB /* RCUISearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUISearchDisplayController.h; sourceTree = "<group>"; };
+		8C7884671CD49BF700BCC7BB /* RCUISearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUISearchDisplayController.m; sourceTree = "<group>"; };
+		8C7884691CD49BF700BCC7BB /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		8C78846A1CD49BF700BCC7BB /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		8C78846B1CD49BF700BCC7BB /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		8C78846C1CD49BF700BCC7BB /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		8C78846D1CD49BF700BCC7BB /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		8C78846E1CD49BF700BCC7BB /* emptyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyIcon.png; sourceTree = "<group>"; };
+		8C78846F1CD49BF700BCC7BB /* emptyIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyIcon@2x.png"; sourceTree = "<group>"; };
+		8C7884701CD49BF700BCC7BB /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		8C7884711CD49BF700BCC7BB /* photoDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoDefault.png; sourceTree = "<group>"; };
+		8C7884721CD49BF700BCC7BB /* photoDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoDefault@2x.png"; sourceTree = "<group>"; };
+		8C7884731CD49BF700BCC7BB /* photoLock@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoLock@2x~ipad.png"; sourceTree = "<group>"; };
+		8C7884741CD49BF700BCC7BB /* photoLock@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoLock@2x~iphone.png"; sourceTree = "<group>"; };
+		8C7884751CD49BF700BCC7BB /* photoLock~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoLock~ipad.png"; sourceTree = "<group>"; };
+		8C7884761CD49BF700BCC7BB /* photoLock~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoLock~iphone.png"; sourceTree = "<group>"; };
+		8C7884771CD49BF700BCC7BB /* reloadButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reloadButton.png; sourceTree = "<group>"; };
+		8C7884781CD49BF700BCC7BB /* reloadButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reloadButton@2x.png"; sourceTree = "<group>"; };
+		8C78847A1CD49BF700BCC7BB /* RCUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewCell.h; sourceTree = "<group>"; };
+		8C78847B1CD49BF700BCC7BB /* RCUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewCell.m; sourceTree = "<group>"; };
+		8C78847C1CD49BF700BCC7BB /* RCUITableViewiOS6GroupStyleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewiOS6GroupStyleCell.h; sourceTree = "<group>"; };
+		8C78847D1CD49BF700BCC7BB /* RCUITableViewiOS6GroupStyleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewiOS6GroupStyleCell.m; sourceTree = "<group>"; };
+		8C78847E1CD49BF700BCC7BB /* RCUITableViewiOS7GroupStyleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewiOS7GroupStyleCell.h; sourceTree = "<group>"; };
+		8C78847F1CD49BF700BCC7BB /* RCUITableViewiOS7GroupStyleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewiOS7GroupStyleCell.m; sourceTree = "<group>"; };
+		8C7884801CD49BF700BCC7BB /* UITableViewCell+RCUIIOS7Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+RCUIIOS7Style.h"; sourceTree = "<group>"; };
+		8C7884811CD49BF700BCC7BB /* UITableViewCell+RCUIIOS7Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+RCUIIOS7Style.m"; sourceTree = "<group>"; };
+		8C7884831CD49BF700BCC7BB /* RCUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewController.h; sourceTree = "<group>"; };
+		8C7884841CD49BF700BCC7BB /* RCUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewController.m; sourceTree = "<group>"; };
+		8C7884861CD49BF700BCC7BB /* RCUITableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewDataSource.h; sourceTree = "<group>"; };
+		8C7884871CD49BF700BCC7BB /* RCUITableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewDataSource.m; sourceTree = "<group>"; };
+		8C7884881CD49BF700BCC7BB /* RCUITableViewListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewListDataSource.h; sourceTree = "<group>"; };
+		8C7884891CD49BF700BCC7BB /* RCUITableViewListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewListDataSource.m; sourceTree = "<group>"; };
+		8C78848A1CD49BF700BCC7BB /* RCUITableViewSectionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewSectionDataSource.h; sourceTree = "<group>"; };
+		8C78848B1CD49BF700BCC7BB /* RCUITableViewSectionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewSectionDataSource.m; sourceTree = "<group>"; };
+		8C78848D1CD49BF700BCC7BB /* RCUITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewDelegate.h; sourceTree = "<group>"; };
+		8C78848E1CD49BF700BCC7BB /* RCUITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewDelegate.m; sourceTree = "<group>"; };
+		8C78848F1CD49BF700BCC7BB /* RCUITableViewDragRefreshDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewDragRefreshDelegate.h; sourceTree = "<group>"; };
+		8C7884901CD49BF700BCC7BB /* RCUITableViewDragRefreshDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewDragRefreshDelegate.m; sourceTree = "<group>"; };
+		8C7884911CD49BF700BCC7BB /* RCUITableViewGroupedVarHeightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewGroupedVarHeightDelegate.h; sourceTree = "<group>"; };
+		8C7884921CD49BF700BCC7BB /* RCUITableViewGroupedVarHeightDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewGroupedVarHeightDelegate.m; sourceTree = "<group>"; };
+		8C7884931CD49BF700BCC7BB /* RCUITableViewNetworkEnabledDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewNetworkEnabledDelegate.h; sourceTree = "<group>"; };
+		8C7884941CD49BF700BCC7BB /* RCUITableViewNetworkEnabledDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewNetworkEnabledDelegate.m; sourceTree = "<group>"; };
+		8C7884951CD49BF700BCC7BB /* RCUITableViewPlainDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewPlainDelegate.h; sourceTree = "<group>"; };
+		8C7884961CD49BF700BCC7BB /* RCUITableViewPlainDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewPlainDelegate.m; sourceTree = "<group>"; };
+		8C7884971CD49BF700BCC7BB /* RCUITableViewPlainVarHeightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewPlainVarHeightDelegate.h; sourceTree = "<group>"; };
+		8C7884981CD49BF700BCC7BB /* RCUITableViewPlainVarHeightDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewPlainVarHeightDelegate.m; sourceTree = "<group>"; };
+		8C7884991CD49BF700BCC7BB /* RCUITableViewVarHeightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewVarHeightDelegate.h; sourceTree = "<group>"; };
+		8C78849A1CD49BF700BCC7BB /* RCUITableViewVarHeightDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewVarHeightDelegate.m; sourceTree = "<group>"; };
+		8C78849C1CD49BF700BCC7BB /* RCUITableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewItem.h; sourceTree = "<group>"; };
+		8C78849D1CD49BF700BCC7BB /* RCUITableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewItem.m; sourceTree = "<group>"; };
+		8C78849F1CD49BF700BCC7BB /* RCUITableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewSection.h; sourceTree = "<group>"; };
+		8C7884A01CD49BF700BCC7BB /* RCUITableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewSection.m; sourceTree = "<group>"; };
+		8C7884A21CD49BF700BCC7BB /* RCUITableViewFooterInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewFooterInfiniteScrollView.h; sourceTree = "<group>"; };
+		8C7884A31CD49BF700BCC7BB /* RCUITableViewFooterInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewFooterInfiniteScrollView.m; sourceTree = "<group>"; };
+		8C7884A41CD49BF700BCC7BB /* RCUITableViewHeaderDragRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewHeaderDragRefreshView.h; sourceTree = "<group>"; };
+		8C7884A51CD49BF700BCC7BB /* RCUITableViewHeaderDragRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewHeaderDragRefreshView.m; sourceTree = "<group>"; };
+		8C7884A61CD49BF700BCC7BB /* RCUITableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUITableViewHeaderView.h; sourceTree = "<group>"; };
+		8C7884A71CD49BF700BCC7BB /* RCUITableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUITableViewHeaderView.m; sourceTree = "<group>"; };
+		8C7884D51CD4B7A000BCC7BB /* RCUIGlobalRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUIGlobalRect.h; sourceTree = "<group>"; };
+		8C7884D61CD4B7A000BCC7BB /* RCUIGlobalRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUIGlobalRect.m; sourceTree = "<group>"; };
+		8C7884D81CD4B7FF00BCC7BB /* UIView+RCUICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RCUICategory.h"; sourceTree = "<group>"; };
+		8C7884D91CD4B7FF00BCC7BB /* UIView+RCUICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RCUICategory.m"; sourceTree = "<group>"; };
+		8C7884DB1CD4B81800BCC7BB /* UITableView+RCUICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RCUICategory.h"; sourceTree = "<group>"; };
+		8C7884DC1CD4B81800BCC7BB /* UITableView+RCUICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RCUICategory.m"; sourceTree = "<group>"; };
+		8C7884E01CD4BC8700BCC7BB /* RCResourceKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCResourceKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -957,6 +1170,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C4211F41CD5E279001C0FC6 /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8C4211F51CD5E279001C0FC6 /* mainscreen */,
+			);
+			path = calendar;
+			sourceTree = "<group>";
+		};
+		8C4211F51CD5E279001C0FC6 /* mainscreen */ = {
+			isa = PBXGroup;
+			children = (
+				8C4212291CD6E18E001C0FC6 /* Component */,
+				8C42121F1CD6DF9C001C0FC6 /* util */,
+				8C78844A1CD4966300BCC7BB /* RCSPCalendarViewController.h */,
+				8C78844B1CD4966300BCC7BB /* RCSPCalendarViewController.m */,
+				8C78844E1CD497E000BCC7BB /* RCSPEventListViewController.h */,
+				8C78844F1CD497E000BCC7BB /* RCSPEventListViewController.m */,
+				8C4211F61CD5E279001C0FC6 /* eventlist */,
+			);
+			path = mainscreen;
+			sourceTree = "<group>";
+		};
+		8C4211F61CD5E279001C0FC6 /* eventlist */ = {
+			isa = PBXGroup;
+			children = (
+				8C42121C1CD6DD66001C0FC6 /* RCSPEventListTableViewCell.h */,
+				8C42121D1CD6DD66001C0FC6 /* RCSPEventListTableViewCell.m */,
+				8C4212191CD6DD5F001C0FC6 /* RCSPEventListFreeTimeCell.h */,
+				8C42121A1CD6DD5F001C0FC6 /* RCSPEventListFreeTimeCell.m */,
+				8C4211F71CD5E2D5001C0FC6 /* RCSPEventListDataSource.h */,
+				8C4211F81CD5E2D5001C0FC6 /* RCSPEventListDataSource.m */,
+				8C4211FA1CD5E33F001C0FC6 /* RCSPEventListItem.h */,
+				8C4211FB1CD5E33F001C0FC6 /* RCSPEventListItem.m */,
+			);
+			path = eventlist;
+			sourceTree = "<group>";
+		};
+		8C4211FD1CD5E3A7001C0FC6 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8C42124E1CD6E4D2001C0FC6 /* NSString+RCStringEmpty.h */,
+				8C42124F1CD6E4D2001C0FC6 /* NSString+RCStringEmpty.m */,
+				8C4211FE1CD5E3A7001C0FC6 /* DataModel */,
+				8C4212051CD5E3A7001C0FC6 /* Managers */,
+				8C42120A1CD5E3A7001C0FC6 /* Util */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8C4211FE1CD5E3A7001C0FC6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				8C4211FF1CD5E3A7001C0FC6 /* RCSPEvent.h */,
+				8C4212001CD5E3A7001C0FC6 /* RCSPEvent.m */,
+				8C4212011CD5E3A7001C0FC6 /* RCSPEventAction.h */,
+				8C4212021CD5E3A7001C0FC6 /* RCSPEventAction.m */,
+				8C4212031CD5E3A7001C0FC6 /* RCSPTimePeriod.h */,
+				8C4212041CD5E3A7001C0FC6 /* RCSPTimePeriod.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		8C4212051CD5E3A7001C0FC6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8C4212061CD5E3A7001C0FC6 /* RCSPCalendarManager.h */,
+				8C4212071CD5E3A7001C0FC6 /* RCSPCalendarManager.m */,
+				8C4212081CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.h */,
+				8C4212091CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8C42120A1CD5E3A7001C0FC6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8C42120B1CD5E3A7001C0FC6 /* EKEvent+RCUtil.h */,
+				8C42120C1CD5E3A7001C0FC6 /* EKEvent+RCUtil.m */,
+				8C42120D1CD5E3A7001C0FC6 /* NSDate+RCCalendarUtil.h */,
+				8C42120E1CD5E3A7001C0FC6 /* NSDate+RCCalendarUtil.m */,
+				8C42120F1CD5E3A7001C0FC6 /* RCSPEventMatcher.h */,
+				8C4212101CD5E3A7001C0FC6 /* RCSPEventMatcher.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8C42121F1CD6DF9C001C0FC6 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				8C4212201CD6E0E8001C0FC6 /* RCSPCalendarComponentFactory.h */,
+				8C4212211CD6E0E8001C0FC6 /* RCSPCalendarComponentFactory.m */,
+				8C4212221CD6E0E8001C0FC6 /* RCSPCalendarUIDefines.h */,
+				8C4212231CD6E0E8001C0FC6 /* RCSPCalendarUIDefines.m */,
+				8C4212241CD6E0E8001C0FC6 /* UIViewController+RCSPChildViewController.h */,
+				8C4212251CD6E0E8001C0FC6 /* UIViewController+RCSPChildViewController.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		8C4212291CD6E18E001C0FC6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8C42123C1CD6E234001C0FC6 /* RCSPCalendarSelectedDateView.h */,
+				8C42123D1CD6E234001C0FC6 /* RCSPCalendarSelectedDateView.m */,
+				8C42123E1CD6E234001C0FC6 /* RCSPConerMaskView.h */,
+				8C42123F1CD6E234001C0FC6 /* RCSPConerMaskView.m */,
+				8C4212401CD6E234001C0FC6 /* RCSPEventBackgroundButton.h */,
+				8C4212411CD6E234001C0FC6 /* RCSPEventBackgroundButton.m */,
+				8C4212421CD6E234001C0FC6 /* RCSPEventGlanceActionView.h */,
+				8C4212431CD6E234001C0FC6 /* RCSPEventGlanceActionView.m */,
+				8C4212441CD6E234001C0FC6 /* RCSPEventGlanceTitleView.h */,
+				8C4212451CD6E234001C0FC6 /* RCSPEventGlanceTitleView.m */,
+				8C4212461CD6E234001C0FC6 /* RCSPEventGlanceView.h */,
+				8C4212471CD6E234001C0FC6 /* RCSPEventGlanceView.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		8C66B9441CD36ADE009E3892 = {
 			isa = PBXGroup;
 			children = (
@@ -976,8 +1307,10 @@
 		8C66B94F1CD36ADE009E3892 /* RCSimple */ = {
 			isa = PBXGroup;
 			children = (
+				8C7884DF1CD4BC8700BCC7BB /* RCResourceKit */,
+				8C7884511CD49BF700BCC7BB /* RCUIViewController */,
+				8C78844D1CD497B400BCC7BB /* UI */,
 				8C7881281CD4456800BCC7BB /* RCFoundation */,
-				8C7881151CD4301900BCC7BB /* RCUIKit */,
 				8C7880D91CD4282400BCC7BB /* RCUIControl */,
 				8C7880711CD4236700BCC7BB /* Awesome */,
 				8C7880611CD4205300BCC7BB /* RCUIThemeManager */,
@@ -986,8 +1319,6 @@
 				8C66B9541CD36ADE009E3892 /* AppDelegate.m */,
 				8C66B9561CD36ADE009E3892 /* ViewController.h */,
 				8C66B9571CD36ADE009E3892 /* ViewController.m */,
-				8C7880511CD41AD800BCC7BB /* RCSPLaunchView.h */,
-				8C7880521CD41AD800BCC7BB /* RCSPLaunchView.m */,
 				8C66B9591CD36ADE009E3892 /* Main.storyboard */,
 				8C66B95F1CD36ADE009E3892 /* Assets.xcassets */,
 				8C66B9611CD36ADE009E3892 /* LaunchScreen.storyboard */,
@@ -1010,6 +1341,18 @@
 		8C7880541CD41B8800BCC7BB /* RCUICommon */ = {
 			isa = PBXGroup;
 			children = (
+				8C4211E81CD57960001C0FC6 /* NSArray+RCUICategory.h */,
+				8C4211E91CD57960001C0FC6 /* NSArray+RCUICategory.m */,
+				8C4211EA1CD57960001C0FC6 /* NSObject+RCUICategory.h */,
+				8C4211EB1CD57960001C0FC6 /* NSObject+RCUICategory.m */,
+				8C4211EC1CD57960001C0FC6 /* NSString+RCUIAddition.h */,
+				8C4211ED1CD57960001C0FC6 /* NSString+RCUIAddition.m */,
+				8C7884DB1CD4B81800BCC7BB /* UITableView+RCUICategory.h */,
+				8C7884DC1CD4B81800BCC7BB /* UITableView+RCUICategory.m */,
+				8C7884D81CD4B7FF00BCC7BB /* UIView+RCUICategory.h */,
+				8C7884D91CD4B7FF00BCC7BB /* UIView+RCUICategory.m */,
+				8C7884D51CD4B7A000BCC7BB /* RCUIGlobalRect.h */,
+				8C7884D61CD4B7A000BCC7BB /* RCUIGlobalRect.m */,
 				8C7880E01CD428DE00BCC7BB /* RCUIGlobalStyle.h */,
 				8C7880E11CD428DE00BCC7BB /* RCUIGlobalStyle.m */,
 				8C7880DD1CD4289200BCC7BB /* UIFont+RCUILineHeight.h */,
@@ -1136,6 +1479,8 @@
 				8C7880F71CD42E8B00BCC7BB /* RCUICustomTableUI */,
 				8C7880E91CD42A5C00BCC7BB /* RCUIBadge.h */,
 				8C7880EA1CD42A5C00BCC7BB /* RCUIBadge.m */,
+				8C4211F11CD57C5A001C0FC6 /* RCUISearchBar.h */,
+				8C4211F21CD57C5A001C0FC6 /* RCUISearchBar.m */,
 				8C7880E61CD42A1E00BCC7BB /* RCUISwitch.h */,
 				8C7880E71CD42A1E00BCC7BB /* RCUISwitch.m */,
 				8C7880E31CD4295C00BCC7BB /* RCUINumberTipTextField.h */,
@@ -1157,40 +1502,10 @@
 			path = RCUICustomTableUI;
 			sourceTree = "<group>";
 		};
-		8C7881151CD4301900BCC7BB /* RCUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				8C7881161CD4301900BCC7BB /* RCUIViewController */,
-			);
-			path = RCUIKit;
-			sourceTree = "<group>";
-		};
-		8C7881161CD4301900BCC7BB /* RCUIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8C7881171CD4301900BCC7BB /* Table View Controller */,
-			);
-			path = RCUIViewController;
-			sourceTree = "<group>";
-		};
-		8C7881171CD4301900BCC7BB /* Table View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8C7881181CD4301900BCC7BB /* Search Display Controller */,
-			);
-			path = "Table View Controller";
-			sourceTree = "<group>";
-		};
-		8C7881181CD4301900BCC7BB /* Search Display Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Search Display Controller";
-			sourceTree = "<group>";
-		};
 		8C7881281CD4456800BCC7BB /* RCFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				8C4211FD1CD5E3A7001C0FC6 /* Calendar */,
 				8C78841E1CD45B1B00BCC7BB /* RCExtern.h */,
 				8C78841F1CD45B1B00BCC7BB /* RCExtern.m */,
 				8C78841A1CD45AE200BCC7BB /* RCNSStringDefinitions.h */,
@@ -1597,6 +1912,201 @@
 			path = JoinNow_Icon;
 			sourceTree = "<group>";
 		};
+		8C78844D1CD497B400BCC7BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8C4211F41CD5E279001C0FC6 /* calendar */,
+				8C7880511CD41AD800BCC7BB /* RCSPLaunchView.h */,
+				8C7880521CD41AD800BCC7BB /* RCSPLaunchView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8C7884511CD49BF700BCC7BB /* RCUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884521CD49BF700BCC7BB /* LICENSE */,
+				8C7884531CD49BF700BCC7BB /* RCUIBaseViewController.h */,
+				8C7884541CD49BF700BCC7BB /* RCUIBaseViewController.m */,
+				8C7884551CD49BF700BCC7BB /* RCUIModel.h */,
+				8C7884561CD49BF700BCC7BB /* RCUIModel.m */,
+				8C7884571CD49BF700BCC7BB /* RCUIModelDelegate.h */,
+				8C7884581CD49BF700BCC7BB /* RCUIModelViewController.h */,
+				8C7884591CD49BF700BCC7BB /* RCUIModelViewController.m */,
+				8C78845A1CD49BF700BCC7BB /* RCUIOrientationSupportedViewController.h */,
+				8C78845B1CD49BF700BCC7BB /* RCUIOrientationSupportedViewController.m */,
+				8C78845C1CD49BF700BCC7BB /* RCUIRootViewController.h */,
+				8C78845D1CD49BF700BCC7BB /* RCUIRootViewController.m */,
+				8C78845E1CD49BF700BCC7BB /* Table View Controller */,
+			);
+			path = RCUIViewController;
+			sourceTree = "<group>";
+		};
+		8C78845E1CD49BF700BCC7BB /* Table View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C78845F1CD49BF700BCC7BB /* Error View */,
+				8C7884621CD49BF700BCC7BB /* Loading View */,
+				8C7884651CD49BF700BCC7BB /* Search Display Controller */,
+				8C7884681CD49BF700BCC7BB /* Skin */,
+				8C7884791CD49BF700BCC7BB /* Table Cell */,
+				8C7884821CD49BF700BCC7BB /* Table Controller */,
+				8C7884851CD49BF700BCC7BB /* Table Data Source */,
+				8C78848C1CD49BF700BCC7BB /* Table Delegate */,
+				8C78849B1CD49BF700BCC7BB /* Table Item */,
+				8C78849E1CD49BF700BCC7BB /* Table Section */,
+				8C7884A11CD49BF700BCC7BB /* Table Views */,
+			);
+			path = "Table View Controller";
+			sourceTree = "<group>";
+		};
+		8C78845F1CD49BF700BCC7BB /* Error View */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884601CD49BF700BCC7BB /* RCUIErrorView.h */,
+				8C7884611CD49BF700BCC7BB /* RCUIErrorView.m */,
+			);
+			path = "Error View";
+			sourceTree = "<group>";
+		};
+		8C7884621CD49BF700BCC7BB /* Loading View */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884631CD49BF700BCC7BB /* RCUILoadingView.h */,
+				8C7884641CD49BF700BCC7BB /* RCUILoadingView.m */,
+			);
+			path = "Loading View";
+			sourceTree = "<group>";
+		};
+		8C7884651CD49BF700BCC7BB /* Search Display Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884661CD49BF700BCC7BB /* RCUISearchDisplayController.h */,
+				8C7884671CD49BF700BCC7BB /* RCUISearchDisplayController.m */,
+			);
+			path = "Search Display Controller";
+			sourceTree = "<group>";
+		};
+		8C7884681CD49BF700BCC7BB /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884691CD49BF700BCC7BB /* blueArrow.png */,
+				8C78846A1CD49BF700BCC7BB /* blueArrow@2x.png */,
+				8C78846B1CD49BF700BCC7BB /* check.png */,
+				8C78846C1CD49BF700BCC7BB /* check@2x.png */,
+				8C78846D1CD49BF700BCC7BB /* empty.png */,
+				8C78846E1CD49BF700BCC7BB /* emptyIcon.png */,
+				8C78846F1CD49BF700BCC7BB /* emptyIcon@2x.png */,
+				8C7884701CD49BF700BCC7BB /* error.png */,
+				8C7884711CD49BF700BCC7BB /* photoDefault.png */,
+				8C7884721CD49BF700BCC7BB /* photoDefault@2x.png */,
+				8C7884731CD49BF700BCC7BB /* photoLock@2x~ipad.png */,
+				8C7884741CD49BF700BCC7BB /* photoLock@2x~iphone.png */,
+				8C7884751CD49BF700BCC7BB /* photoLock~ipad.png */,
+				8C7884761CD49BF700BCC7BB /* photoLock~iphone.png */,
+				8C7884771CD49BF700BCC7BB /* reloadButton.png */,
+				8C7884781CD49BF700BCC7BB /* reloadButton@2x.png */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+		8C7884791CD49BF700BCC7BB /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8C78847A1CD49BF700BCC7BB /* RCUITableViewCell.h */,
+				8C78847B1CD49BF700BCC7BB /* RCUITableViewCell.m */,
+				8C78847C1CD49BF700BCC7BB /* RCUITableViewiOS6GroupStyleCell.h */,
+				8C78847D1CD49BF700BCC7BB /* RCUITableViewiOS6GroupStyleCell.m */,
+				8C78847E1CD49BF700BCC7BB /* RCUITableViewiOS7GroupStyleCell.h */,
+				8C78847F1CD49BF700BCC7BB /* RCUITableViewiOS7GroupStyleCell.m */,
+				8C7884801CD49BF700BCC7BB /* UITableViewCell+RCUIIOS7Style.h */,
+				8C7884811CD49BF700BCC7BB /* UITableViewCell+RCUIIOS7Style.m */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		8C7884821CD49BF700BCC7BB /* Table Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884831CD49BF700BCC7BB /* RCUITableViewController.h */,
+				8C7884841CD49BF700BCC7BB /* RCUITableViewController.m */,
+			);
+			path = "Table Controller";
+			sourceTree = "<group>";
+		};
+		8C7884851CD49BF700BCC7BB /* Table Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884861CD49BF700BCC7BB /* RCUITableViewDataSource.h */,
+				8C7884871CD49BF700BCC7BB /* RCUITableViewDataSource.m */,
+				8C7884881CD49BF700BCC7BB /* RCUITableViewListDataSource.h */,
+				8C7884891CD49BF700BCC7BB /* RCUITableViewListDataSource.m */,
+				8C78848A1CD49BF700BCC7BB /* RCUITableViewSectionDataSource.h */,
+				8C78848B1CD49BF700BCC7BB /* RCUITableViewSectionDataSource.m */,
+			);
+			path = "Table Data Source";
+			sourceTree = "<group>";
+		};
+		8C78848C1CD49BF700BCC7BB /* Table Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8C78848D1CD49BF700BCC7BB /* RCUITableViewDelegate.h */,
+				8C78848E1CD49BF700BCC7BB /* RCUITableViewDelegate.m */,
+				8C78848F1CD49BF700BCC7BB /* RCUITableViewDragRefreshDelegate.h */,
+				8C7884901CD49BF700BCC7BB /* RCUITableViewDragRefreshDelegate.m */,
+				8C7884911CD49BF700BCC7BB /* RCUITableViewGroupedVarHeightDelegate.h */,
+				8C7884921CD49BF700BCC7BB /* RCUITableViewGroupedVarHeightDelegate.m */,
+				8C7884931CD49BF700BCC7BB /* RCUITableViewNetworkEnabledDelegate.h */,
+				8C7884941CD49BF700BCC7BB /* RCUITableViewNetworkEnabledDelegate.m */,
+				8C7884951CD49BF700BCC7BB /* RCUITableViewPlainDelegate.h */,
+				8C7884961CD49BF700BCC7BB /* RCUITableViewPlainDelegate.m */,
+				8C7884971CD49BF700BCC7BB /* RCUITableViewPlainVarHeightDelegate.h */,
+				8C7884981CD49BF700BCC7BB /* RCUITableViewPlainVarHeightDelegate.m */,
+				8C7884991CD49BF700BCC7BB /* RCUITableViewVarHeightDelegate.h */,
+				8C78849A1CD49BF700BCC7BB /* RCUITableViewVarHeightDelegate.m */,
+			);
+			path = "Table Delegate";
+			sourceTree = "<group>";
+		};
+		8C78849B1CD49BF700BCC7BB /* Table Item */ = {
+			isa = PBXGroup;
+			children = (
+				8C78849C1CD49BF700BCC7BB /* RCUITableViewItem.h */,
+				8C78849D1CD49BF700BCC7BB /* RCUITableViewItem.m */,
+			);
+			path = "Table Item";
+			sourceTree = "<group>";
+		};
+		8C78849E1CD49BF700BCC7BB /* Table Section */ = {
+			isa = PBXGroup;
+			children = (
+				8C78849F1CD49BF700BCC7BB /* RCUITableViewSection.h */,
+				8C7884A01CD49BF700BCC7BB /* RCUITableViewSection.m */,
+			);
+			path = "Table Section";
+			sourceTree = "<group>";
+		};
+		8C7884A11CD49BF700BCC7BB /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884A21CD49BF700BCC7BB /* RCUITableViewFooterInfiniteScrollView.h */,
+				8C7884A31CD49BF700BCC7BB /* RCUITableViewFooterInfiniteScrollView.m */,
+				8C7884A41CD49BF700BCC7BB /* RCUITableViewHeaderDragRefreshView.h */,
+				8C7884A51CD49BF700BCC7BB /* RCUITableViewHeaderDragRefreshView.m */,
+				8C7884A61CD49BF700BCC7BB /* RCUITableViewHeaderView.h */,
+				8C7884A71CD49BF700BCC7BB /* RCUITableViewHeaderView.m */,
+			);
+			path = "Table Views";
+			sourceTree = "<group>";
+		};
+		8C7884DF1CD4BC8700BCC7BB /* RCResourceKit */ = {
+			isa = PBXGroup;
+			children = (
+				8C7884E01CD4BC8700BCC7BB /* RCResourceKit.h */,
+			);
+			path = RCResourceKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1665,10 +2175,12 @@
 				8C7883AD1CD4540700BCC7BB /* JoinNow_26.png in Resources */,
 				8C7883E41CD4540700BCC7BB /* JoinNow_5@3x.png in Resources */,
 				8C66B9631CD36ADE009E3892 /* LaunchScreen.storyboard in Resources */,
+				8C7884BE1CD49BF700BCC7BB /* photoLock~iphone.png in Resources */,
 				8C7883A71CD4540700BCC7BB /* JoinNow_25.png in Resources */,
 				8C7883F51CD4540700BCC7BB /* JoinNow_8@2x.png in Resources */,
 				8C78835A1CD4540700BCC7BB /* JoinNow_13@2x.png in Resources */,
 				8C78835D1CD4540700BCC7BB /* JoinNow_13_pressed@2x.png in Resources */,
+				8C7884B41CD49BF700BCC7BB /* check@2x.png in Resources */,
 				8C7882D91CD4540700BCC7BB /* CY@3x.png in Resources */,
 				8C7883E11CD4540700BCC7BB /* JoinNow_4_pressed@3x.png in Resources */,
 				8C7882B81CD4540700BCC7BB /* DinamicLegalDocRefresh@2x.png in Resources */,
@@ -1691,6 +2203,8 @@
 				8C7883BA1CD4540700BCC7BB /* JoinNow_28@2x.png in Resources */,
 				8C7882F91CD4540700BCC7BB /* ID@2x.png in Resources */,
 				8C7883A41CD4540700BCC7BB /* JoinNow_24_pressed.png in Resources */,
+				8C7884B71CD49BF700BCC7BB /* emptyIcon@2x.png in Resources */,
+				8C7884BC1CD49BF700BCC7BB /* photoLock@2x~iphone.png in Resources */,
 				8C7883881CD4540700BCC7BB /* JoinNow_2.png in Resources */,
 				8C7883131CD4540700BCC7BB /* MY.png in Resources */,
 				8C7883A91CD4540700BCC7BB /* JoinNow_25@3x.png in Resources */,
@@ -1708,6 +2222,7 @@
 				8C78836F1CD4540700BCC7BB /* JoinNow_16_pressed@2x.png in Resources */,
 				8C7884071CD4540700BCC7BB /* RC_Apps_Glip@2x~iphone.png in Resources */,
 				8C7883EC1CD4540700BCC7BB /* JoinNow_6_pressed@2x.png in Resources */,
+				8C7884BA1CD49BF700BCC7BB /* photoDefault@2x.png in Resources */,
 				8C7883AE1CD4540700BCC7BB /* JoinNow_26@2x.png in Resources */,
 				8C7883511CD4540700BCC7BB /* JoinNow_11_pressed@2x.png in Resources */,
 				8C7882B31CD4540700BCC7BB /* Calendar_Permission@2x~iphone.png in Resources */,
@@ -1724,8 +2239,10 @@
 				8C78833E1CD4540700BCC7BB /* UnsupportIcon@2x.png in Resources */,
 				8C7883AA1CD4540700BCC7BB /* JoinNow_25_pressed.png in Resources */,
 				8C78838A1CD4540700BCC7BB /* JoinNow_20@2x.png in Resources */,
+				8C7884B81CD49BF700BCC7BB /* error.png in Resources */,
 				8C7882FF1CD4540700BCC7BB /* IL@2x.png in Resources */,
 				8C7883F91CD4540700BCC7BB /* JoinNow_8_pressed@3x.png in Resources */,
+				8C7884C01CD49BF700BCC7BB /* reloadButton@2x.png in Resources */,
 				8C7882A81CD4540700BCC7BB /* 3dShortCut_Favorites@3x.png in Resources */,
 				8C7883931CD4540700BCC7BB /* JoinNow_21_pressed@2x.png in Resources */,
 				8C7883FC1CD4540700BCC7BB /* JoinNow_9@3x.png in Resources */,
@@ -1741,6 +2258,7 @@
 				8C7882F21CD4540700BCC7BB /* HK.png in Resources */,
 				8C7882EE1CD4540700BCC7BB /* GB@3x.png in Resources */,
 				8C7883961CD4540700BCC7BB /* JoinNow_22@2x.png in Resources */,
+				8C7884B31CD49BF700BCC7BB /* check.png in Resources */,
 				8C78836A1CD4540700BCC7BB /* JoinNow_15_pressed@3x.png in Resources */,
 				8C7882F41CD4540700BCC7BB /* HK@3x.png in Resources */,
 				8C7883E71CD4540700BCC7BB /* JoinNow_5_pressed@3x.png in Resources */,
@@ -1768,6 +2286,7 @@
 				8C7882ED1CD4540700BCC7BB /* GB@2x.png in Resources */,
 				8C7882CB1CD4540700BCC7BB /* CA.png in Resources */,
 				8C7883081CD4540700BCC7BB /* JP@2x.png in Resources */,
+				8C7884B21CD49BF700BCC7BB /* blueArrow@2x.png in Resources */,
 				8C7882E31CD4540700BCC7BB /* ES.png in Resources */,
 				8C7883BE1CD4540700BCC7BB /* JoinNow_28_pressed@3x.png in Resources */,
 				8C78838D1CD4540700BCC7BB /* JoinNow_20_pressed@2x.png in Resources */,
@@ -1828,6 +2347,7 @@
 				8C7882AC1CD4540700BCC7BB /* 3dShortCut_Messages@3x.png in Resources */,
 				8C7883B11CD4540700BCC7BB /* JoinNow_26_pressed@2x.png in Resources */,
 				8C7880771CD4236700BCC7BB /* RCFont.ttf in Resources */,
+				8C7884BD1CD49BF700BCC7BB /* photoLock~ipad.png in Resources */,
 				8C78837D1CD4540700BCC7BB /* JoinNow_19.png in Resources */,
 				8C7883451CD4540700BCC7BB /* GlipLaunch~iphone.png in Resources */,
 				8C7883921CD4540700BCC7BB /* JoinNow_21_pressed.png in Resources */,
@@ -1891,15 +2411,19 @@
 				8C7883B51CD4540700BCC7BB /* JoinNow_27@3x.png in Resources */,
 				8C78832B1CD4540700BCC7BB /* SE.png in Resources */,
 				8C7883C21CD4540700BCC7BB /* JoinNow_29_pressed.png in Resources */,
+				8C7884A81CD49BF700BCC7BB /* LICENSE in Resources */,
 				8C7883891CD4540700BCC7BB /* JoinNow_20.png in Resources */,
 				8C7883CD1CD4540700BCC7BB /* JoinNow_30@3x.png in Resources */,
+				8C7884B91CD49BF700BCC7BB /* photoDefault.png in Resources */,
 				8C7882E51CD4540700BCC7BB /* ES@3x.png in Resources */,
 				8C7883D81CD4540700BCC7BB /* JoinNow_3@3x.png in Resources */,
 				8C7883ED1CD4540700BCC7BB /* JoinNow_6_pressed@3x.png in Resources */,
 				8C7882EF1CD4540700BCC7BB /* GE.png in Resources */,
 				8C7882BF1CD4540700BCC7BB /* BE.png in Resources */,
+				8C7884BF1CD49BF700BCC7BB /* reloadButton.png in Resources */,
 				8C7883321CD4540700BCC7BB /* SI@2x.png in Resources */,
 				8C7883781CD4540700BCC7BB /* JoinNow_18@2x.png in Resources */,
+				8C7884B61CD49BF700BCC7BB /* emptyIcon.png in Resources */,
 				8C7883211CD4540700BCC7BB /* PK@3x.png in Resources */,
 				8C78838E1CD4540700BCC7BB /* JoinNow_20_pressed@3x.png in Resources */,
 				8C7883901CD4540700BCC7BB /* JoinNow_21@2x.png in Resources */,
@@ -1945,6 +2469,7 @@
 				8C7883CF1CD4540700BCC7BB /* JoinNow_30_pressed@2x.png in Resources */,
 				8C7882C61CD4540700BCC7BB /* BH@2x.png in Resources */,
 				8C7883FF1CD4540700BCC7BB /* JoinNow_9_pressed@3x.png in Resources */,
+				8C7884B11CD49BF700BCC7BB /* blueArrow.png in Resources */,
 				8C78835F1CD4540700BCC7BB /* JoinNow_14.png in Resources */,
 				8C7882D81CD4540700BCC7BB /* CY@2x.png in Resources */,
 				8C7883061CD4540700BCC7BB /* IT@3x.png in Resources */,
@@ -1963,6 +2488,7 @@
 				8C78837E1CD4540700BCC7BB /* JoinNow_19@2x.png in Resources */,
 				8C7883B91CD4540700BCC7BB /* JoinNow_28.png in Resources */,
 				8C7883E01CD4540700BCC7BB /* JoinNow_4_pressed@2x.png in Resources */,
+				8C7884B51CD49BF700BCC7BB /* empty.png in Resources */,
 				8C78840F1CD4540700BCC7BB /* RC_Apps_Meetings@3x~iphone.png in Resources */,
 				8C78831D1CD4540700BCC7BB /* PH@2x.png in Resources */,
 				8C7883B61CD4540700BCC7BB /* JoinNow_27_pressed.png in Resources */,
@@ -2005,6 +2531,7 @@
 				8C7882A71CD4540700BCC7BB /* 3dShortCut_Favorites@2x.png in Resources */,
 				8C7883091CD4540700BCC7BB /* JP@3x.png in Resources */,
 				8C7882DC1CD4540700BCC7BB /* CZ@3x.png in Resources */,
+				8C7884BB1CD49BF700BCC7BB /* photoLock@2x~ipad.png in Resources */,
 				8C7882C41CD4540700BCC7BB /* BG@3x.png in Resources */,
 				8C78836D1CD4540700BCC7BB /* JoinNow_16@3x.png in Resources */,
 				8C78836E1CD4540700BCC7BB /* JoinNow_16_pressed.png in Resources */,
@@ -2041,66 +2568,125 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7884C31CD49BF700BCC7BB /* RCUITableViewiOS7GroupStyleCell.m in Sources */,
 				8C78812B1CD4456800BCC7BB /* RCBrand.m in Sources */,
+				8C7884C11CD49BF700BCC7BB /* RCUITableViewCell.m in Sources */,
+				8C7884501CD497E000BCC7BB /* RCSPEventListViewController.m in Sources */,
 				8C7880661CD4208F00BCC7BB /* RCUIThemeStyle.m in Sources */,
+				8C7884C51CD49BF700BCC7BB /* RCUITableViewController.m in Sources */,
 				8C7880E81CD42A1E00BCC7BB /* RCUISwitch.m in Sources */,
 				8C7880C11CD4270300BCC7BB /* UIBarButtonItem+RCUIThemeStyle.m in Sources */,
+				8C78844C1CD4966300BCC7BB /* RCSPCalendarViewController.m in Sources */,
+				8C4212131CD5E3A7001C0FC6 /* RCSPTimePeriod.m in Sources */,
+				8C7884AF1CD49BF700BCC7BB /* RCUILoadingView.m in Sources */,
+				8C7884AB1CD49BF700BCC7BB /* RCUIModelViewController.m in Sources */,
+				8C4212491CD6E234001C0FC6 /* RCSPConerMaskView.m in Sources */,
 				8C7880D21CD4270300BCC7BB /* UITableView+RCUIThemeStyle.m in Sources */,
+				8C4212141CD5E3A7001C0FC6 /* RCSPCalendarManager.m in Sources */,
 				8C78805A1CD41D3A00BCC7BB /* RCExtern.m in Sources */,
 				8C66B95E1CD36ADE009E3892 /* RCSimple.xcdatamodeld in Sources */,
+				8C4212271CD6E0E8001C0FC6 /* RCSPCalendarUIDefines.m in Sources */,
 				8C7880601CD41F2100BCC7BB /* UIWindow+RCUICategory.m in Sources */,
+				8C7884AA1CD49BF700BCC7BB /* RCUIModel.m in Sources */,
 				8C78841D1CD45AE200BCC7BB /* RCNSStringDefinitions.m in Sources */,
 				8C7880791CD4236700BCC7BB /* RCUIAwesome.m in Sources */,
 				8C7880C71CD4270300BCC7BB /* UIPageControl+RCUIThemeStyle.m in Sources */,
 				8C7880D51CD4270300BCC7BB /* UITextView+RCUIThemeStyle.m in Sources */,
 				8C7880861CD4263900BCC7BB /* UIImage+RCUIPathCategory.m in Sources */,
+				8C4212281CD6E0E8001C0FC6 /* UIViewController+RCSPChildViewController.m in Sources */,
 				8C7880D81CD4270300BCC7BB /* UIWebView+RCUIThemeStyle.m in Sources */,
 				8C7880CE1CD4270300BCC7BB /* UIStepper+RCUIThemeStyle.m in Sources */,
+				8C7884C91CD49BF700BCC7BB /* RCUITableViewDelegate.m in Sources */,
 				8C7880531CD41AD800BCC7BB /* RCSPLaunchView.m in Sources */,
 				8C7884191CD45A7900BCC7BB /* RCUIThemeStyleNameConst.m in Sources */,
 				8C7880D11CD4270300BCC7BB /* UITabBarItem+RCUIThemeStyle.m in Sources */,
 				8C7880C21CD4270300BCC7BB /* UIButton+RCUIThemeStyle.m in Sources */,
+				8C4211F31CD57C5A001C0FC6 /* RCUISearchBar.m in Sources */,
+				8C4212171CD5E3A7001C0FC6 /* NSDate+RCCalendarUtil.m in Sources */,
 				8C7880CA1CD4270300BCC7BB /* UIProgressView+RCUIThemeStyle.m in Sources */,
+				8C4212121CD5E3A7001C0FC6 /* RCSPEventAction.m in Sources */,
 				8C7880DC1CD4282400BCC7BB /* RCUIPageControl.m in Sources */,
 				8C7880D41CD4270300BCC7BB /* UITextField+RCUIThemeStyle.m in Sources */,
+				8C4212181CD5E3A7001C0FC6 /* RCSPEventMatcher.m in Sources */,
+				8C7884D11CD49BF700BCC7BB /* RCUITableViewSection.m in Sources */,
 				8C7880781CD4236700BCC7BB /* RCUIAppAwesomeIcons.m in Sources */,
+				8C4212161CD5E3A7001C0FC6 /* EKEvent+RCUtil.m in Sources */,
 				8C7880EB1CD42A5C00BCC7BB /* RCUIBadge.m in Sources */,
+				8C4212151CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.m in Sources */,
 				8C78810E1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.m in Sources */,
 				8C7880881CD4263900BCC7BB /* UIImage+RCUIStretchable.m in Sources */,
+				8C7884CF1CD49BF700BCC7BB /* RCUITableViewVarHeightDelegate.m in Sources */,
 				8C7880C51CD4270300BCC7BB /* UILabel+RCUIThemeStyle.m in Sources */,
+				8C4211FC1CD5E33F001C0FC6 /* RCSPEventListItem.m in Sources */,
 				8C7880BF1CD4270300BCC7BB /* UIActivityIndicatorView+RCUIThemeStyle.m in Sources */,
 				8C7880DF1CD4289200BCC7BB /* UIFont+RCUILineHeight.m in Sources */,
 				8C7881241CD4448500BCC7BB /* RCUIThemeStyleManager.m in Sources */,
+				8C7884CE1CD49BF700BCC7BB /* RCUITableViewPlainVarHeightDelegate.m in Sources */,
+				8C7884CA1CD49BF700BCC7BB /* RCUITableViewDragRefreshDelegate.m in Sources */,
 				8C7880671CD4208F00BCC7BB /* UILabel+RCUIThemeStyle.m in Sources */,
+				8C7884AC1CD49BF700BCC7BB /* RCUIOrientationSupportedViewController.m in Sources */,
 				8C66B9581CD36ADE009E3892 /* ViewController.m in Sources */,
 				8C7880E51CD4295C00BCC7BB /* RCUINumberTipTextField.m in Sources */,
+				8C7884C71CD49BF700BCC7BB /* RCUITableViewListDataSource.m in Sources */,
 				8C7880D01CD4270300BCC7BB /* UITabBar+RCUIThemeStyle.m in Sources */,
+				8C7884D71CD4B7A000BCC7BB /* RCUIGlobalRect.m in Sources */,
 				8C7880C01CD4270300BCC7BB /* UIBadge+RCUIThemeStyle.m in Sources */,
+				8C7884D01CD49BF700BCC7BB /* RCUITableViewItem.m in Sources */,
+				8C4211F01CD57960001C0FC6 /* NSString+RCUIAddition.m in Sources */,
+				8C42124D1CD6E234001C0FC6 /* RCSPEventGlanceView.m in Sources */,
 				8C66B9551CD36ADE009E3892 /* AppDelegate.m in Sources */,
 				8C7880851CD4263900BCC7BB /* UIImage+RCUIMergeCategory.m in Sources */,
 				8C78810D1CD42E8B00BCC7BB /* RCUIiOS7TableViewCellBackgroundView.m in Sources */,
+				8C7884CB1CD49BF700BCC7BB /* RCUITableViewGroupedVarHeightDelegate.m in Sources */,
 				8C7880CB1CD4270300BCC7BB /* UISearchBar+RCUIThemeStyle.m in Sources */,
 				8C7880CF1CD4270300BCC7BB /* UISwitch+RCUIThemeStyle.m in Sources */,
+				8C42124B1CD6E234001C0FC6 /* RCSPEventGlanceActionView.m in Sources */,
+				8C7884C81CD49BF700BCC7BB /* RCUITableViewSectionDataSource.m in Sources */,
 				8C7880D31CD4270300BCC7BB /* UITableViewCell+RCUIThemeStyle.m in Sources */,
 				8C7880D71CD4270300BCC7BB /* UIView+RCUIThemeStyle.m in Sources */,
+				8C42121E1CD6DD66001C0FC6 /* RCSPEventListTableViewCell.m in Sources */,
+				8C4212111CD5E3A7001C0FC6 /* RCSPEvent.m in Sources */,
 				8C7880C41CD4270300BCC7BB /* UIImageView+RCUIThemeStyle.m in Sources */,
+				8C42121B1CD6DD5F001C0FC6 /* RCSPEventListFreeTimeCell.m in Sources */,
 				8C7880701CD4225500BCC7BB /* UIView+RCUIThemeStyle.m in Sources */,
+				8C7884CC1CD49BF700BCC7BB /* RCUITableViewNetworkEnabledDelegate.m in Sources */,
+				8C7884C21CD49BF700BCC7BB /* RCUITableViewiOS6GroupStyleCell.m in Sources */,
+				8C7884DD1CD4B81800BCC7BB /* UITableView+RCUICategory.m in Sources */,
 				8C7880CD1CD4270300BCC7BB /* UISlider+RCUIThemeStyle.m in Sources */,
 				8C7880CC1CD4270300BCC7BB /* UISegmentedControl+RCUIThemeStyle.m in Sources */,
 				8C78806A1CD420E500BCC7BB /* RCUIThemeStyleDefined.m in Sources */,
 				8C7880871CD4263900BCC7BB /* UIImage+RCUIProfileImagePlaceholderCategory.m in Sources */,
 				8C7881271CD444E000BCC7BB /* RCUIRingCentralThemeStyle.m in Sources */,
+				8C4211F91CD5E2D5001C0FC6 /* RCSPEventListDataSource.m in Sources */,
+				8C4212481CD6E234001C0FC6 /* RCSPCalendarSelectedDateView.m in Sources */,
 				8C7880C91CD4270300BCC7BB /* UIPopoverBackgroundView+RCUIThemeStyle.m in Sources */,
 				8C7880D61CD4270300BCC7BB /* UIToolbar+RCUIThemeStyle.m in Sources */,
 				8C7880C81CD4270300BCC7BB /* UIPickerView+RCUIThemeStyle.m in Sources */,
+				8C7884A91CD49BF700BCC7BB /* RCUIBaseViewController.m in Sources */,
+				8C7884C41CD49BF700BCC7BB /* UITableViewCell+RCUIIOS7Style.m in Sources */,
+				8C7884D41CD49BF700BCC7BB /* RCUITableViewHeaderView.m in Sources */,
+				8C4212501CD6E4D2001C0FC6 /* NSString+RCStringEmpty.m in Sources */,
+				8C42124C1CD6E234001C0FC6 /* RCSPEventGlanceTitleView.m in Sources */,
+				8C4211EF1CD57960001C0FC6 /* NSObject+RCUICategory.m in Sources */,
+				8C4211EE1CD57960001C0FC6 /* NSArray+RCUICategory.m in Sources */,
+				8C7884AE1CD49BF700BCC7BB /* RCUIErrorView.m in Sources */,
+				8C7884DA1CD4B7FF00BCC7BB /* UIView+RCUICategory.m in Sources */,
+				8C7884CD1CD49BF700BCC7BB /* RCUITableViewPlainDelegate.m in Sources */,
 				8C7880571CD41C9D00BCC7BB /* RCUIGlobalCommon.m in Sources */,
 				8C66B9521CD36ADE009E3892 /* main.m in Sources */,
 				8C7880C61CD4270300BCC7BB /* UINavigationBar+RCUIThemeStyle.m in Sources */,
+				8C7884AD1CD49BF700BCC7BB /* RCUIRootViewController.m in Sources */,
+				8C4212261CD6E0E8001C0FC6 /* RCSPCalendarComponentFactory.m in Sources */,
 				8C7880841CD4263900BCC7BB /* UIImage+RCUICategory.m in Sources */,
+				8C7884B01CD49BF700BCC7BB /* RCUISearchDisplayController.m in Sources */,
 				8C7884201CD45B1B00BCC7BB /* RCExtern.m in Sources */,
+				8C7884D31CD49BF700BCC7BB /* RCUITableViewHeaderDragRefreshView.m in Sources */,
 				8C7880E21CD428DE00BCC7BB /* RCUIGlobalStyle.m in Sources */,
+				8C7884C61CD49BF700BCC7BB /* RCUITableViewDataSource.m in Sources */,
 				8C78805D1CD41DAA00BCC7BB /* UIScreen+RCUIBounds.m in Sources */,
 				8C7880C31CD4270300BCC7BB /* UIDatePicker+RCUIThemeStyle.m in Sources */,
+				8C42124A1CD6E234001C0FC6 /* RCSPEventBackgroundButton.m in Sources */,
+				8C7884D21CD49BF700BCC7BB /* RCUITableViewFooterInfiniteScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
