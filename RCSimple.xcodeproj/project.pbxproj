@@ -519,6 +519,7 @@
 		8C7884D71CD4B7A000BCC7BB /* RCUIGlobalRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884D61CD4B7A000BCC7BB /* RCUIGlobalRect.m */; };
 		8C7884DA1CD4B7FF00BCC7BB /* UIView+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884D91CD4B7FF00BCC7BB /* UIView+RCUICategory.m */; };
 		8C7884DD1CD4B81800BCC7BB /* UITableView+RCUICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7884DC1CD4B81800BCC7BB /* UITableView+RCUICategory.m */; };
+		8C8BB27A1CD840580094B46E /* RCSPCalendarPermissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BB2771CD840580094B46E /* RCSPCalendarPermissionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1157,6 +1158,8 @@
 		8C7884DB1CD4B81800BCC7BB /* UITableView+RCUICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RCUICategory.h"; sourceTree = "<group>"; };
 		8C7884DC1CD4B81800BCC7BB /* UITableView+RCUICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RCUICategory.m"; sourceTree = "<group>"; };
 		8C7884E01CD4BC8700BCC7BB /* RCResourceKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCResourceKit.h; sourceTree = "<group>"; };
+		8C8BB2761CD840580094B46E /* RCSPCalendarPermissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSPCalendarPermissionViewController.h; sourceTree = "<group>"; };
+		8C8BB2771CD840580094B46E /* RCSPCalendarPermissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSPCalendarPermissionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1173,6 +1176,7 @@
 		8C4211F41CD5E279001C0FC6 /* calendar */ = {
 			isa = PBXGroup;
 			children = (
+				8C8BB2751CD840360094B46E /* permission */,
 				8C4211F51CD5E279001C0FC6 /* mainscreen */,
 			);
 			path = calendar;
@@ -2107,6 +2111,15 @@
 			path = RCResourceKit;
 			sourceTree = "<group>";
 		};
+		8C8BB2751CD840360094B46E /* permission */ = {
+			isa = PBXGroup;
+			children = (
+				8C8BB2761CD840580094B46E /* RCSPCalendarPermissionViewController.h */,
+				8C8BB2771CD840580094B46E /* RCSPCalendarPermissionViewController.m */,
+			);
+			path = permission;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2611,6 +2624,7 @@
 				8C7884D11CD49BF700BCC7BB /* RCUITableViewSection.m in Sources */,
 				8C7880781CD4236700BCC7BB /* RCUIAppAwesomeIcons.m in Sources */,
 				8C4212161CD5E3A7001C0FC6 /* EKEvent+RCUtil.m in Sources */,
+				8C8BB27A1CD840580094B46E /* RCSPCalendarPermissionViewController.m in Sources */,
 				8C7880EB1CD42A5C00BCC7BB /* RCUIBadge.m in Sources */,
 				8C4212151CD5E3A7001C0FC6 /* RCSPCalendarSyncManager.m in Sources */,
 				8C78810E1CD42E8B00BCC7BB /* RCUITableViewCellBackgroundView.m in Sources */,

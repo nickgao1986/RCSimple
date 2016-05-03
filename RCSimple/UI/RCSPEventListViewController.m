@@ -49,6 +49,7 @@
 - (void) viewDidLoad;
 {
     [super viewDidLoad];
+
 //    [self createTableViewContentKVOBinding];
 //    [self createTableViewFrameKVOBinding];
 }
@@ -66,7 +67,13 @@
     self.dataSource  = dataSource;
     self.tableView.delegate = dataSource;
     self.listDataSource = dataSource;
-    [self.tableView uiApplyThemeStyle: [RCUI_THEME_STYLE () tableViewThemeWithStyleName: RCCommonTableViewDefault]];
+    
+    RCUIThemeStyle* style = [[RCUIThemeStyle alloc] init];
+    RCUITableViewThemeStyle *themeStyle = [style tableViewThemeWithStyleName: RCCommonTableViewDefault];
+    
+    [self.tableView uiApplyThemeStyle: themeStyle];
+    [self refreshEventsForCurrentDate];
+
 //    [self createRefreshFooterView];
 //    [self createRefreshHeaderViewWithType: self.refreshHeaderViewType];
 }

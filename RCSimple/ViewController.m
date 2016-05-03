@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "RCSPEventListViewController.h"
-
+#import "RCSPCalendarPermissionViewController.h"
 
 #define CURRENT_DATE_VIEW_HEIGHT 48
 
@@ -30,7 +30,11 @@
     
   //  [self initLaunchView];
     
-    RCSPEventListViewController* controller = [[RCSPEventListViewController alloc] initWithNibName:nil bundle:nil];
+//    RCSPEventListViewController* controller = [[RCSPEventListViewController alloc] initWithNibName:nil bundle:nil];
+//    [self presentViewController:controller animated:true completion:nil];
+    
+    
+    RCSPCalendarPermissionViewController* controller = [[RCSPCalendarPermissionViewController alloc] initWithNibName:nil bundle:nil];
     [self presentViewController:controller animated:true completion:nil];
 
 }

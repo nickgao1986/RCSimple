@@ -78,6 +78,9 @@
     dispatch_async(globalQueue, ^{
         RCSPCalendarManager *calendarManager = [RCSPCalendarManager sharedManager];
         NSArray <RCSPEvent *> *convertedEvents = [calendarManager fetchEventsForDate: date isSorted: YES];
+               
+      
+        
         NSMutableArray *array = [NSMutableArray array];
         for (RCSPEvent *event in convertedEvents)
         {
