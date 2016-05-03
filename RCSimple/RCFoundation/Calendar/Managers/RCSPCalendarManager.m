@@ -180,20 +180,27 @@ RC_DEF_STRING (RCSPSelectCalendarChangedNotification);
                                          toDate: (NSDate *)endDate
                                        isSorted: (BOOL)sorted;
 {
-    if ([self isUserBinded] && self.isPermissionGranted)
+//    if ([self isUserBinded] && self.isPermissionGranted)
+//    {
+//        NSArray <EKEvent *> *events = [self eventFromDate: startDate toDate: endDate];
+//        if (sorted)
+//        {
+//            events = [self sortEvents: events];
+//        }
+//        NSArray <RCSPEvent *> *convertedEvents = [self convertEvent: events];
+//        return convertedEvents;
+//    }
+//    else
+//    {
+//        return nil;
+//    }
+    NSArray <EKEvent *> *events = [self eventFromDate: startDate toDate: endDate];
+    if (sorted)
     {
-        NSArray <EKEvent *> *events = [self eventFromDate: startDate toDate: endDate];
-        if (sorted)
-        {
-            events = [self sortEvents: events];
-        }
-        NSArray <RCSPEvent *> *convertedEvents = [self convertEvent: events];
-        return convertedEvents;
+        events = [self sortEvents: events];
     }
-    else
-    {
-        return nil;
-    }
+    NSArray <RCSPEvent *> *convertedEvents = [self convertEvent: events];
+    return convertedEvents;
 }
 
 - (void) fetchEventsForDate: (NSDate *)date

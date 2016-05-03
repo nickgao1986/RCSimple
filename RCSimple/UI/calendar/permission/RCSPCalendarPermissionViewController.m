@@ -12,6 +12,7 @@
 #import "RCSPCalendarManager.h"
 #import "RCUIGlobalCommon.h"
 #import "RCUIGlobalStyle.h"
+#import "RCSPEventListViewController.h"
 
 @interface RCSPCalendarPermissionViewController ()<RCSPLaunchViewDelegate>
 @property (nonatomic, retain) RCSPLaunchView *launchView;
@@ -111,6 +112,9 @@
         {
             [self enableBtnClicked];
         }
+    }else{
+            RCSPEventListViewController* controller = [[RCSPEventListViewController alloc] initWithNibName:nil bundle:nil];
+            [self presentViewController:controller animated:true completion:nil];
     }
 }
 
