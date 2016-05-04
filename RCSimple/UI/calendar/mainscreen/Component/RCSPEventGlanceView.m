@@ -216,6 +216,9 @@
         }
     }
     BOOL enableView = event.isCurentUserAccepted;
+    //fix it
+//    enableView = false;
+    
     self.colorView.backgroundColor = enableView ? event.sourceColor : [event.sourceColor colorWithAlphaComponent: 0.4];
     [self setViewEnabled: enableView];
     

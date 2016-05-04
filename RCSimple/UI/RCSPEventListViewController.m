@@ -72,7 +72,6 @@
     RCUITableViewThemeStyle *themeStyle = [style tableViewThemeWithStyleName: RCCommonTableViewDefault];
     
     [self.tableView uiApplyThemeStyle: themeStyle];
-    [self refreshEventsForCurrentDate];
 
 //    [self createRefreshFooterView];
 //    [self createRefreshHeaderViewWithType: self.refreshHeaderViewType];
